@@ -360,13 +360,13 @@ namespace Sce.PlayStation.Core.Imaging
 				throw new DirectoryNotFoundException();
 			}
 			FileAttributes attributes = File.GetAttributes(directoryName);
-			bool flag = 1 == (attributes & 1);
-			if (flag)
+			bool canAccess = FileAttributes.ReadOnly == (attributes & FileAttributes.ReadOnly);
+			if (canAccess)
 			{
 				string text = string.Format("Access to the path '{0}' is denied.", path);
 				throw new UnauthorizedAccessException(text);
 			}
-			if (16 != (attributes & 16))
+			if (FileAttributes.Directory != (attributes & FileAttributes.Directory))
 			{
 				string text = string.Format("Access to the path '{0}' is denied.", path);
 				throw new UnauthorizedAccessException(text);

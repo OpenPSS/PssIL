@@ -891,18 +891,18 @@ namespace Sce.PlayStation.Core.Graphics
 		[SecuritySafeCritical]
 		static GraphicsContext()
 		{
-			int screenSize;
-			PsmGraphicsContext.GetScreenSizes(null, out screenSize);
-			GraphicsContext.screenSizes = new ImageSize[screenSize];
-			PsmGraphicsContext.GetScreenSizes(GraphicsContext.screenSizes, out screenSize);
-			int width;
-			int height;
-			PsmGraphicsContext.GetMaxScreenSize(out x, out y);
-			for (int i = 0; i < width; i++)
+			int result;
+			PsmGraphicsContext.GetScreenSizes(null, out result);
+			GraphicsContext.screenSizes = new ImageSize[result];
+			PsmGraphicsContext.GetScreenSizes(GraphicsContext.screenSizes, out result);
+			int screenWidth;
+			int screenHeight;
+			PsmGraphicsContext.GetMaxScreenSize(out screenWidth, out screenHeight);
+			for (int i = 0; i < screenWidth; i++)
 			{
-				if (GraphicsContext.screenSizes[i].Width > width || GraphicsContext.screenSizes[i].Height > height)
+				if (GraphicsContext.screenSizes[i].Width > screenWidth || GraphicsContext.screenSizes[i].Height > screenHeight)
 				{
-					ScreenBuffer.FitRect(width, height, ref GraphicsContext.screenSizes[i].Width, ref GraphicsContext.screenSizes[i].Height);
+					ScreenBuffer.FitRect(screenWidth, screenHeight, ref GraphicsContext.screenSizes[i].Width, ref GraphicsContext.screenSizes[i].Height);
 				}
 			}
 		}

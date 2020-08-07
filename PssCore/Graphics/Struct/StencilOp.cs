@@ -17,7 +17,7 @@ namespace Sce.PlayStation.Core.Graphics
 		/// <param name="zPass">Depth passing mode of the stencil test operation</param>
 		public StencilOp(StencilOpMode fail, StencilOpMode zFail, StencilOpMode zPass)
 		{
-			this.bits = (uint)(fail | (uint)zFail << 8 | (uint)zPass << 16);
+			this.bits = (uint)((uint)fail | (uint)zFail << 8 | (uint)zPass << 16);
 		}
 
 		/// <summary>Sets a value to the structure representing the stencil test operation</summary>
@@ -26,7 +26,7 @@ namespace Sce.PlayStation.Core.Graphics
 		/// <param name="zPass">Depth passing mode of the stencil test operation</param>
 		public void Set(StencilOpMode fail, StencilOpMode zFail, StencilOpMode zPass)
 		{
-			this.bits = (uint)(fail | (uint)zFail << 8 | (uint)zPass << 16);
+			this.bits = (uint)((uint)fail | (uint)zFail << 8 | (uint)zPass << 16);
 		}
 
 		/// <summary>Stencil failure mode of the stencil test operation</summary>

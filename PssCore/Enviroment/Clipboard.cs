@@ -29,7 +29,7 @@ namespace Sce.PlayStation.Core.Environment
 			int errorCode = Clipboard.SetTextNative(text);
 			if (errorCode != 0)
 			{
-				Error.ThrowNativeException(num);
+				Error.ThrowNativeException(errorCode);
 			}
 		}
 

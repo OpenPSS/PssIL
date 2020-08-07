@@ -327,7 +327,7 @@ namespace Sce.PlayStation.Core.Device
 			}
 			if (sizeId < 0 || this._cameraInfo.SupportedPreviewSizes.Count < sizeId)
 			{
-				Error.ThrowNativeException(-2141716477);
+				Error.ThrowNativeException(ArgumentOutOfRange);
 			}
 			int errorCode = Camera.OpenNative(this._handle, this._cameraInfo.SupportedPreviewSizes[sizeId]);
 			if (errorCode < 0)
@@ -457,7 +457,7 @@ namespace Sce.PlayStation.Core.Device
 			Camera camera = obj as Camera;
 			if (camera._handle == 0)
 			{
-				Error.ThrowNativeException(0x80580005);
+				Error.ThrowNativeException(ObjectDisposed);
 			}
 			int multiplier = 2;
 			if (camera._currentPreviewImageFormat == CameraImageFormat.Rgba8888)
@@ -466,7 +466,7 @@ namespace Sce.PlayStation.Core.Device
 			}
 			int totalFrameSize = camera._currentPreviewSize.Width * camera._currentPreviewSize.Height * multiplier;
 			byte[] frameBuffer = new byte[totalFrameSize];
-			long frameframeCount = 0L;
+			long frameCount = 0L;
 			long lastFrameCount = 0L;
 			long frameCountErrorCheck = 0L;
 			long ticks = DateTime.Now.Ticks;

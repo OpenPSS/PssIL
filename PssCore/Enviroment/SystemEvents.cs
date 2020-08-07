@@ -56,7 +56,7 @@ namespace Sce.PlayStation.Core.Environment
 			int errorCode = SystemEvents.CheckEventsNative(out internalData);
 			if (errorCode != 0)
 			{
-				Error.ThrowNativeException(num);
+				Error.ThrowNativeException(errorCode);
 			}
 			if (internalData.QuitRequired)
 			{

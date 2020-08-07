@@ -17,7 +17,7 @@ namespace Sce.PlayStation.Core.Graphics
 		/// <param name="mip">Mipmap texture filter mode</param>
 		public TextureFilter(TextureFilterMode mag, TextureFilterMode min, TextureFilterMode mip)
 		{
-			this.bits = (uint)(mag | (uint)min << 8 | (uint)mip << 16);
+			this.bits = (uint)((uint)mag | (uint)min << 8 | (uint)mip << 16);
 		}
 
 		/// <summary>Sets a value to the structure representing the texture filter</summary>
@@ -26,7 +26,7 @@ namespace Sce.PlayStation.Core.Graphics
 		/// <param name="mip">Mipmap texture filter mode</param>
 		public void Set(TextureFilterMode mag, TextureFilterMode min, TextureFilterMode mip)
 		{
-			this.bits = (uint)(mag | (uint)min << 8 | (uint)mip << 16);
+			this.bits = (uint)((uint)mag | (uint)min << 8 | (uint)mip << 16);
 		}
 
 		/// <summary>Enlarged texture filter mode</summary>

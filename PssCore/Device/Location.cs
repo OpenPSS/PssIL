@@ -58,7 +58,7 @@ namespace Sce.PlayStation.Core.Device
 			int errorCode = Location.GetDataNative(ref data);
 			if (errorCode != 0)
 			{
-				Error.ThrowNativeException(dataNative);
+				Error.ThrowNativeException(errorCode);
 			}
 			return data;
 		}

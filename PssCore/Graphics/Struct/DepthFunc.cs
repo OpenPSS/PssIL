@@ -15,7 +15,7 @@ namespace Sce.PlayStation.Core.Graphics
 		/// <param name="writeMask">Depth test function write mask</param>
 		public DepthFunc(DepthFuncMode mode, bool writeMask)
 		{
-			this.bits = ((uint)mode | ((!writeMask) ? 0x00 : 0xFF));
+			this.bits = (uint)((uint)mode | ((!writeMask) ? 0x00 : 0xFF));
 		}
 
 		/// <summary>Sets a value to the structure representing the depth test function</summary>
@@ -23,7 +23,7 @@ namespace Sce.PlayStation.Core.Graphics
 		/// <param name="writeMask">Depth test function write mask</param>
 		public void Set(DepthFuncMode mode, bool writeMask)
 		{
-			this.bits = ((uint)mode | ((!writeMask) ? 0x00 : 0xFF));
+			this.bits = (uint)((uint)mode | ((!writeMask) ? 0x00 : 0xFF));
 		}
 
 		/// <summary>Depth test function mode</summary>

@@ -15,7 +15,7 @@ namespace Sce.PlayStation.Core.Graphics
 		/// <param name="t">T coordinate texture wrap mode</param>
 		public TextureWrap(TextureWrapMode s, TextureWrapMode t)
 		{
-			this.bits = (uint)(s | (uint)t << 8);
+			this.bits = (uint)((uint)s | (uint)t << 8);
 		}
 
 		/// <summary>Sets a value to the structure representing the texture wrap</summary>
@@ -23,7 +23,7 @@ namespace Sce.PlayStation.Core.Graphics
 		/// <param name="t">T coordinate texture wrap mode</param>
 		public void Set(TextureWrapMode s, TextureWrapMode t)
 		{
-			this.bits = (uint)(s | (uint)t << 8);
+			this.bits = (uint)((uint)s | (uint)t << 8);
 		}
 
 		/// <summary>S coordinate texture wrap mode</summary>

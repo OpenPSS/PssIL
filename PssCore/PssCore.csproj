@@ -55,6 +55,9 @@
     <Folder Include="Imaging\" />
     <Folder Include="Imaging\Struct\" />
     <Folder Include="Imaging\Enum\" />
+    <Folder Include="Input\" />
+    <Folder Include="Input\Struct\" />
+    <Folder Include="Input\Enum\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Core\Error.cs" />
@@ -215,5 +218,14 @@
     <Compile Include="Imaging\Font.cs" />
     <Compile Include="Imaging\Image.cs" />
     <Compile Include="Imaging\Enum\FontAlias.cs" />
+    <Compile Include="Input\Struct\GamePadData.cs" />
+    <Compile Include="Input\Struct\MotionData.cs" />
+    <Compile Include="Input\Struct\TouchData.cs" />
+    <Compile Include="Input\Enum\GamePadButtons.cs" />
+    <Compile Include="Input\Enum\TouchStatus.cs" />
+    <Compile Include="Input\GamePad.cs" />
+    <Compile Include="Input\Motion.cs" />
+    <Compile Include="Input\Touch.cs" />
+    <Compile Include="Enviroment\Enum\GamePadButtonMeaning.cs" />
   </ItemGroup>
 </Project>
