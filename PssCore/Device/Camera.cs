@@ -79,13 +79,13 @@ namespace Sce.PlayStation.Core.Device
 		 * Global Variables
 		 */
 		/// <summary>Error code when the method cannot be called</summary>
-		private const int InvalidOperaion = (int)0x80580004;
+		private const int InvalidOperaion = unchecked((int)0x80580004);
 
 		/// <summary>Error code when the object is already deleted</summary>
-		private const int ObjectDisposed = (int)0x80580005;
+		private const int ObjectDisposed = unchecked((int)0x80580005);
 
 		/// <summary>Error code when outside of the array range was specified</summary>
-		private const int ArgumentOutOfRange = (int)0x80580003;
+		private const int ArgumentOutOfRange = unchecked((int)0x80580003);
 		
 		/// <summary>Event that occurs when the stream image frame has changed<br />
 		/// Occurs asynchronously in a thread separate from the thread that called the Start method</summary>
