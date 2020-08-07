@@ -5,13 +5,12 @@ using System.Security;
 
 namespace Sce.PlayStation.Core
 {
+	/// <summary>
+	/// handles exceptions thrown from native runtime code and passing them to the IL application.
+	/// </summary>
+
 	internal class Error 
 	{
-		/*
-		 * This class handles exceptions thrown from native runtime code 
-		 * and passing them to the IL application.
-		 */
-
 		/*
 		 *   Native Error Codes
 		 */
@@ -43,7 +42,10 @@ namespace Sce.PlayStation.Core
 		[SecurityCritical]
 		[MethodImpl(4096)]
 		private static extern int GetExceptionInfoNative(out string message, out string param); 
-
+		
+		/*
+		 *	IL Code.
+		 */
 		[SecuritySafeCritical]
 		internal static void ThrowNativeException(int error)
 		{
