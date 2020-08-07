@@ -52,6 +52,9 @@
     <Folder Include="Graphics\" />
     <Folder Include="Graphics\Struct\" />
     <Folder Include="Graphics\Enum\" />
+    <Folder Include="Imaging\" />
+    <Folder Include="Imaging\Struct\" />
+    <Folder Include="Imaging\Enum\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Core\Error.cs" />
@@ -201,5 +204,16 @@
     <Compile Include="Graphics\PsmShaderProgram.cs" />
     <Compile Include="Graphics\PsmTexture.cs" />
     <Compile Include="Graphics\PsmVertexBuffer.cs" />
+    <Compile Include="Imaging\Struct\CharMetrics.cs" />
+    <Compile Include="Imaging\Struct\FontMetrics.cs" />
+    <Compile Include="Imaging\Struct\ImageColor.cs" />
+    <Compile Include="Imaging\Struct\ImagePosition.cs" />
+    <Compile Include="Imaging\Struct\ImageRect.cs" />
+    <Compile Include="Imaging\Struct\ImageSize.cs" />
+    <Compile Include="Imaging\Enum\FontStyle.cs" />
+    <Compile Include="Imaging\Enum\ImageMode.cs" />
+    <Compile Include="Imaging\Font.cs" />
+    <Compile Include="Imaging\Image.cs" />
+    <Compile Include="Imaging\Enum\FontAlias.cs" />
   </ItemGroup>
 </Project>
