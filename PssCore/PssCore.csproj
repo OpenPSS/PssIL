@@ -34,6 +34,7 @@
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Json" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Sce\Sce.Psm.CSharp.targets" />
   <ItemGroup>
@@ -58,6 +59,9 @@
     <Folder Include="Input\" />
     <Folder Include="Input\Struct\" />
     <Folder Include="Input\Enum\" />
+    <Folder Include="Services\" />
+    <Folder Include="Services\Struct\" />
+    <Folder Include="Services\Enum\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Core\Error.cs" />
@@ -227,5 +231,23 @@
     <Compile Include="Input\Motion.cs" />
     <Compile Include="Input\Touch.cs" />
     <Compile Include="Enviroment\Enum\GamePadButtonMeaning.cs" />
+    <Compile Include="Services\Enum\InAppPurchaseCommand.cs" />
+    <Compile Include="Services\Enum\InAppPurchaseTicketType.cs" />
+    <Compile Include="Services\Enum\NetworkRequestType.cs" />
+    <Compile Include="Services\Enum\NetworkState.cs" />
+    <Compile Include="Services\Struct\InAppPurchaseProductData.cs" />
+    <Compile Include="Services\AccountInformation.cs" />
+    <Compile Include="Services\InAppPurchaseDialog.cs" />
+    <Compile Include="Services\InAppPurchaseProduct.cs" />
+    <Compile Include="Services\InAppPurchaseProductList.cs" />
+    <Compile Include="Services\Network.cs" />
+    <Compile Include="Services\NetworkAsyncResult.cs" />
+    <Compile Include="Services\NetworkErrorDelegate.cs" />
+    <Compile Include="Services\NetworkRequest.cs" />
+    <Compile Include="Services\NetworkResponse.cs" />
+    <Compile Include="Services\NetworkResponseDelegate.cs" />
+    <Compile Include="Services\NetworkStreamReader.cs" />
+    <Compile Include="Services\NetworkStreamReaderDelegate.cs" />
+    <Compile Include="Services\Telemetry.cs" />
   </ItemGroup>
 </Project>
