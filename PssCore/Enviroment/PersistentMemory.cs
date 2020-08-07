@@ -7,13 +7,20 @@ namespace Sce.PlayStation.Core.Environment
 	/// <summary>Class providing persistent memory area</summary>
 	public static class PersistentMemory
 	{
+		/*
+		 *  Implemented by PSM Runtime.
+		 */
 		[SecurityCritical]
 		[MethodImpl(4096)]
 		private static extern int WriteNative(byte[] fileImage);
 		[SecurityCritical]
 		[MethodImpl(4096)]
 		private static extern int ReadNative(byte[] fileImage);
-
+		
+		/*
+		 *	IL Code
+		 */
+		
 		/// <summary>Write data to persistent memory</summary>
 		/// <param name="data">Write content (maximum 64KB)</param>
 		[SecuritySafeCritical]

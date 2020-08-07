@@ -71,10 +71,7 @@ namespace Sce.PlayStation.Core.Device
 		[MethodImpl(4096)]
 		private static extern int GetPictureFilenameNative(int handle, out string filename);
 		
-		/*
-		 *	IL Code.
-		 */
-		
+
 		/*
 		 * Global Variables
 		 */
@@ -109,7 +106,11 @@ namespace Sce.PlayStation.Core.Device
 		private bool _isTakingPicture = false;
 		private static BackgroundWorker _worker = null;
 		private static object syncObject = new object();
-
+		
+		/*
+		 *	IL Code.
+		 */
+		
 		/// <summary>Obtain the number of cameras</summary>
 		/// <returns>Number of cameras</returns>
 		[SecuritySafeCritical]

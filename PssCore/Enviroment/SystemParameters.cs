@@ -22,6 +22,10 @@ namespace Sce.PlayStation.Core.Environment
 		[MethodImpl(4096)]
 		private static extern int GetString(SystemParameters.ParameterKey key, out string value);
 		
+		/*
+		 *	IL Code.
+		 */
+		
 		private enum ParameterKey : uint
 		{
 			Language, /* 0 */

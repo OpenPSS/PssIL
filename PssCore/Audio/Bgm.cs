@@ -14,15 +14,12 @@ namespace Sce.PlayStation.Core.Audio
 		[SecurityCritical]
 		[MethodImpl(4096)]
 		private static extern int NewFromFilename(string filename, out int handle);
-
 		[SecurityCritical]
 		[MethodImpl(4096)]
 		private static extern int NewFromFileImage(byte[] fileImage, out int handle);
-
 		[SecurityCritical]
 		[MethodImpl(4096)]
 		private static extern void ReleaseNative(int handle);
-
 		[SecurityCritical]
 		[MethodImpl(4096)]
 		private static extern int CreatePlayerNative(int handle, out int playerHandle);
