@@ -65,7 +65,7 @@ namespace Sce.PlayStation.Core.Audio
 		private static extern int GetLoopPosition(int handle, out ulong msStart, out ulong msEnd);
 		
 		/*
-		 *  Implemented by PSM Runtime.
+		 *	IL Code.
 		 */
 		
 		private int handle = 0;
@@ -104,10 +104,10 @@ namespace Sce.PlayStation.Core.Audio
 		[SecuritySafeCritical]
 		public void Play()
 		{
-			int num = BgmPlayer.PlayNative(this.handle);
-			if (num != 0)
+			int errorCode = BgmPlayer.PlayNative(this.handle);
+			if (errorCode != 0)
 			{
-				Error.ThrowNativeException(num);
+				Error.ThrowNativeException(errorCode);
 			}
 		}
 
@@ -115,10 +115,10 @@ namespace Sce.PlayStation.Core.Audio
 		[SecuritySafeCritical]
 		public void Stop()
 		{
-			int num = BgmPlayer.StopNative(this.handle);
-			if (num != 0)
+			int errorCode = BgmPlayer.StopNative(this.handle);
+			if (errorCode != 0)
 			{
-				Error.ThrowNativeException(num);
+				Error.ThrowNativeException(errorCode);
 			}
 		}
 
@@ -142,10 +142,10 @@ namespace Sce.PlayStation.Core.Audio
 		[SecuritySafeCritical]
 		public void Pause()
 		{
-			int num = BgmPlayer.PauseNative(this.handle);
-			if (num != 0)
+			int errorCode = BgmPlayer.PauseNative(this.handle);
+			if (errorCode != 0)
 			{
-				Error.ThrowNativeException(num);
+				Error.ThrowNativeException(errorCode);
 			}
 		}
 
@@ -153,10 +153,10 @@ namespace Sce.PlayStation.Core.Audio
 		[SecuritySafeCritical]
 		public void Resume()
 		{
-			int num = BgmPlayer.ResumeNative(this.handle);
-			if (num != 0)
+			int errorCode = BgmPlayer.ResumeNative(this.handle);
+			if (errorCode != 0)
 			{
-				Error.ThrowNativeException(num);
+				Error.ThrowNativeException(errorCode);
 			}
 		}
 
@@ -177,10 +177,10 @@ namespace Sce.PlayStation.Core.Audio
 			[SecuritySafeCritical]
 			set
 			{
-				int num = BgmPlayer.SetVolumeNative(this.handle, value);
-				if (num != 0)
+				int errorCode = BgmPlayer.SetVolumeNative(this.handle, value);
+				if (errorCode != 0)
 				{
-					Error.ThrowNativeException(num);
+					Error.ThrowNativeException(errorCode);
 				}
 			}
 		}
@@ -191,21 +191,21 @@ namespace Sce.PlayStation.Core.Audio
 			[SecuritySafeCritical]
 			get
 			{
-				bool result = false;
-				int loopNative = BgmPlayer.GetLoopNative(this.handle, out result);
-				if (loopNative != 0)
+				bool isLooping = false;
+				int errorCode = BgmPlayer.GetLoopNative(this.handle, out isLooping);
+				if (errorCode != 0)
 				{
-					Error.ThrowNativeException(loopNative);
+					Error.ThrowNativeException(errorCode);
 				}
-				return result;
+				return isLooping;
 			}
 			[SecuritySafeCritical]
 			set
 			{
-				int num = BgmPlayer.SetLoopNative(this.handle, value);
-				if (num != 0)
+				int errorCode = BgmPlayer.SetLoopNative(this.handle, value);
+				if (errorCode != 0)
 				{
-					Error.ThrowNativeException(num);
+					Error.ThrowNativeException(errorCode);
 				}
 			}
 		}
@@ -352,22 +352,22 @@ namespace Sce.PlayStation.Core.Audio
 			[SecuritySafeCritical]
 			get
 			{
-				ulong num = 0UL;
-				int position = BgmPlayer.GetPosition(this.handle, out num);
-				if (position != 0)
+				ulong position = 0UL;
+				int errorCode = BgmPlayer.GetPosition(this.handle, out position);
+				if (errorCode != 0)
 				{
-					Error.ThrowNativeException(position);
+					Error.ThrowNativeException(errorCode);
 				}
-				return new TimeSpan((long)(num * 10000UL));
+				return new TimeSpan((long)(position * 10000UL));
 			}
 			[SecuritySafeCritical]
 			set
 			{
 				ulong millisecond = (ulong)value.TotalMilliseconds;
-				int num = BgmPlayer.SetPosition(this.handle, millisecond);
-				if (num != 0)
+				int errorCode = BgmPlayer.SetPosition(this.handle, millisecond);
+				if (errorCode != 0)
 				{
-					Error.ThrowNativeException(num);
+					Error.ThrowNativeException(errorCode);
 				}
 			}
 		}
@@ -378,13 +378,13 @@ namespace Sce.PlayStation.Core.Audio
 			[SecuritySafeCritical]
 			get
 			{
-				ulong result = 0UL;
-				int length = BgmPlayer.GetLength(this.handle, out result);
-				if (length != 0)
+				ulong length = 0UL;
+				int errorCode = BgmPlayer.GetLength(this.handle, out length);
+				if (errorCode != 0)
 				{
-					Error.ThrowNativeException(length);
+					Error.ThrowNativeException(errorCode);
 				}
-				return result;
+				return length;
 			}
 		}
 	}

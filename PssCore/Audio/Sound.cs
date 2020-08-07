@@ -29,15 +29,17 @@ namespace Sce.PlayStation.Core.Audio
 		 *	IL Code.
 		 */
 		
+		private int handle = 0;
+		
 		/// <summary>Sound constructor (from the filename)</summary>
 		/// <param name="filename">Sound effect filename</param>
 		[SecuritySafeCritical]
 		public Sound(string filename)
 		{
-			int num = Sound.NewFromFilename(filename, out this.handle);
-			if (num < 0)
+			int errorCode = Sound.NewFromFilename(filename, out this.handle);
+			if (errorCode < 0)
 			{
-				Error.ThrowNativeException(num);
+				Error.ThrowNativeException(errorCode);
 			}
 		}
 
@@ -46,10 +48,10 @@ namespace Sce.PlayStation.Core.Audio
 		[SecuritySafeCritical]
 		public Sound(byte[] fileImage)
 		{
-			int num = Sound.NewFromFileImage(fileImage, out this.handle);
-			if (num < 0)
+			int errorCode = Sound.NewFromFileImage(fileImage, out this.handle);
+			if (errorCode < 0)
 			{
-				Error.ThrowNativeException(num);
+				Error.ThrowNativeException(errorCode);
 			}
 		}
 
@@ -81,15 +83,13 @@ namespace Sce.PlayStation.Core.Audio
 		[SecuritySafeCritical]
 		public SoundPlayer CreatePlayer()
 		{
-			int num2;
-			int num = Sound.CreatePlayerNative(this.handle, out num2);
-			if (num != 0)
+			int sndPlayerId;
+			int errorCode = Sound.CreatePlayerNative(this.handle, out sndPlayerId);
+			if (errorCode != 0)
 			{
-				Error.ThrowNativeException(num);
+				Error.ThrowNativeException(errorCode);
 			}
-			return new SoundPlayer(num2);
+			return new SoundPlayer(sndPlayerId);
 		}
-
-		private int handle = 0;
 	}
 }

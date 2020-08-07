@@ -94,10 +94,10 @@ namespace Sce.PlayStation.Core.Audio
 		[SecuritySafeCritical]
 		public void Play()
 		{
-			int num = SoundPlayer.PlayNative(this.handle);
-			if (num != 0)
+			int errorCode = SoundPlayer.PlayNative(this.handle);
+			if (errorCode != 0)
 			{
-				Error.ThrowNativeException(num);
+				Error.ThrowNativeException(errorCode);
 			}
 		}
 
@@ -105,10 +105,10 @@ namespace Sce.PlayStation.Core.Audio
 		[SecuritySafeCritical]
 		public void Stop()
 		{
-			int num = SoundPlayer.StopNative(this.handle);
-			if (num != 0)
+			int errorCode = SoundPlayer.StopNative(this.handle);
+			if (errorCode != 0)
 			{
-				Error.ThrowNativeException(num);
+				Error.ThrowNativeException(errorCode);
 			}
 		}
 
@@ -145,10 +145,10 @@ namespace Sce.PlayStation.Core.Audio
 			[SecuritySafeCritical]
 			set
 			{
-				int num = SoundPlayer.SetVolumeNative(this.handle, value);
-				if (num != 0)
+				int errorCode = SoundPlayer.SetVolumeNative(this.handle, value);
+				if (errorCode != 0)
 				{
-					Error.ThrowNativeException(num);
+					Error.ThrowNativeException(errorCode);
 				}
 			}
 		}
@@ -170,10 +170,10 @@ namespace Sce.PlayStation.Core.Audio
 			[SecuritySafeCritical]
 			set
 			{
-				int num = SoundPlayer.SetPanNative(this.handle, value);
-				if (num != 0)
+				int errorCode = SoundPlayer.SetPanNative(this.handle, value);
+				if (errorCode != 0)
 				{
-					Error.ThrowNativeException(num);
+					Error.ThrowNativeException(errorCode);
 				}
 			}
 		}
@@ -195,10 +195,10 @@ namespace Sce.PlayStation.Core.Audio
 			[SecuritySafeCritical]
 			set
 			{
-				int num = SoundPlayer.SetLoopNative(this.handle, value);
-				if (num != 0)
+				int errorCode = SoundPlayer.SetLoopNative(this.handle, value);
+				if (errorCode != 0)
 				{
-					Error.ThrowNativeException(num);
+					Error.ThrowNativeException(errorCode);
 				}
 			}
 		}
@@ -220,10 +220,10 @@ namespace Sce.PlayStation.Core.Audio
 			[SecuritySafeCritical]
 			set
 			{
-				int num = SoundPlayer.SetPlaybackRateNative(this.handle, value);
-				if (num != 0)
+				int errorCode = SoundPlayer.SetPlaybackRateNative(this.handle, value);
+				if (errorCode != 0)
 				{
-					Error.ThrowNativeException(num);
+					Error.ThrowNativeException(errorCode);
 				}
 			}
 		}
@@ -234,22 +234,22 @@ namespace Sce.PlayStation.Core.Audio
 			[SecuritySafeCritical]
 			get
 			{
-				ulong num = 0UL;
-				int position = SoundPlayer.GetPosition(this.handle, out num);
-				if (position != 0)
+				ulong position = 0UL;
+				int errorCode = SoundPlayer.GetPosition(this.handle, out position);
+				if (errorCode != 0)
 				{
-					Error.ThrowNativeException(position);
+					Error.ThrowNativeException(errorCode);
 				}
-				return num * 0.001;
+				return position * 0.001;
 			}
 			[SecuritySafeCritical]
 			set
 			{
 				ulong millisecond = (ulong)(value * 1000.0);
-				int num = SoundPlayer.SetPosition(this.handle, millisecond);
-				if (num != 0)
+				int errorCode = SoundPlayer.SetPosition(this.handle, millisecond);
+				if (errorCode != 0)
 				{
-					Error.ThrowNativeException(num);
+					Error.ThrowNativeException(errorCode);
 				}
 			}
 		}
@@ -260,13 +260,13 @@ namespace Sce.PlayStation.Core.Audio
 			[SecuritySafeCritical]
 			get
 			{
-				ulong num = 0UL;
-				int length = SoundPlayer.GetLength(this.handle, out num);
-				if (length != 0)
+				ulong length = 0UL;
+				int errorCode = SoundPlayer.GetLength(this.handle, out length);
+				if (errorCode != 0)
 				{
-					Error.ThrowNativeException(length);
+					Error.ThrowNativeException(errorCode);
 				}
-				return num * 0.001;
+				return length * 0.001;
 			}
 		}
 
@@ -276,21 +276,21 @@ namespace Sce.PlayStation.Core.Audio
 			[SecuritySafeCritical]
 			get
 			{
-				ulong result = 0UL;
-				int position = SoundPlayer.GetPosition(this.handle, out result);
-				if (position != 0)
+				ulong position = 0UL;
+				int errorCode = SoundPlayer.GetPosition(this.handle, out position);
+				if (errorCode != 0)
 				{
-					Error.ThrowNativeException(position);
+					Error.ThrowNativeException(errorCode);
 				}
-				return result;
+				return position;
 			}
 			[SecuritySafeCritical]
 			set
 			{
-				int num = SoundPlayer.SetPosition(this.handle, value);
-				if (num != 0)
+				int errorCode = SoundPlayer.SetPosition(this.handle, value);
+				if (errorCode != 0)
 				{
-					Error.ThrowNativeException(num);
+					Error.ThrowNativeException(errorCode);
 				}
 			}
 		}
@@ -301,13 +301,13 @@ namespace Sce.PlayStation.Core.Audio
 			[SecuritySafeCritical]
 			get
 			{
-				ulong result = 0UL;
-				int length = SoundPlayer.GetLength(this.handle, out result);
-				if (length != 0)
+				ulong length = 0UL;
+				int errorCode = SoundPlayer.GetLength(this.handle, out length);
+				if (errorCode != 0)
 				{
-					Error.ThrowNativeException(length);
+					Error.ThrowNativeException(errorCode);
 				}
-				return result;
+				return length;
 			}
 		}
 	}
