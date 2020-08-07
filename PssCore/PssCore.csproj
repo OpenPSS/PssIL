@@ -45,6 +45,10 @@
     <Folder Include="Device\" />
     <Folder Include="Device\Enum\" />
     <Folder Include="Device\Struct\" />
+    <Folder Include="Enviroment\" />
+    <Folder Include="Enviroment\Struct\" />
+    <Folder Include="Enviroment\Interface\" />
+    <Folder Include="Enviroment\Enum\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Core\Error.cs" />
@@ -117,5 +121,24 @@
     <Compile Include="Device\Struct\CameraInfo.cs" />
     <Compile Include="Device\Struct\CameraSize.cs" />
     <Compile Include="Device\Struct\LocationData.cs" />
+    <Compile Include="Device\Enum\CameraState.cs" />
+    <Compile Include="Enviroment\Struct\MemoryUsage.cs" />
+    <Compile Include="Enviroment\Interface\ICommonDialog.cs" />
+    <Compile Include="Enviroment\Enum\CommonDialogResult.cs" />
+    <Compile Include="Enviroment\Enum\CommonDialogState.cs" />
+    <Compile Include="Enviroment\Enum\CommonDialogType.cs" />
+    <Compile Include="Enviroment\Enum\TextInputMode.cs" />
+    <Compile Include="Enviroment\Enum\YesNoLayout.cs" />
+    <Compile Include="Enviroment\Clipboard.cs" />
+    <Compile Include="Enviroment\Log.cs" />
+    <Compile Include="Enviroment\MinimizedEventArgs.cs" />
+    <Compile Include="Enviroment\NetworkInformation.cs" />
+    <Compile Include="Enviroment\PersistentMemory.cs" />
+    <Compile Include="Enviroment\RestoredEventArgs.cs" />
+    <Compile Include="Enviroment\Shell.cs" />
+    <Compile Include="Enviroment\SystemEvents.cs" />
+    <Compile Include="Enviroment\SystemMemory.cs" />
+    <Compile Include="Enviroment\SystemParameters.cs" />
+    <Compile Include="Enviroment\Enum\NetworkInterfaceType.cs" />
   </ItemGroup>
 </Project>
