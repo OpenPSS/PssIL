@@ -1,23 +1,10 @@
-using System;
+﻿using System;
 
 namespace Sce.PlayStation.Core
 {
 	/// <summary>vector of 2 signed bytes</summary>
 	public struct Byte2 : IEquatable<Byte2>
 	{
-		/*
-		 *	Global Variables
-		 */
-		
-		/// <summary>X</summary>
-		public sbyte X;
-		/// <summary>Y</summary>
-		public sbyte Y;
-		
-		/*
-		 *	Function calls
-		 */
-		
 		/// <summary>constructor taking 2 scalar integers</summary>
 		/// <param name="x">x value to init with</param>
 		/// <param name="y">y value to init with</param>
@@ -89,5 +76,11 @@ namespace Sce.PlayStation.Core
 		{
 			return !v1.Equals(v2);
 		}
+
+		/// <summary>X</summary>
+		public sbyte X;
+
+		/// <summary>Y</summary>
+		public sbyte Y;
 	}
 }

@@ -3,13 +3,9 @@
 namespace Sce.PlayStation.Core
 {
 	/// <summary>matrix of 16 floats</summary>
-	// 
 	public struct Matrix4 : IEquatable<Matrix4>
 	{
 		/// <summary>the first column in the matrix</summary>
-
-
-
 		public Vector4 ColumnX
 		{
 			get
@@ -26,9 +22,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <summary>the second column in the matrix</summary>
-
-
-
 		public Vector4 ColumnY
 		{
 			get
@@ -45,9 +38,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <summary>the third column in the matrix</summary>
-
-
-
 		public Vector4 ColumnZ
 		{
 			get
@@ -64,9 +54,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <summary>the fourth column in the matrix</summary>
-
-
-
 		public Vector4 ColumnW
 		{
 			get
@@ -83,9 +70,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <summary>the first row in the matrix</summary>
-
-
-
 		public Vector4 RowX
 		{
 			get
@@ -102,9 +86,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <summary>the second row in the matrix</summary>
-
-
-
 		public Vector4 RowY
 		{
 			get
@@ -121,9 +102,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <summary>the third row in the matrix</summary>
-
-
-
 		public Vector4 RowZ
 		{
 			get
@@ -140,9 +118,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <summary>the fourth row in the matrix</summary>
-
-
-
 		public Vector4 RowW
 		{
 			get
@@ -159,9 +134,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <summary>XYZ components of ColumnX</summary>
-
-
-
 		public Vector3 AxisX
 		{
 			get
@@ -177,9 +149,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <summary>XYZ components of ColumnY</summary>
-
-
-
 		public Vector3 AxisY
 		{
 			get
@@ -195,9 +164,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <summary>XYZ components of ColumnZ</summary>
-
-
-
 		public Vector3 AxisZ
 		{
 			get
@@ -213,9 +179,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <summary>XYZ components of ColumnW</summary>
-
-
-
 		public Vector3 AxisW
 		{
 			get
@@ -247,7 +210,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="m42">value to initialize column 4 element 2 with</param>
 		/// <param name="m43">value to initialize column 4 element 3 with</param>
 		/// <param name="m44">value to initialize column 4 element 4 with</param>
-
 		public Matrix4(float m11, float m12, float m13, float m14, float m21, float m22, float m23, float m24, float m31, float m32, float m33, float m34, float m41, float m42, float m43, float m44)
 		{
 			this.M11 = m11;
@@ -273,7 +235,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="y">vector to initialize matrix column 2 with</param>
 		/// <param name="z">vector to initialize matrix column 3 with</param>
 		/// <param name="w">vector to initialize matrix column 4 with</param>
-
 		public Matrix4(Vector4 x, Vector4 y, Vector4 z, Vector4 w)
 		{
 			this.M11 = x.X;
@@ -299,7 +260,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="y">vector to initialize matrix column 2 with</param>
 		/// <param name="z">vector to initialize matrix column 3 with</param>
 		/// <param name="w">vector to initialize matrix column 4 with</param>
-
 		public Matrix4(Vector3 x, Vector3 y, Vector3 z, Vector3 w)
 		{
 			this.M11 = x.X;
@@ -322,7 +282,6 @@ namespace Sce.PlayStation.Core
 
 		/// <summary>return the determinant of this matrix</summary>
 		/// <returns>the determinant of this matrix</returns>
-
 		public float Determinant()
 		{
 			float result;
@@ -354,7 +313,6 @@ namespace Sce.PlayStation.Core
 
 		/// <summary>get the transpose of the matrix</summary>
 		/// <returns>matrix transpose</returns>
-
 		public Matrix4 Transpose()
 		{
 			Matrix4 result;
@@ -364,7 +322,6 @@ namespace Sce.PlayStation.Core
 
 		/// <summary>get the transpose of the matrix</summary>
 		/// <param name="result">matrix transpose</param>
-
 		public void Transpose(out Matrix4 result)
 		{
 			result.M11 = this.M11;
@@ -387,7 +344,6 @@ namespace Sce.PlayStation.Core
 
 		/// <summary>inverse for a matrix</summary>
 		/// <returns>matrix inverse</returns>
-
 		public Matrix4 Inverse()
 		{
 			Matrix4 result;
@@ -397,7 +353,6 @@ namespace Sce.PlayStation.Core
 
 		/// <summary>inverse for a matrix</summary>
 		/// <param name="result">matrix inverse</param>
-
 		public void Inverse(out Matrix4 result)
 		{
 			if (this.M14 == 0f && this.M24 == 0f && this.M34 == 0f && this.M44 == 1f)
@@ -440,7 +395,6 @@ namespace Sce.PlayStation.Core
 
 		/// <summary>inverse for an affine matrix</summary>
 		/// <returns>matrix inverse</returns>
-
 		public Matrix4 InverseAffine()
 		{
 			Matrix4 result;
@@ -450,7 +404,6 @@ namespace Sce.PlayStation.Core
 
 		/// <summary>inverse for an affine matrix</summary>
 		/// <param name="result">matrix inverse</param>
-
 		public void InverseAffine(out Matrix4 result)
 		{
 			float num = this.M22 * this.M33 - this.M23 * this.M32;
@@ -477,7 +430,6 @@ namespace Sce.PlayStation.Core
 
 		/// <summary>inverse for a orthonormal martix</summary>
 		/// <returns>matrix inverse</returns>
-
 		public Matrix4 InverseOrthonormal()
 		{
 			Matrix4 result;
@@ -487,7 +439,6 @@ namespace Sce.PlayStation.Core
 
 		/// <summary>inverse for a orthonormal matrix</summary>
 		/// <param name="result">matrix inverse</param>
-
 		public void InverseOrthonormal(out Matrix4 result)
 		{
 			result.M11 = this.M11;
@@ -510,7 +461,6 @@ namespace Sce.PlayStation.Core
 
 		/// <summary>orthonormalize a matrix</summary>
 		/// <returns>orthonormalized matrix</returns>
-
 		public Matrix4 Orthonormalize()
 		{
 			Matrix4 result;
@@ -520,7 +470,6 @@ namespace Sce.PlayStation.Core
 
 		/// <summary>orthonormalize a matrix</summary>
 		/// <param name="result">orthonormalized matrix</param>
-
 		public void Orthonormalize(out Matrix4 result)
 		{
 			Vector3 vector;
@@ -551,7 +500,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>return this * v</summary>
 		/// <param name="v">vector</param>
 		/// <returns>this * v</returns>
-
 		public Vector4 Transform(Vector4 v)
 		{
 			Vector4 result;
@@ -562,7 +510,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>result = this * v</summary>
 		/// <param name="v">vector</param>
 		/// <param name="result">this * v</param>
-
 		public void Transform(ref Vector4 v, out Vector4 result)
 		{
 			result.X = this.M11 * v.X + this.M21 * v.Y + this.M31 * v.Z + this.M41 * v.W;
@@ -574,7 +521,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>return this * v (X,Y,Z,1)</summary>
 		/// <param name="v">vector</param>
 		/// <returns>this * v (X,Y,Z,1)</returns>
-
 		public Vector3 TransformPoint(Vector3 v)
 		{
 			Vector3 result;
@@ -585,7 +531,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>result = this * v (X,Y,Z,1)</summary>
 		/// <param name="v">vector</param>
 		/// <param name="result">this * v (X,Y,Z,1)</param>
-
 		public void TransformPoint(ref Vector3 v, out Vector3 result)
 		{
 			result.X = this.M11 * v.X + this.M21 * v.Y + this.M31 * v.Z + this.M41;
@@ -596,7 +541,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>return this * v (X,Y,0,1)</summary>
 		/// <param name="v">vector</param>
 		/// <returns>this * v (X,Y,0,1)</returns>
-
 		public Vector2 TransformPoint(Vector2 v)
 		{
 			Vector2 result;
@@ -607,7 +551,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>result = this * v (X,Y,0,1)</summary>
 		/// <param name="v">vector</param>
 		/// <param name="result">this * v (X,Y,0,1)</param>
-
 		public void TransformPoint(ref Vector2 v, out Vector2 result)
 		{
 			result.X = this.M11 * v.X + this.M21 * v.Y + this.M41;
@@ -617,7 +560,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>return this * v (X,Y,Z,0)</summary>
 		/// <param name="v">vector</param>
 		/// <returns>this * v (X,Y,Z,0)</returns>
-
 		public Vector3 TransformVector(Vector3 v)
 		{
 			Vector3 result;
@@ -628,7 +570,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>result = this * v (X,Y,Z,0)</summary>
 		/// <param name="v">vector</param>
 		/// <param name="result">this * v (X,Y,Z,0)</param>
-
 		public void TransformVector(ref Vector3 v, out Vector3 result)
 		{
 			result.X = this.M11 * v.X + this.M21 * v.Y + this.M31 * v.Z;
@@ -639,7 +580,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>return this * v (X,Y,0,0)</summary>
 		/// <param name="v">vector</param>
 		/// <returns>this * v (X,Y,0,0)</returns>
-
 		public Vector2 TransformVector(Vector2 v)
 		{
 			Vector2 result;
@@ -650,7 +590,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>result = this * v (X,Y,0,0)</summary>
 		/// <param name="v">vector</param>
 		/// <param name="result">this * v (X,Y,0,0)</param>
-
 		public void TransformVector(ref Vector2 v, out Vector2 result)
 		{
 			result.X = this.M11 * v.X + this.M21 * v.Y;
@@ -660,7 +599,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>return this * v ( divided by W )</summary>
 		/// <param name="v">vector</param>
 		/// <returns>this * v ( divided by W )</returns>
-
 		public Vector4 TransformProjection(Vector4 v)
 		{
 			Vector4 result;
@@ -671,7 +609,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>result = this * v ( divided by W )</summary>
 		/// <param name="v">vector</param>
 		/// <param name="result">this * v ( divided by W )</param>
-
 		public void TransformProjection(ref Vector4 v, out Vector4 result)
 		{
 			result.W = this.M14 * v.X + this.M24 * v.Y + this.M34 * v.Z + this.M44 * v.W;
@@ -683,7 +620,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>return this * v ( divided by W )</summary>
 		/// <param name="v">vector</param>
 		/// <returns>this * v ( divided by W )</returns>
-
 		public Vector3 TransformProjection(Vector3 v)
 		{
 			Vector3 result;
@@ -694,7 +630,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>result = this * v ( divided by W )</summary>
 		/// <param name="v">vector</param>
 		/// <param name="result">this * v ( divided by W )</param>
-
 		public void TransformProjection(ref Vector3 v, out Vector3 result)
 		{
 			float num = this.M14 * v.X + this.M24 * v.Y + this.M34 * v.Z + this.M44;
@@ -706,7 +641,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>return this * v ( divided by W )</summary>
 		/// <param name="v">vector</param>
 		/// <returns>this * v ( divided by W )</returns>
-
 		public Vector2 TransformProjection(Vector2 v)
 		{
 			Vector2 result;
@@ -717,7 +651,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>result = this * v ( divided by W )</summary>
 		/// <param name="v">vector</param>
 		/// <param name="result">this * v ( divided by W )</param>
-
 		public void TransformProjection(ref Vector2 v, out Vector2 result)
 		{
 			float num = this.M14 * v.X + this.M24 * v.Y + this.M44;
@@ -728,7 +661,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>return this + m</summary>
 		/// <param name="m">matrix</param>
 		/// <returns>this + m</returns>
-
 		public Matrix4 Add(Matrix4 m)
 		{
 			Matrix4 result;
@@ -739,7 +671,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>result = this + m</summary>
 		/// <param name="m">matrix</param>
 		/// <param name="result">this + m</param>
-
 		public void Add(ref Matrix4 m, out Matrix4 result)
 		{
 			result.M11 = this.M11 + m.M11;
@@ -763,7 +694,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>return this - m</summary>
 		/// <param name="m">matrix</param>
 		/// <returns>this - m</returns>
-
 		public Matrix4 Subtract(Matrix4 m)
 		{
 			Matrix4 result;
@@ -774,7 +704,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>result = this - m</summary>
 		/// <param name="m">matrix</param>
 		/// <param name="result">this - m</param>
-
 		public void Subtract(ref Matrix4 m, out Matrix4 result)
 		{
 			result.M11 = this.M11 - m.M11;
@@ -798,7 +727,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>return this * m</summary>
 		/// <param name="m">matrix</param>
 		/// <returns>this * m</returns>
-
 		public Matrix4 Multiply(Matrix4 m)
 		{
 			Matrix4 result;
@@ -809,7 +737,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>result = this * m</summary>
 		/// <param name="m">matrix</param>
 		/// <param name="result">this * m</param>
-
 		public void Multiply(ref Matrix4 m, out Matrix4 result)
 		{
 			result.M11 = this.M11 * m.M11 + this.M21 * m.M12 + this.M31 * m.M13 + this.M41 * m.M14;
@@ -833,7 +760,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>return this * m ( for affine matrices )</summary>
 		/// <param name="m">matrix</param>
 		/// <returns>this * m</returns>
-
 		public Matrix4 MultiplyAffine(Matrix4 m)
 		{
 			Matrix4 result;
@@ -844,7 +770,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>result = this * m ( for affine matrices )</summary>
 		/// <param name="m">matrix</param>
 		/// <param name="result">this * m</param>
-
 		public void MultiplyAffine(ref Matrix4 m, out Matrix4 result)
 		{
 			result.M11 = this.M11 * m.M11 + this.M21 * m.M12 + this.M31 * m.M13;
@@ -868,7 +793,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>return this * f</summary>
 		/// <param name="f">scalar</param>
 		/// <returns>this * f</returns>
-
 		public Matrix4 Multiply(float f)
 		{
 			Matrix4 result;
@@ -879,7 +803,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>result = this * f</summary>
 		/// <param name="f">scalar</param>
 		/// <param name="result">this * f</param>
-
 		public void Multiply(float f, out Matrix4 result)
 		{
 			result.M11 = this.M11 * f;
@@ -903,7 +826,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>return this / f</summary>
 		/// <param name="f">scalar</param>
 		/// <returns>this / f</returns>
-
 		public Matrix4 Divide(float f)
 		{
 			Matrix4 result;
@@ -914,7 +836,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>result = this / f</summary>
 		/// <param name="f">scalar</param>
 		/// <param name="result">this / f</param>
-
 		public void Divide(float f, out Matrix4 result)
 		{
 			this.Multiply(1f / f, out result);
@@ -922,7 +843,6 @@ namespace Sce.PlayStation.Core
 
 		/// <summary>return -this</summary>
 		/// <returns>-this</returns>
-
 		public Matrix4 Negate()
 		{
 			Matrix4 result;
@@ -932,7 +852,6 @@ namespace Sce.PlayStation.Core
 
 		/// <summary>result = -this</summary>
 		/// <param name="result">-this</param>
-
 		public void Negate(out Matrix4 result)
 		{
 			this.Multiply(-1f, out result);
@@ -941,7 +860,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>test to determine if a matrix is orthonormal</summary>
 		/// <param name="epsilon">epsilon for testing if vectors are unit vectors</param>
 		/// <returns>true if the matrix is orthonormal, false otherwise</returns>
-
 		public bool IsOrthonormal(float epsilon)
 		{
 			return !this.ColumnX.IsNaN() && !this.ColumnY.IsNaN() && !this.ColumnZ.IsNaN() && !this.ColumnW.IsNaN() && this.AxisX.Cross(this.AxisY).Dot(this.AxisZ) > 0f && this.ColumnX.IsUnit(epsilon) && this.ColumnY.IsUnit(epsilon) && this.ColumnZ.IsUnit(epsilon) && Math.Abs(this.ColumnX.Dot(this.ColumnY)) < epsilon && Math.Abs(this.ColumnY.Dot(this.ColumnZ)) < epsilon && Math.Abs(this.ColumnZ.Dot(this.ColumnX)) < epsilon && this.M44 == 1f && (this.M44 == 1f && this.M14 == 0f && this.M24 == 0f) && this.M34 == 0f;
@@ -949,7 +867,6 @@ namespace Sce.PlayStation.Core
 
 		/// <summary>test if this is an identity matrix</summary>
 		/// <returns>true if this is an identity matrix, false otherwise</returns>
-
 		public bool IsIdentity()
 		{
 			return this.Equals(Matrix4.Identity);
@@ -957,7 +874,6 @@ namespace Sce.PlayStation.Core
 
 		/// <summary>test if any elements of this are Infinity</summary>
 		/// <returns>true if any elements of this are Infinity, false otherwise</returns>
-
 		public bool IsInfinity()
 		{
 			return this.ColumnX.IsInfinity() || this.ColumnY.IsInfinity() || this.ColumnZ.IsInfinity() || this.ColumnW.IsInfinity();
@@ -965,12 +881,10 @@ namespace Sce.PlayStation.Core
 
 		/// <summary>test if any elements of this are NaN</summary>
 		/// <returns>true if any elements of this are NaN, false otherwise</returns>
-
 		public bool IsNaN()
 		{
 			return this.ColumnX.IsNaN() || this.ColumnY.IsNaN() || this.ColumnZ.IsNaN() || this.ColumnW.IsNaN();
 		}
-
 
 		public bool Equals(Matrix4 m, float epsilon)
 		{
@@ -980,7 +894,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>equality test</summary>
 		/// <param name="m">the matrix to compare this to</param>
 		/// <returns>true if this == m, false otherwise</returns>
-
 		public bool Equals(Matrix4 m)
 		{
 			return this.ColumnX == m.ColumnX && this.ColumnY == m.ColumnY && this.ColumnZ == m.ColumnZ && this.ColumnW == m.ColumnW;
@@ -989,7 +902,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>equality test</summary>
 		/// <param name="o">the object to compare this to</param>
 		/// <returns>true if this == o, false otherwise</returns>
-
 		public override bool Equals(object o)
 		{
 			return o is Matrix4 && this.Equals((Matrix4)o);
@@ -997,7 +909,6 @@ namespace Sce.PlayStation.Core
 
 		/// <summary>convert matrix to string for printing</summary>
 		/// <returns>matrix as string</returns>
-
 		public override string ToString()
 		{
 			return string.Format("({0},{1},{2},{3})", new object[]
@@ -1011,7 +922,6 @@ namespace Sce.PlayStation.Core
 
 		/// <summary>gets the hash code for this vector</summary>
 		/// <returns>integer hash code</returns>
-
 		public override int GetHashCode()
 		{
 			return this.ColumnX.GetHashCode() ^ this.ColumnY.GetHashCode() ^ this.ColumnZ.GetHashCode() ^ this.ColumnW.GetHashCode();
@@ -1022,7 +932,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="rotation">quaternion rotation values</param>
 		/// <param name="scale">x, y, z scale values</param>
 		/// <returns>translation matrix times rotation matrix times scale matrix</returns>
-
 		public static Matrix4 Transformation(Vector3 translation, Quaternion rotation, Vector3 scale)
 		{
 			Matrix4 result;
@@ -1035,7 +944,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="rotation">quaternion rotation values</param>
 		/// <param name="scale">x, y, z scale values</param>
 		/// <param name="result">translation matrix times rotation matrix times scale matrix</param>
-
 		public static void Transformation(ref Vector3 translation, ref Quaternion rotation, ref Vector3 scale, out Matrix4 result)
 		{
 			rotation.ToMatrix4(out result);
@@ -1058,7 +966,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="rotation">z rotation angle</param>
 		/// <param name="scale">x, y scale values</param>
 		/// <returns>translation matrix times rotation matrix times scale matrix</returns>
-
 		public static Matrix4 Transformation(Vector2 translation, float rotation, Vector2 scale)
 		{
 			Matrix4 result;
@@ -1071,7 +978,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="rotation">z rotation angle</param>
 		/// <param name="scale">x, y scale values</param>
 		/// <param name="result">translation matrix times rotation matrix times scale matrix</param>
-
 		public static void Transformation(ref Vector2 translation, float rotation, ref Vector2 scale, out Matrix4 result)
 		{
 			float num = (float)Math.Cos((double)rotation);
@@ -1089,7 +995,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="translation">x, y, z translation values</param>
 		/// <param name="scale">x, y, z scale values</param>
 		/// <returns>translation matrix times scale matrix</returns>
-
 		public static Matrix4 Transformation(Vector3 translation, Vector3 scale)
 		{
 			Matrix4 result;
@@ -1101,7 +1006,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="translation">x, y, z translation values</param>
 		/// <param name="scale">x, y, z scale values</param>
 		/// <param name="result">translation matrix times scale matrix</param>
-
 		public static void Transformation(ref Vector3 translation, ref Vector3 scale, out Matrix4 result)
 		{
 			result = Matrix4.Identity;
@@ -1117,7 +1021,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="translation">x, y translation values</param>
 		/// <param name="scale">x, y scale values</param>
 		/// <returns>translation matrix times scale matrix</returns>
-
 		public static Matrix4 Transformation(Vector2 translation, Vector2 scale)
 		{
 			Matrix4 result;
@@ -1129,7 +1032,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="translation">x, y translation values</param>
 		/// <param name="scale">x, y scale values</param>
 		/// <param name="result">translation matrix times scale matrix</param>
-
 		public static void Transformation(ref Vector2 translation, ref Vector2 scale, out Matrix4 result)
 		{
 			result = Matrix4.Identity;
@@ -1144,7 +1046,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="y">y translation</param>
 		/// <param name="z">z translation</param>
 		/// <returns>translation matrix</returns>
-
 		public static Matrix4 Translation(float x, float y, float z)
 		{
 			Matrix4 result;
@@ -1157,7 +1058,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="y">y translation</param>
 		/// <param name="z">z translation</param>
 		/// <param name="result">translation matrix</param>
-
 		public static void Translation(float x, float y, float z, out Matrix4 result)
 		{
 			result = Matrix4.Identity;
@@ -1169,7 +1069,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>get a matrix for translating a point</summary>
 		/// <param name="translation">a vector containing the x, y, z translation values</param>
 		/// <returns>translation matrix</returns>
-
 		public static Matrix4 Translation(Vector3 translation)
 		{
 			Matrix4 result;
@@ -1180,7 +1079,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>get a matrix for translating a point</summary>
 		/// <param name="translation">a vector containing the x, y, z translation values</param>
 		/// <param name="result">translation matrix</param>
-
 		public static void Translation(ref Vector3 translation, out Matrix4 result)
 		{
 			Matrix4.Translation(translation.X, translation.Y, translation.Z, out result);
@@ -1189,7 +1087,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>get a matrix for translating a point</summary>
 		/// <param name="translation">a vector containing the x, y translation values</param>
 		/// <returns>translation matrix</returns>
-
 		public static Matrix4 Translation(Vector2 translation)
 		{
 			Matrix4 result;
@@ -1200,7 +1097,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>get a matrix for translating a point</summary>
 		/// <param name="translation">a vector containing the x, y translation values</param>
 		/// <param name="result">translation matrix</param>
-
 		public static void Translation(ref Vector2 translation, out Matrix4 result)
 		{
 			Matrix4.Translation(translation.X, translation.Y, 0f, out result);
@@ -1210,7 +1106,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="axis">the axis to rotate around</param>
 		/// <param name="angle">the angle to rotate</param>
 		/// <returns>rotation matrix</returns>
-
 		public static Matrix4 RotationAxis(Vector3 axis, float angle)
 		{
 			Matrix4 result;
@@ -1222,7 +1117,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="axis">the axis to rotate around</param>
 		/// <param name="angle">the angle to rotate</param>
 		/// <param name="result">rotation matrix</param>
-
 		public static void RotationAxis(ref Vector3 axis, float angle, out Matrix4 result)
 		{
 			Quaternion quaternion;
@@ -1233,7 +1127,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>gets a matrix for rotating around the x axis</summary>
 		/// <param name="angle">the angle to rotate</param>
 		/// <returns>rotation matrix</returns>
-
 		public static Matrix4 RotationX(float angle)
 		{
 			Matrix4 result;
@@ -1244,7 +1137,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>gets a matrix for rotating around the x axis</summary>
 		/// <param name="angle">the angle to rotate</param>
 		/// <param name="result">rotation matrix</param>
-
 		public static void RotationX(float angle, out Matrix4 result)
 		{
 			float num = (float)Math.Sin((double)angle);
@@ -1259,7 +1151,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>gets a matrix for rotating around the y axis</summary>
 		/// <param name="angle">the angle to rotate</param>
 		/// <returns>rotation matrix</returns>
-
 		public static Matrix4 RotationY(float angle)
 		{
 			Matrix4 result;
@@ -1270,7 +1161,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>gets a matrix for rotating around the y axis</summary>
 		/// <param name="angle">the angle to rotate</param>
 		/// <param name="result">rotation matrix</param>
-
 		public static void RotationY(float angle, out Matrix4 result)
 		{
 			float num = (float)Math.Sin((double)angle);
@@ -1285,7 +1175,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>gets a matrix for rotating around the z axis</summary>
 		/// <param name="angle">the angle to rotate</param>
 		/// <returns>rotation matrix</returns>
-
 		public static Matrix4 RotationZ(float angle)
 		{
 			Matrix4 result;
@@ -1296,7 +1185,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>gets a matrix for rotating around the z axis</summary>
 		/// <param name="angle">the angle to rotate</param>
 		/// <param name="result">rotation matrix</param>
-
 		public static void RotationZ(float angle, out Matrix4 result)
 		{
 			float num = (float)Math.Sin((double)angle);
@@ -1313,7 +1201,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="y">y angle</param>
 		/// <param name="z">z angle</param>
 		/// <returns>a new matrix from the three euler angles</returns>
-
 		public static Matrix4 RotationZyx(float x, float y, float z)
 		{
 			Matrix4 result;
@@ -1326,7 +1213,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="y">y angle</param>
 		/// <param name="z">z angle</param>
 		/// <param name="result">a new matrix from the three euler angles</param>
-
 		public static void RotationZyx(float x, float y, float z, out Matrix4 result)
 		{
 			Quaternion quaternion;
@@ -1337,7 +1223,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>create a new matrix from three euler angles</summary>
 		/// <param name="angles">the z, y, x euler angles used to create the matrix</param>
 		/// <returns>a new matrix from the three euler angles</returns>
-
 		public static Matrix4 RotationZyx(Vector3 angles)
 		{
 			Matrix4 result;
@@ -1348,7 +1233,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>create a new matrix from three euler angles</summary>
 		/// <param name="angles">the z, y, x euler angles used to create the matrix</param>
 		/// <param name="result">a new matrix from the three euler angles</param>
-
 		public static void RotationZyx(ref Vector3 angles, out Matrix4 result)
 		{
 			Matrix4.RotationZyx(angles.X, angles.Y, angles.Z, out result);
@@ -1359,7 +1243,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="y">y angle</param>
 		/// <param name="z">z angle</param>
 		/// <returns>a new matrix from the three euler angles</returns>
-
 		public static Matrix4 RotationYxz(float x, float y, float z)
 		{
 			Matrix4 result;
@@ -1372,7 +1255,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="y">y angle</param>
 		/// <param name="z">z angle</param>
 		/// <param name="result">a new matrix from the three euler angles</param>
-
 		public static void RotationYxz(float x, float y, float z, out Matrix4 result)
 		{
 			Quaternion quaternion;
@@ -1383,7 +1265,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>create a new matrix from three euler angles</summary>
 		/// <param name="angles">the y, x, z euler angles used to create the matrix</param>
 		/// <returns>a new matrix from the three euler angles</returns>
-
 		public static Matrix4 RotationYxz(Vector3 angles)
 		{
 			Matrix4 result;
@@ -1394,7 +1275,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>create a new matrix from three euler angles</summary>
 		/// <param name="angles">the y, x, z euler angles used to create the matrix</param>
 		/// <param name="result">a new matrix from the three euler angles</param>
-
 		public static void RotationYxz(ref Vector3 angles, out Matrix4 result)
 		{
 			Matrix4.RotationYxz(angles.X, angles.Y, angles.Z, out result);
@@ -1405,7 +1285,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="y">y angle</param>
 		/// <param name="z">z angle</param>
 		/// <returns>a new matrix from the three euler angles</returns>
-
 		public static Matrix4 RotationXzy(float x, float y, float z)
 		{
 			Matrix4 result;
@@ -1418,7 +1297,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="y">y angle</param>
 		/// <param name="z">z angle</param>
 		/// <param name="result">a new matrix from the three euler angles</param>
-
 		public static void RotationXzy(float x, float y, float z, out Matrix4 result)
 		{
 			Quaternion quaternion;
@@ -1429,7 +1307,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>create a new matrix from three euler angles</summary>
 		/// <param name="angles">the x, z, y euler angles used to create the matrix</param>
 		/// <returns>a new matrix from the three euler angles</returns>
-
 		public static Matrix4 RotationXzy(Vector3 angles)
 		{
 			Matrix4 result;
@@ -1440,7 +1317,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>create a new matrix from three euler angles</summary>
 		/// <param name="angles">the x, z, y euler angles used to create the matrix</param>
 		/// <param name="result">a new matrix from the three euler angles</param>
-
 		public static void RotationXzy(ref Vector3 angles, out Matrix4 result)
 		{
 			Matrix4.RotationXzy(angles.X, angles.Y, angles.Z, out result);
@@ -1451,7 +1327,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="y">y angle</param>
 		/// <param name="z">z angle</param>
 		/// <returns>a new matrix from the three euler angles</returns>
-
 		public static Matrix4 RotationXyz(float x, float y, float z)
 		{
 			Matrix4 result;
@@ -1464,7 +1339,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="y">y angle</param>
 		/// <param name="z">z angle</param>
 		/// <param name="result">a new matrix from the three euler angles</param>
-
 		public static void RotationXyz(float x, float y, float z, out Matrix4 result)
 		{
 			Quaternion quaternion;
@@ -1475,7 +1349,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>create a new matrix from three euler angles</summary>
 		/// <param name="angles">the x, y, z euler angles used to create the matrix</param>
 		/// <returns>a new matrix from the three euler angles</returns>
-
 		public static Matrix4 RotationXyz(Vector3 angles)
 		{
 			Matrix4 result;
@@ -1486,7 +1359,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>create a new matrix from three euler angles</summary>
 		/// <param name="angles">the x, y, z euler angles used to create the matrix</param>
 		/// <param name="result">a new matrix from the three euler angles</param>
-
 		public static void RotationXyz(ref Vector3 angles, out Matrix4 result)
 		{
 			Matrix4.RotationXyz(angles.X, angles.Y, angles.Z, out result);
@@ -1497,7 +1369,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="y">y angle</param>
 		/// <param name="z">z angle</param>
 		/// <returns>a new matrix from the three euler angles</returns>
-
 		public static Matrix4 RotationYzx(float x, float y, float z)
 		{
 			Matrix4 result;
@@ -1510,7 +1381,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="y">y angle</param>
 		/// <param name="z">z angle</param>
 		/// <param name="result">a new matrix from the three euler angles</param>
-
 		public static void RotationYzx(float x, float y, float z, out Matrix4 result)
 		{
 			Quaternion quaternion;
@@ -1521,7 +1391,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>create a new matrix from three euler angles</summary>
 		/// <param name="angles">the y, z, x euler angles used to create the matrix</param>
 		/// <returns>a new matrix from the three euler angles</returns>
-
 		public static Matrix4 RotationYzx(Vector3 angles)
 		{
 			Matrix4 result;
@@ -1532,7 +1401,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>create a new matrix from three euler angles</summary>
 		/// <param name="angles">the y, z, x euler angles used to create the matrix</param>
 		/// <param name="result">a new matrix from the three euler angles</param>
-
 		public static void RotationYzx(ref Vector3 angles, out Matrix4 result)
 		{
 			Matrix4.RotationYzx(angles.X, angles.Y, angles.Z, out result);
@@ -1543,7 +1411,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="y">y angle</param>
 		/// <param name="z">z angle</param>
 		/// <returns>a new matrix from the three euler angles</returns>
-
 		public static Matrix4 RotationZxy(float x, float y, float z)
 		{
 			Matrix4 result;
@@ -1556,7 +1423,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="y">y angle</param>
 		/// <param name="z">z angle</param>
 		/// <param name="result">a new matrix from the three euler angles</param>
-
 		public static void RotationZxy(float x, float y, float z, out Matrix4 result)
 		{
 			Quaternion quaternion;
@@ -1567,7 +1433,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>create a new matrix from three euler angles</summary>
 		/// <param name="angles">the z, x, y euler angles used to create the matrix</param>
 		/// <returns>a new matrix from the three euler angles</returns>
-
 		public static Matrix4 RotationZxy(Vector3 angles)
 		{
 			Matrix4 result;
@@ -1578,7 +1443,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>create a new matrix from three euler angles</summary>
 		/// <param name="angles">the z, x, y euler angles used to create the matrix</param>
 		/// <param name="result">a new matrix from the three euler angles</param>
-
 		public static void RotationZxy(ref Vector3 angles, out Matrix4 result)
 		{
 			Matrix4.RotationZxy(angles.X, angles.Y, angles.Z, out result);
@@ -1589,7 +1453,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="y">y scale</param>
 		/// <param name="z">z scale</param>
 		/// <returns>scaling matrix</returns>
-
 		public static Matrix4 Scale(float x, float y, float z)
 		{
 			Matrix4 result;
@@ -1602,7 +1465,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="y">y scale</param>
 		/// <param name="z">z scale</param>
 		/// <param name="result">scaling matrix</param>
-
 		public static void Scale(float x, float y, float z, out Matrix4 result)
 		{
 			result = Matrix4.Identity;
@@ -1614,7 +1476,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>get a matrix for scaling a point</summary>
 		/// <param name="scale">a vector containing the x, y, z scale values</param>
 		/// <returns>scaling matrix</returns>
-
 		public static Matrix4 Scale(Vector3 scale)
 		{
 			Matrix4 result;
@@ -1625,7 +1486,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>get a matrix for scaling a point</summary>
 		/// <param name="scale">a vector containing the x, y, z scale values</param>
 		/// <param name="result">scaling matrix</param>
-
 		public static void Scale(ref Vector3 scale, out Matrix4 result)
 		{
 			Matrix4.Scale(scale.X, scale.Y, scale.Z, out result);
@@ -1634,7 +1494,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>get a matrix for scaling a point</summary>
 		/// <param name="scale">a vector containing the x, y scale values</param>
 		/// <returns>scaling matrix</returns>
-
 		public static Matrix4 Scale(Vector2 scale)
 		{
 			Matrix4 result;
@@ -1645,7 +1504,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>get a matrix for scaling a point</summary>
 		/// <param name="scale">a vector containing the x, y scale values</param>
 		/// <param name="result">scaling matrix</param>
-
 		public static void Scale(ref Vector2 scale, out Matrix4 result)
 		{
 			Matrix4.Scale(scale.X, scale.Y, 0f, out result);
@@ -1657,7 +1515,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="n">distance from the viewer to the near clip</param>
 		/// <param name="f">distance from the viewer to the far clip</param>
 		/// <returns>perspective matrix</returns>
-
 		public static Matrix4 Perspective(float fovy, float aspect, float n, float f)
 		{
 			Matrix4 result;
@@ -1671,7 +1528,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="n">distance from the viewer to the near clip</param>
 		/// <param name="f">distance from the viewer to the far clip</param>
 		/// <param name="result">perspective matrix</param>
-
 		public static void Perspective(float fovy, float aspect, float n, float f, out Matrix4 result)
 		{
 			float num = n * (float)Math.Tan((double)(fovy * 0.5f));
@@ -1689,7 +1545,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="n">distance to the near clip plane</param>
 		/// <param name="f">distance to the far clip plane</param>
 		/// <returns>perspective matrix</returns>
-
 		public static Matrix4 Frustum(float l, float r, float b, float t, float n, float f)
 		{
 			Matrix4 result;
@@ -1705,7 +1560,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="n">distance to the near clip plane</param>
 		/// <param name="f">distance to the far clip plane</param>
 		/// <param name="result">perspective matrix</param>
-
 		public static void Frustum(float l, float r, float b, float t, float n, float f, out Matrix4 result)
 		{
 			result = Matrix4.Identity;
@@ -1727,7 +1581,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="n">distance to the near clip plane</param>
 		/// <param name="f">distance to the far clip plane</param>
 		/// <returns>orthographic matrix</returns>
-
 		public static Matrix4 Ortho(float l, float r, float b, float t, float n, float f)
 		{
 			Matrix4 result;
@@ -1743,7 +1596,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="n">distance to the near clip plane</param>
 		/// <param name="f">distance to the far clip plane</param>
 		/// <param name="result">orthographic matrix</param>
-
 		public static void Ortho(float l, float r, float b, float t, float n, float f, out Matrix4 result)
 		{
 			float num = 1f / (r - l);
@@ -1763,7 +1615,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="center">position of the reference point</param>
 		/// <param name="up">the up vector</param>
 		/// <returns>viewing transformation matrix</returns>
-
 		public static Matrix4 LookAt(Vector3 eye, Vector3 center, Vector3 up)
 		{
 			Matrix4 result;
@@ -1776,7 +1627,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="center">position of the reference point</param>
 		/// <param name="up">the up vector</param>
 		/// <param name="result">viewing transformation matrix</param>
-
 		public static void LookAt(ref Vector3 eye, ref Vector3 center, ref Vector3 up, out Matrix4 result)
 		{
 			Vector3 vector;
@@ -1808,7 +1658,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>static function equivalent to Determinant()</summary>
 		/// <param name="m">matrix</param>
 		/// <returns>the determinant of this matrix</returns>
-
 		public static float Determinant(Matrix4 m)
 		{
 			return m.Determinant();
@@ -1817,7 +1666,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>static function equivalent to Determinant()</summary>
 		/// <param name="m">matrix</param>
 		/// <returns>the determinant of this matrix</returns>
-
 		public static float Determinant(ref Matrix4 m)
 		{
 			return m.Determinant();
@@ -1826,7 +1674,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>static function equivalent to Transpose()</summary>
 		/// <param name="m">matrix</param>
 		/// <returns>matrix transpose</returns>
-
 		public static Matrix4 Transpose(Matrix4 m)
 		{
 			Matrix4 result;
@@ -1837,7 +1684,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>static function equivalent to Transpose(out Matrix4)</summary>
 		/// <param name="m">matrix</param>
 		/// <param name="result">matrix transpose</param>
-
 		public static void Transpose(ref Matrix4 m, out Matrix4 result)
 		{
 			m.Transpose(out result);
@@ -1846,7 +1692,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>static function equivalent to Inverse()</summary>
 		/// <param name="m">matrix</param>
 		/// <returns>matrix inverse</returns>
-
 		public static Matrix4 Inverse(Matrix4 m)
 		{
 			Matrix4 result;
@@ -1857,7 +1702,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>static function equivalent to Inverse(out Matrix4)</summary>
 		/// <param name="m">matrix</param>
 		/// <param name="result">matrix inverse</param>
-
 		public static void Inverse(ref Matrix4 m, out Matrix4 result)
 		{
 			m.Inverse(out result);
@@ -1866,7 +1710,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>static function equivalent to InverseAffine()</summary>
 		/// <param name="m">matrix</param>
 		/// <returns>matrix inverse</returns>
-
 		public static Matrix4 InverseAffine(Matrix4 m)
 		{
 			Matrix4 result;
@@ -1877,7 +1720,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>static function equivalent to InverseAffine(out Matrix4)</summary>
 		/// <param name="m">matrix</param>
 		/// <param name="result">matrix inverse</param>
-
 		public static void InverseAffine(ref Matrix4 m, out Matrix4 result)
 		{
 			m.InverseAffine(out result);
@@ -1886,7 +1728,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>static function equivalent to InverseOrthonormal()</summary>
 		/// <param name="m">matrix</param>
 		/// <returns>matrix inverse</returns>
-
 		public static Matrix4 InverseOrthonormal(Matrix4 m)
 		{
 			Matrix4 result;
@@ -1897,7 +1738,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>static function equivalent to InverseOrthonormal(out Matrix4)</summary>
 		/// <param name="m">matrix</param>
 		/// <param name="result">matrix inverse</param>
-
 		public static void InverseOrthonormal(ref Matrix4 m, out Matrix4 result)
 		{
 			m.InverseOrthonormal(out result);
@@ -1906,7 +1746,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>static function equivalent to Orthonormalize()</summary>
 		/// <param name="m">matrix</param>
 		/// <returns>orthonormalized matrix</returns>
-
 		public static Matrix4 Orthonormalize(Matrix4 m)
 		{
 			Matrix4 result;
@@ -1917,7 +1756,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>static function equivalent to Orthonormalize(out Matrix4)</summary>
 		/// <param name="m">matrix</param>
 		/// <param name="result">orthonormalized matrix</param>
-
 		public static void Orthonormalize(ref Matrix4 m, out Matrix4 result)
 		{
 			m.Orthonormalize(out result);
@@ -1927,7 +1765,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="m">matrix</param>
 		/// <param name="v">vector</param>
 		/// <returns>m * v</returns>
-
 		public static Vector4 Transform(Matrix4 m, Vector4 v)
 		{
 			Vector4 result;
@@ -1939,7 +1776,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="m">matrix</param>
 		/// <param name="v">vector</param>
 		/// <param name="result">m * v</param>
-
 		public static void Transform(ref Matrix4 m, ref Vector4 v, out Vector4 result)
 		{
 			m.Transform(ref v, out result);
@@ -1949,7 +1785,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="m">matrix</param>
 		/// <param name="v">vector</param>
 		/// <returns>m * v (X,Y,Z,1)</returns>
-
 		public static Vector3 TransformPoint(Matrix4 m, Vector3 v)
 		{
 			Vector3 result;
@@ -1961,7 +1796,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="m">matrix</param>
 		/// <param name="v">vector</param>
 		/// <param name="result">m * v (X,Y,Z,1)</param>
-
 		public static void TransformPoint(ref Matrix4 m, ref Vector3 v, out Vector3 result)
 		{
 			m.TransformPoint(ref v, out result);
@@ -1971,7 +1805,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="m">matrix</param>
 		/// <param name="v">vector</param>
 		/// <returns>m * v (X,Y,0,1)</returns>
-
 		public static Vector2 TransformPoint(Matrix4 m, Vector2 v)
 		{
 			Vector2 result;
@@ -1983,7 +1816,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="m">matrix</param>
 		/// <param name="v">vector</param>
 		/// <param name="result">m * v (X,Y,0,1)</param>
-
 		public static void TransformPoint(ref Matrix4 m, ref Vector2 v, out Vector2 result)
 		{
 			m.TransformPoint(ref v, out result);
@@ -1993,7 +1825,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="m">matrix</param>
 		/// <param name="v">vector</param>
 		/// <returns>m * v (X,Y,Z,0)</returns>
-
 		public static Vector3 TransformVector(Matrix4 m, Vector3 v)
 		{
 			Vector3 result;
@@ -2005,7 +1836,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="m">matrix</param>
 		/// <param name="v">vector</param>
 		/// <param name="result">m * v (X,Y,Z,0)</param>
-
 		public static void TransformVector(ref Matrix4 m, ref Vector3 v, out Vector3 result)
 		{
 			m.TransformVector(ref v, out result);
@@ -2015,7 +1845,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="m">matrix</param>
 		/// <param name="v">vector</param>
 		/// <returns>m * v (X,Y,0,0)</returns>
-
 		public static Vector2 TransformVector(Matrix4 m, Vector2 v)
 		{
 			Vector2 result;
@@ -2027,7 +1856,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="m">matrix</param>
 		/// <param name="v">vector</param>
 		/// <param name="result">m * v (X,Y,0,0)</param>
-
 		public static void TransformVector(ref Matrix4 m, ref Vector2 v, out Vector2 result)
 		{
 			m.TransformVector(ref v, out result);
@@ -2037,7 +1865,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="m">matrix</param>
 		/// <param name="v">vector</param>
 		/// <returns>m * v ( divided by W )</returns>
-
 		public static Vector4 TransformProjection(Matrix4 m, Vector4 v)
 		{
 			Vector4 result;
@@ -2049,7 +1876,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="m">matrix</param>
 		/// <param name="v">vector</param>
 		/// <param name="result">m * v ( divided by W )</param>
-
 		public static void TransformProjection(ref Matrix4 m, ref Vector4 v, out Vector4 result)
 		{
 			m.TransformProjection(ref v, out result);
@@ -2059,7 +1885,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="m">matrix</param>
 		/// <param name="v">vector</param>
 		/// <returns>m * v ( divided by W )</returns>
-
 		public static Vector3 TransformProjection(Matrix4 m, Vector3 v)
 		{
 			Vector3 result;
@@ -2071,7 +1896,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="m">matrix</param>
 		/// <param name="v">vector</param>
 		/// <param name="result">m * v ( divided by W )</param>
-
 		public static void TransformProjection(ref Matrix4 m, ref Vector3 v, out Vector3 result)
 		{
 			m.TransformProjection(ref v, out result);
@@ -2081,7 +1905,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="m">matrix</param>
 		/// <param name="v">vector</param>
 		/// <returns>m * v ( divided by W )</returns>
-
 		public static Vector2 TransformProjection(Matrix4 m, Vector2 v)
 		{
 			Vector2 result;
@@ -2093,7 +1916,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="m">matrix</param>
 		/// <param name="v">vector</param>
 		/// <param name="result">m * v ( divided by W )</param>
-
 		public static void TransformProjection(ref Matrix4 m, ref Vector2 v, out Vector2 result)
 		{
 			m.TransformProjection(ref v, out result);
@@ -2103,7 +1925,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="m1">matrix 1</param>
 		/// <param name="m2">matrix 2</param>
 		/// <returns>m1 + m2</returns>
-
 		public static Matrix4 Add(Matrix4 m1, Matrix4 m2)
 		{
 			Matrix4 result;
@@ -2115,7 +1936,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="m1">matrix 1</param>
 		/// <param name="m2">matrix 2</param>
 		/// <param name="result">m1 + m2</param>
-
 		public static void Add(ref Matrix4 m1, ref Matrix4 m2, out Matrix4 result)
 		{
 			m1.Add(ref m2, out result);
@@ -2125,7 +1945,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="m1">matrix 1</param>
 		/// <param name="m2">matrix 2</param>
 		/// <returns>m1 - m2</returns>
-
 		public static Matrix4 Subtract(Matrix4 m1, Matrix4 m2)
 		{
 			Matrix4 result;
@@ -2137,7 +1956,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="m1">matrix 1</param>
 		/// <param name="m2">matrix 2</param>
 		/// <param name="result">m1 - m2</param>
-
 		public static void Subtract(ref Matrix4 m1, ref Matrix4 m2, out Matrix4 result)
 		{
 			m1.Subtract(ref m2, out result);
@@ -2147,7 +1965,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="m1">matrix 1</param>
 		/// <param name="m2">matrix 2</param>
 		/// <returns>m1 * m2</returns>
-
 		public static Matrix4 Multiply(Matrix4 m1, Matrix4 m2)
 		{
 			Matrix4 result;
@@ -2159,7 +1976,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="m1">matrix 1</param>
 		/// <param name="m2">matrix 2</param>
 		/// <param name="result">m1 * m2</param>
-
 		public static void Multiply(ref Matrix4 m1, ref Matrix4 m2, out Matrix4 result)
 		{
 			m1.Multiply(ref m2, out result);
@@ -2169,7 +1985,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="m1">matrix 1</param>
 		/// <param name="m2">matrix 2</param>
 		/// <returns>m1 * m2</returns>
-
 		public static Matrix4 MultiplyAffine(Matrix4 m1, Matrix4 m2)
 		{
 			Matrix4 result;
@@ -2181,7 +1996,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="m1">matrix 1</param>
 		/// <param name="m2">matrix 2</param>
 		/// <param name="result">m1 * m2</param>
-
 		public static void MultiplyAffine(ref Matrix4 m1, ref Matrix4 m2, out Matrix4 result)
 		{
 			m1.MultiplyAffine(ref m2, out result);
@@ -2191,7 +2005,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="m">matrix</param>
 		/// <param name="f">scalar</param>
 		/// <returns>m * f</returns>
-
 		public static Matrix4 Multiply(Matrix4 m, float f)
 		{
 			Matrix4 result;
@@ -2203,7 +2016,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="m">matrix</param>
 		/// <param name="f">scalar</param>
 		/// <param name="result">m * f</param>
-
 		public static void Multiply(ref Matrix4 m, float f, out Matrix4 result)
 		{
 			m.Multiply(f, out result);
@@ -2213,7 +2025,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="m">matrix</param>
 		/// <param name="f">scalar</param>
 		/// <returns>m / f</returns>
-
 		public static Matrix4 Divide(Matrix4 m, float f)
 		{
 			Matrix4 result;
@@ -2225,7 +2036,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="m">matrix</param>
 		/// <param name="f">scalar</param>
 		/// <param name="result">m / f</param>
-
 		public static void Divide(ref Matrix4 m, float f, out Matrix4 result)
 		{
 			m.Divide(f, out result);
@@ -2234,7 +2044,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>static function equivalent to Negate()</summary>
 		/// <param name="m">matrix</param>
 		/// <returns>-m</returns>
-
 		public static Matrix4 Negate(Matrix4 m)
 		{
 			Matrix4 result;
@@ -2245,7 +2054,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>static function equivalent to Negate(out Matrix4)</summary>
 		/// <param name="m">matrix</param>
 		/// <param name="result">-m</param>
-
 		public static void Negate(ref Matrix4 m, out Matrix4 result)
 		{
 			m.Negate(out result);
@@ -2255,7 +2063,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="m1">matrix 1</param>
 		/// <param name="m2">matrix 2</param>
 		/// <returns>true is equal, false otherwise</returns>
-
 		public static bool operator ==(Matrix4 m1, Matrix4 m2)
 		{
 			return m1.Equals(m2);
@@ -2265,7 +2072,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="m1">matrix 1</param>
 		/// <param name="m2">matrix 2</param>
 		/// <returns>true if not equal, false otherwise</returns>
-
 		public static bool operator !=(Matrix4 m1, Matrix4 m2)
 		{
 			return !m1.Equals(m2);
@@ -2274,7 +2080,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>operator adding each element of matrix 1 to the corresponding element of matrix 2</summary>
 		/// <param name="m1">matrix 1</param>
 		/// <param name="m2">matrix 2</param>
-
 		public static Matrix4 operator +(Matrix4 m1, Matrix4 m2)
 		{
 			Matrix4 result;
@@ -2286,7 +2091,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="m1">matrix 1</param>
 		/// <param name="m2">matrix 2</param>
 		/// <returns>matrix 1 - matrix 2</returns>
-
 		public static Matrix4 operator -(Matrix4 m1, Matrix4 m2)
 		{
 			Matrix4 result;
@@ -2297,7 +2101,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>unary minus operator</summary>
 		/// <param name="m">matrix to negate</param>
 		/// <returns>unary minus applied to each member of m</returns>
-
 		public static Matrix4 operator -(Matrix4 m)
 		{
 			Matrix4 result;
@@ -2308,7 +2111,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>operator multiplying a matrix by a matrix</summary>
 		/// <param name="m1">matrix 1</param>
 		/// <param name="m2">matrix 2</param>
-
 		public static Matrix4 operator *(Matrix4 m1, Matrix4 m2)
 		{
 			Matrix4 result;
@@ -2319,7 +2121,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>operator multiplying each matrix element by a scalar float value</summary>
 		/// <param name="m">the matrix to multiply</param>
 		/// <param name="f">the scalar float to multiply each matrix element by</param>
-
 		public static Matrix4 operator *(Matrix4 m, float f)
 		{
 			Matrix4 result;
@@ -2330,7 +2131,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>operator multiplying each matrix element by a scalar float value</summary>
 		/// <param name="f">the scalar float to multiply each matrix element by</param>
 		/// <param name="m">the matrix to multiply</param>
-
 		public static Matrix4 operator *(float f, Matrix4 m)
 		{
 			Matrix4 result;
@@ -2341,7 +2141,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>operator multiplying a matrix by a vector</summary>
 		/// <param name="m">the matrix to multiply</param>
 		/// <param name="v">the vector to multiply the matrix by</param>
-
 		public static Vector4 operator *(Matrix4 m, Vector4 v)
 		{
 			Vector4 result;
@@ -2352,7 +2151,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>operator dividing each matrix element by a scalar float value</summary>
 		/// <param name="m">the matrix to divide</param>
 		/// <param name="f">the scalar float to divide each element by</param>
-
 		public static Matrix4 operator /(Matrix4 m, float f)
 		{
 			Matrix4 result;
@@ -2360,13 +2158,11 @@ namespace Sce.PlayStation.Core
 			return result;
 		}
 
-
 		[Obsolete("Use TransformPoint")]
 		public Vector3 Transform(Vector3 v)
 		{
 			return this.TransformPoint(v);
 		}
-
 
 		[Obsolete("Use TransformPoint")]
 		public void Transform(ref Vector3 v, out Vector3 result)
@@ -2374,13 +2170,11 @@ namespace Sce.PlayStation.Core
 			this.TransformPoint(ref v, out result);
 		}
 
-
 		[Obsolete("Use TransformPoint")]
 		public Vector2 Transform(Vector2 v)
 		{
 			return this.TransformPoint(v);
 		}
-
 
 		[Obsolete("Use TransformPoint")]
 		public void Transform(ref Vector2 v, out Vector2 result)
@@ -2388,13 +2182,11 @@ namespace Sce.PlayStation.Core
 			this.TransformPoint(ref v, out result);
 		}
 
-
 		[Obsolete("Use TransformPoint")]
 		public static Vector3 Transform(Matrix4 m, Vector3 v)
 		{
 			return Matrix4.TransformPoint(m, v);
 		}
-
 
 		[Obsolete("Use TransformPoint")]
 		public static void Transform(ref Matrix4 m, ref Vector3 v, out Vector3 result)
@@ -2402,13 +2194,11 @@ namespace Sce.PlayStation.Core
 			Matrix4.TransformPoint(ref m, ref v, out result);
 		}
 
-
 		[Obsolete("Use TransformPoint")]
 		public static Vector2 Transform(Matrix4 m, Vector2 v)
 		{
 			return Matrix4.TransformPoint(m, v);
 		}
-
 
 		[Obsolete("Use TransformPoint")]
 		public static void Transform(ref Matrix4 m, ref Vector2 v, out Vector2 result)
@@ -2416,13 +2206,11 @@ namespace Sce.PlayStation.Core
 			Matrix4.TransformPoint(ref m, ref v, out result);
 		}
 
-
 		[Obsolete("Use TransformPoint")]
 		public static Vector3 operator *(Matrix4 m, Vector3 v)
 		{
 			return m.TransformPoint(v);
 		}
-
 
 		[Obsolete("Use TransformPoint")]
 		public static Vector2 operator *(Matrix4 m, Vector2 v)
@@ -2431,75 +2219,57 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <summary>column 1, element 1</summary>
-
 		public float M11;
 
 		/// <summary>column 1, element 2</summary>
-
 		public float M12;
 
 		/// <summary>column 1, element 3</summary>
-
 		public float M13;
 
 		/// <summary>column 1, element 4</summary>
-
 		public float M14;
 
 		/// <summary>column 2, element 1</summary>
-
 		public float M21;
 
 		/// <summary>column 2, element 2</summary>
-
 		public float M22;
 
 		/// <summary>column 2, element 3</summary>
-
 		public float M23;
 
 		/// <summary>column 2, element 4</summary>
-
 		public float M24;
 
 		/// <summary>column 3, element 1</summary>
-
 		public float M31;
 
 		/// <summary>column 3, element 2</summary>
-
 		public float M32;
 
 		/// <summary>column 3, element 3</summary>
-
 		public float M33;
 
 		/// <summary>column 3, element 4</summary>
-
 		public float M34;
 
 		/// <summary>column 4, element 1</summary>
-
 		public float M41;
 
 		/// <summary>column 4, element 2</summary>
-
 		public float M42;
 
 		/// <summary>column 4, element 3</summary>
-
 		public float M43;
 
 		/// <summary>column 4, element 4</summary>
-
 		public float M44;
 
 		/// <summary>a matrix of all zeroes</summary>
-
 		public static readonly Matrix4 Zero = new Matrix4(Vector4.Zero, Vector4.Zero, Vector4.Zero, Vector4.Zero);
 
 		/// <summary>identity matrix</summary>
-
 		public static readonly Matrix4 Identity = new Matrix4(Vector4.UnitX, Vector4.UnitY, Vector4.UnitZ, Vector4.UnitW);
 	}
 }

@@ -1,44 +1,141 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="PssCore\Device\Camera.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PssCore\Graphics\Struct\DepthFunc.cs">
     <Files>
-      <File FileName="PssCore\Core\Error.cs" Line="46" Column="1" />
-      <File FileName="PssCore\Core\FMath.cs" Line="234" Column="26" />
+      <File FileName="PssCore\Core\Error.cs" Line="110" Column="42" />
+      <File FileName="PssCore\Core\FMath.cs" Line="274" Column="32" />
       <File FileName="PssCore\Core\Interface\IShallowCloneable.cs" Line="13" Column="1" />
       <File FileName="PssCore\Core\Interface\IDeepCloneable.cs" Line="9" Column="3" />
-      <File FileName="PssCore\Core\Struct\Byte2.cs" Line="6" Column="21" />
-      <File FileName="PssCore\Core\Struct\Byte2N.cs" Line="12" Column="10" />
-      <File FileName="PssCore\Core\Struct\Byte3.cs" Line="9" Column="22" />
-      <File FileName="PssCore\Core\Struct\Vector2.cs" Line="1851" Column="3" />
-      <File FileName="PssCore\Core\SystemException\CameraSystemException.cs" Line="3" Column="20" />
-      <File FileName="PssCore\Core\SystemException\ImageSystemException.cs" Line="3" Column="20" />
-      <File FileName="PssCore\Core\SystemException\InputSystemException.cs" Line="3" Column="20" />
-      <File FileName="PssCore\Core\SystemException\AudioSystemException.cs" Line="1" Column="1" />
-      <File FileName="PssCore\Core\SystemException\FontSystemException.cs" Line="5" Column="37" />
-      <File FileName="PssCore\Core\SystemException\GraphicsSystemException.cs" Line="5" Column="41" />
-      <File FileName="PssCore\Core\SystemException\LocationSystemException.cs" Line="3" Column="20" />
-      <File FileName="PssCore\Core\Struct\Vector4.cs" Line="5" Column="43" />
-      <File FileName="PssCore\Core\Struct\UShort3.cs" Line="1" Column="1" />
-      <File FileName="PssCore\Core\Struct\UShortN.cs" Line="1" Column="1" />
-      <File FileName="PssCore\Core\Struct\Rgba5551.cs" Line="1" Column="1" />
-      <File FileName="PssCore\Core\Struct\Byte3N.cs" Line="1" Column="1" />
-      <File FileName="PssCore\Core\Struct\UByte3.cs" Line="1" Column="1" />
-      <File FileName="PssCore\Core\Struct\UShort3N.cs" Line="33" Column="1" />
-      <File FileName="PssCore\Core\Struct\Rgba.cs" Line="1" Column="1" />
-      <File FileName="PssCore\Core\Struct\Quaternion.cs" Line="1" Column="1" />
-      <File FileName="PssCore\Core\Struct\Rgb565.cs" Line="49" Column="39" />
-      <File FileName="PssCore\Core\Struct\Short2N.cs" Line="1" Column="1" />
       <File FileName="PssCore\Audio\Enums\BgmStatus.cs" Line="13" Column="14" />
       <File FileName="PssCore\Audio\Enums\SoundStatus.cs" Line="3" Column="23" />
-      <File FileName="PssCore\Audio\Bgm.cs" Line="88" Column="21" />
-      <File FileName="PssCore\Audio\BgmPlayer.cs" Line="368" Column="18" />
-      <File FileName="PssCore\Audio\Sound.cs" Line="17" Column="65" />
-      <File FileName="PssCore\Audio\SoundPlayer.cs" Line="263" Column="9" />
+      <File FileName="PssCore\Audio\Bgm.cs" Line="22" Column="56" />
+      <File FileName="PssCore\Audio\BgmPlayer.cs" Line="65" Column="47" />
+      <File FileName="PssCore\Audio\Sound.cs" Line="11" Column="1" />
+      <File FileName="PssCore\Audio\SoundPlayer.cs" Line="263" Column="14" />
       <File FileName="PssCore\Device\Enum\LocationDeviceType.cs" Line="17" Column="40" />
       <File FileName="PssCore\Device\Enum\PictureState.cs" Line="13" Column="18" />
       <File FileName="PssCore\Device\Enum\CameraFacing.cs" Line="11" Column="16" />
       <File FileName="PssCore\Device\Enum\CameraImageFormat.cs" Line="11" Column="16" />
-      <File FileName="PssCore\Device\Camera.cs" Line="473" Column="40" />
+      <File FileName="PssCore\Device\Camera.cs" Line="501" Column="42" />
+      <File FileName="PssCore\Device\CameraImportDialog.cs" Line="4" Column="28" />
+      <File FileName="PssCore\Device\Location.cs" Line="61" Column="41" />
+      <File FileName="PssCore\Device\PhotoImportDialog.cs" Line="4" Column="28" />
+      <File FileName="PssCore\Device\Struct\CameraInfo.cs" Line="6" Column="59" />
+      <File FileName="PssCore\Device\Struct\CameraSize.cs" Line="23" Column="2" />
+      <File FileName="PssCore\Device\Struct\LocationData.cs" Line="50" Column="66" />
+      <File FileName="PssCore\Device\Enum\CameraState.cs" Line="15" Column="24" />
+      <File FileName="PssCore\Enviroment\Struct\MemoryUsage.cs" Line="19" Column="3" />
+      <File FileName="PssCore\Enviroment\Interface\ICommonDialog.cs" Line="21" Column="72" />
+      <File FileName="PssCore\Enviroment\Enum\CommonDialogResult.cs" Line="15" Column="13" />
+      <File FileName="PssCore\Enviroment\Enum\CommonDialogState.cs" Line="13" Column="16" />
+      <File FileName="PssCore\Enviroment\Enum\CommonDialogType.cs" Line="9" Column="14" />
+      <File FileName="PssCore\Enviroment\Enum\TextInputMode.cs" Line="13" Column="16" />
+      <File FileName="PssCore\Enviroment\Enum\YesNoLayout.cs" Line="11" Column="18" />
+      <File FileName="PssCore\Enviroment\Clipboard.cs" Line="32" Column="41" />
+      <File FileName="PssCore\Enviroment\Log.cs" Line="12" Column="1" />
+      <File FileName="PssCore\Enviroment\SystemParameters.cs" Line="59" Column="37" />
+      <File FileName="PssCore\Enviroment\MinimizedEventArgs.cs" Line="6" Column="36" />
+      <File FileName="PssCore\Enviroment\NetworkInformation.cs" Line="10" Column="1" />
+      <File FileName="PssCore\Enviroment\PersistentMemory.cs" Line="10" Column="1" />
+      <File FileName="PssCore\Enviroment\RestoredEventArgs.cs" Line="6" Column="36" />
+      <File FileName="PssCore\Enviroment\Shell.cs" Line="10" Column="1" />
+      <File FileName="PssCore\Enviroment\SystemEvents.cs" Line="59" Column="41" />
+      <File FileName="PssCore\Enviroment\SystemMemory.cs" Line="10" Column="1" />
+      <File FileName="PssCore\Graphics\Enum\BlendFuncFactor.cs" Line="1" Column="1" />
+      <File FileName="PssCore\Graphics\Enum\BlendFuncMode.cs" Line="1" Column="1" />
+      <File FileName="PssCore\Graphics\Enum\ClearMask.cs" Line="1" Column="1" />
+      <File FileName="PssCore\Graphics\Enum\ColorMask.cs" Line="1" Column="1" />
+      <File FileName="PssCore\Graphics\Enum\CullFaceDirection.cs" Line="1" Column="1" />
+      <File FileName="PssCore\Graphics\Enum\CullFaceMode.cs" Line="1" Column="1" />
+      <File FileName="PssCore\Graphics\Enum\DepthFuncMode.cs" Line="1" Column="1" />
+      <File FileName="PssCore\Graphics\Enum\DrawMode.cs" Line="2" Column="1" />
+      <File FileName="PssCore\Graphics\Enum\EnableMode.cs" Line="2" Column="1" />
+      <File FileName="PssCore\Graphics\Enum\GraphicsExtension.cs" Line="1" Column="1" />
+      <File FileName="PssCore\Graphics\Enum\GraphicsUpdate.cs" Line="1" Column="1" />
+      <File FileName="PssCore\Graphics\Enum\InternalOption.cs" Line="1" Column="1" />
+      <File FileName="PssCore\Graphics\Enum\PixelBufferOption.cs" Line="1" Column="1" />
+      <File FileName="PssCore\Graphics\Enum\PixelBufferType.cs" Line="1" Column="1" />
+      <File FileName="PssCore\Graphics\Enum\PixelFormat.cs" Line="1" Column="1" />
+      <File FileName="PssCore\Graphics\Enum\ShaderUniformType.cs" Line="1" Column="1" />
+      <File FileName="PssCore\Graphics\Enum\StencilFuncMode.cs" Line="1" Column="1" />
+      <File FileName="PssCore\Graphics\Enum\StencilOpMode.cs" Line="1" Column="1" />
+      <File FileName="PssCore\Graphics\Enum\TextureCubeFace.cs" Line="1" Column="1" />
+      <File FileName="PssCore\Graphics\Enum\TextureFilterMode.cs" Line="1" Column="1" />
+      <File FileName="PssCore\Graphics\Enum\TextureWrapMode.cs" Line="1" Column="1" />
+      <File FileName="PssCore\Graphics\Enum\VertexFormat.cs" Line="29" Column="10" />
+      <File FileName="PssCore\Graphics\Struct\BlendFunc.cs" Line="11" Column="3" />
+      <File FileName="PssCore\Graphics\Struct\CullFace.cs" Line="8" Column="3" />
+      <File FileName="PssCore\Graphics\Struct\DepthFunc.cs" Line="18" Column="42" />
+      <File FileName="PssCore\Graphics\Struct\GraphicsCaps.cs" Line="9" Column="3" />
+      <File FileName="PssCore\Graphics\Struct\GraphicsCapsState.cs" Line="7" Column="3" />
+      <File FileName="PssCore\Graphics\Struct\GraphicsState.cs" Line="15" Column="1" />
+      <File FileName="PssCore\Graphics\Struct\PolygonOffset.cs" Line="14" Column="1" />
+      <File FileName="PssCore\Graphics\Struct\Primitive.cs" Line="14" Column="3" />
+      <File FileName="PssCore\Graphics\Struct\RenderTarget.cs" Line="10" Column="6" />
+      <File FileName="PssCore\Graphics\Struct\StencilFunc.cs" Line="8" Column="3" />
+      <File FileName="PssCore\Graphics\Struct\StencilOp.cs" Line="29" Column="29" />
+      <File FileName="PssCore\Graphics\Struct\TextureFilter.cs" Line="29" Column="29" />
+      <File FileName="PssCore\Graphics\Struct\TextureWrap.cs" Line="26" Column="29" />
+      <File FileName="PssCore\Graphics\ColorBuffer.cs" Line="1" Column="5" />
+      <File FileName="PssCore\Graphics\DepthBuffer.cs" Line="1" Column="5" />
+      <File FileName="PssCore\Graphics\FrameBuffer.cs" Line="10" Column="3" />
+      <File FileName="PssCore\Graphics\FrameBufferState.cs" Line="20" Column="37" />
+      <File FileName="PssCore\Graphics\GraphicsContext.cs" Line="901" Column="35" />
+      <File FileName="PssCore\Graphics\PixelBuffer.cs" Line="10" Column="3" />
+      <File FileName="PssCore\Graphics\PsmFrameBuffer.cs" Line="12" Column="3" />
+      <File FileName="PssCore\Graphics\PsmGraphicsContext.cs" Line="46" Column="44" />
+      <File FileName="PssCore\Graphics\PsmPixelBuffer.cs" Line="9" Column="3" />
+      <File FileName="PssCore\Graphics\PsmShaderProgram.cs" Line="9" Column="3" />
+      <File FileName="PssCore\Graphics\PsmTexture.cs" Line="30" Column="176" />
+      <File FileName="PssCore\Graphics\PsmVertexBuffer.cs" Line="16" Column="21" />
+      <File FileName="PssCore\Graphics\ShaderProgram.cs" Line="9" Column="3" />
+      <File FileName="PssCore\Graphics\ScreenBuffer.cs" Line="9" Column="3" />
+      <File FileName="PssCore\Graphics\ShaderProgramOption.cs" Line="9" Column="3" />
+      <File FileName="PssCore\Graphics\ShaderProgramState.cs" Line="8" Column="3" />
+      <File FileName="PssCore\Graphics\Texture.cs" Line="14" Column="3" />
+      <File FileName="PssCore\Graphics\Texture2D.cs" Line="177" Column="41" />
+      <File FileName="PssCore\Graphics\TextureCube.cs" Line="180" Column="2" />
+      <File FileName="PssCore\Graphics\TextureState.cs" Line="7" Column="1" />
+      <File FileName="PssCore\Graphics\VertexBuffer.cs" Line="12" Column="3" />
+      <File FileName="PssCore\Imaging\Struct\CharMetrics.cs" Line="24" Column="25" />
+      <File FileName="PssCore\Imaging\Struct\FontMetrics.cs" Line="13" Column="21" />
+      <File FileName="PssCore\Imaging\Struct\ImageColor.cs" Line="12" Column="3" />
+      <File FileName="PssCore\Imaging\Struct\ImagePosition.cs" Line="8" Column="3" />
+      <File FileName="PssCore\Imaging\Struct\ImageRect.cs" Line="11" Column="3" />
+      <File FileName="PssCore\Imaging\Struct\ImageSize.cs" Line="11" Column="3" />
+      <File FileName="PssCore\Imaging\Enum\FontStyle.cs" Line="14" Column="19" />
+      <File FileName="PssCore\Imaging\Enum\ImageMode.cs" Line="11" Column="9" />
+      <File FileName="PssCore\Imaging\Font.cs" Line="10" Column="1" />
+      <File FileName="PssCore\Imaging\Image.cs" Line="366" Column="61" />
+      <File FileName="PssCore\Imaging\Enum\FontAlias.cs" Line="9" Column="17" />
+      <File FileName="PssCore\Input\Struct\MotionData.cs" Line="7" Column="3" />
+      <File FileName="PssCore\Input\Struct\GamePadData.cs" Line="10" Column="20" />
+      <File FileName="PssCore\Input\Struct\TouchData.cs" Line="8" Column="3" />
+      <File FileName="PssCore\Input\Enum\GamePadButtons.cs" Line="38" Column="17" />
+      <File FileName="PssCore\Input\Enum\TouchStatus.cs" Line="17" Column="16" />
+      <File FileName="PssCore\Input\GamePad.cs" Line="10" Column="3" />
+      <File FileName="PssCore\Input\Motion.cs" Line="18" Column="3" />
+      <File FileName="PssCore\Input\Touch.cs" Line="41" Column="34" />
+      <File FileName="PssCore\Enviroment\Enum\GamePadButtonMeaning.cs" Line="11" Column="24" />
+      <File FileName="PssCore\Services\Enum\InAppPurchaseCommand.cs" Line="17" Column="15" />
+      <File FileName="PssCore\Services\Enum\InAppPurchaseTicketType.cs" Line="11" Column="18" />
+      <File FileName="PssCore\Services\Enum\NetworkRequestType.cs" Line="10" Column="11" />
+      <File FileName="PssCore\Services\Enum\NetworkState.cs" Line="29" Column="28" />
+      <File FileName="PssCore\Services\Struct\InAppPurchaseProductData.cs" Line="15" Column="35" />
+      <File FileName="PssCore\Services\AccountInformation.cs" Line="10" Column="3" />
+      <File FileName="PssCore\Services\InAppPurchaseDialog.cs" Line="344" Column="36" />
+      <File FileName="PssCore\Services\InAppPurchaseProduct.cs" Line="12" Column="3" />
+      <File FileName="PssCore\Services\InAppPurchaseProductList.cs" Line="88" Column="61" />
+      <File FileName="PssCore\Services\Network.cs" Line="270" Column="68" />
+      <File FileName="PssCore\Services\NetworkAsyncResult.cs" Line="13" Column="31" />
+      <File FileName="PssCore\Services\NetworkErrorDelegate.cs" Line="1" Column="1" />
+      <File FileName="PssCore\Services\NetworkRequest.cs" Line="197" Column="15" />
+      <File FileName="PssCore\Services\NetworkResponse.cs" Line="28" Column="4" />
+      <File FileName="PssCore\Services\NetworkResponseDelegate.cs" Line="1" Column="1" />
+      <File FileName="PssCore\Services\NetworkStreamReader.cs" Line="1" Column="1" />
+      <File FileName="PssCore\Services\NetworkStreamReaderDelegate.cs" Line="1" Column="1" />
+      <File FileName="PssCore\Services\Telemetry.cs" Line="9" Column="2" />
+      <File FileName="PssCore\Core\Struct\Byte3.cs" Line="8" Column="28" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

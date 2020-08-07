@@ -3,12 +3,10 @@
 namespace Sce.PlayStation.Core
 {
 	/// <summary>a scalar half</summary>
-	// 
 	public struct Half : IEquatable<Half>
 	{
 		/// <summary>constructor taking a float to convert to half</summary>
 		/// <param name="f">the float to convert</param>
-
 		public Half(float f)
 		{
 			this.Bits = Half.FloatToHalf(f);
@@ -16,7 +14,6 @@ namespace Sce.PlayStation.Core
 
 		/// <summary>return the float value of this</summary>
 		/// <returns>the float value of this</returns>
-
 		public float ToFloat()
 		{
 			return Half.HalfToFloat(this.Bits);
@@ -25,7 +22,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>equality test</summary>
 		/// <param name="h">the half to compare this to</param>
 		/// <returns>true if this == h, false otherwise</returns>
-
 		public bool Equals(Half h)
 		{
 			return this.Bits == h.Bits || ((this.Bits | h.Bits) & 32767) == 0;
@@ -34,7 +30,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>equality test</summary>
 		/// <param name="o">the object to compare this to</param>
 		/// <returns>true if this == o, false otherwise</returns>
-
 		public override bool Equals(object o)
 		{
 			return o is Half && this.Equals((Half)o);
@@ -42,7 +37,6 @@ namespace Sce.PlayStation.Core
 
 		/// <summary>get the string representation of float value</summary>
 		/// <returns>the string representation of float value</returns>
-
 		public override string ToString()
 		{
 			return Half.HalfToFloat(this.Bits).ToString();
@@ -50,7 +44,6 @@ namespace Sce.PlayStation.Core
 
 		/// <summary>gets the hash code for this</summary>
 		/// <returns>integer hash code</returns>
-
 		public override int GetHashCode()
 		{
 			return (int)this.Bits;
@@ -60,7 +53,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="h1">half 1</param>
 		/// <param name="h2">half 2</param>
 		/// <returns>true if half 1 == half 2, false otherwise</returns>
-
 		public static bool operator ==(Half h1, Half h2)
 		{
 			return h1.Equals(h2);
@@ -70,7 +62,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="h1">half 1</param>
 		/// <param name="h2">half 2</param>
 		/// <returns>true if half 1 != half 2, false otherwise</returns>
-
 		public static bool operator !=(Half h1, Half h2)
 		{
 			return !h1.Equals(h2);
@@ -79,7 +70,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>float casting operator</summary>
 		/// <param name="h">the half to convert to float</param>
 		/// <returns>the float value of the half</returns>
-
 		public static implicit operator float(Half h)
 		{
 			return Half.HalfToFloat(h.Bits);
@@ -88,12 +78,10 @@ namespace Sce.PlayStation.Core
 		/// <summary>half casting operator</summary>
 		/// <param name="f">the float to convert to half</param>
 		/// <returns>the half value of the float</returns>
-
 		public static explicit operator Half(float f)
 		{
 			return new Half(f);
 		}
-
 
 		private static ushort FloatToHalf(float f)
 		{
@@ -114,7 +102,6 @@ namespace Sce.PlayStation.Core
 			return (ushort)(num2 << 15 | num3 << 10 | num4 >> 13);
 		}
 
-
 		private static float HalfToFloat(ushort h)
 		{
 			int num = h >> 15;
@@ -134,7 +121,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <summary>the half data</summary>
-
 		public ushort Bits;
 	}
 }

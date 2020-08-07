@@ -11,6 +11,8 @@
     <RootNamespace>Sce.PlayStation.Core</RootNamespace>
     <AssemblyName>Sce.PlayStation.Core</AssemblyName>
     <Description>Sce.PlayStation.Core Compatible libary.</Description>
+    <ReleaseVersion>1.0.0.0</ReleaseVersion>
+    <SynchReleaseVersion>false</SynchReleaseVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -65,58 +67,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Core\Error.cs" />
-    <Compile Include="Core\SystemException\AudioSystemException.cs" />
-    <Compile Include="Core\SystemException\CameraSystemException.cs" />
-    <Compile Include="Core\SystemException\FontSystemException.cs" />
-    <Compile Include="Core\SystemException\GraphicsSystemException.cs" />
-    <Compile Include="Core\SystemException\ImageSystemException.cs" />
-    <Compile Include="Core\SystemException\InputSystemException.cs" />
-    <Compile Include="Core\SystemException\LocationSystemException.cs" />
     <Compile Include="Core\FMath.cs" />
     <Compile Include="Core\Interface\IShallowCloneable.cs" />
     <Compile Include="Core\Interface\IDeepCloneable.cs" />
-    <Compile Include="Core\Struct\Byte2.cs" />
-    <Compile Include="Core\Struct\Byte2N.cs" />
-    <Compile Include="Core\Struct\Byte3.cs" />
-    <Compile Include="Core\Struct\Vector2.cs" />
-    <Compile Include="Core\Struct\Byte3N.cs" />
-    <Compile Include="Core\Struct\Byte4.cs" />
-    <Compile Include="Core\Struct\Byte4N.cs" />
-    <Compile Include="Core\Struct\ByteN.cs" />
-    <Compile Include="Core\Struct\Half.cs" />
-    <Compile Include="Core\Struct\Half2.cs" />
-    <Compile Include="Core\Struct\Half3.cs" />
-    <Compile Include="Core\Struct\Half4.cs" />
-    <Compile Include="Core\Struct\Matrix4.cs" />
-    <Compile Include="Core\Struct\Quaternion.cs" />
-    <Compile Include="Core\Struct\Rectangle.cs" />
-    <Compile Include="Core\Struct\Rgb565.cs" />
-    <Compile Include="Core\Struct\Rgba.cs" />
-    <Compile Include="Core\Struct\Rgba4444.cs" />
-    <Compile Include="Core\Struct\Rgba5551.cs" />
-    <Compile Include="Core\Struct\Short2.cs" />
-    <Compile Include="Core\Struct\Short2N.cs" />
-    <Compile Include="Core\Struct\Short3.cs" />
-    <Compile Include="Core\Struct\Short3N.cs" />
-    <Compile Include="Core\Struct\Short4.cs" />
-    <Compile Include="Core\Struct\Short4N.cs" />
-    <Compile Include="Core\Struct\ShortN.cs" />
-    <Compile Include="Core\Struct\UByte2.cs" />
-    <Compile Include="Core\Struct\UByte2N.cs" />
-    <Compile Include="Core\Struct\UByte3.cs" />
-    <Compile Include="Core\Struct\UByte3N.cs" />
-    <Compile Include="Core\Struct\UByte4.cs" />
-    <Compile Include="Core\Struct\UByte4N.cs" />
-    <Compile Include="Core\Struct\UByteN.cs" />
-    <Compile Include="Core\Struct\UShort2.cs" />
-    <Compile Include="Core\Struct\UShort2N.cs" />
-    <Compile Include="Core\Struct\UShort3.cs" />
-    <Compile Include="Core\Struct\UShort3N.cs" />
-    <Compile Include="Core\Struct\UShort4.cs" />
-    <Compile Include="Core\Struct\UShort4N.cs" />
-    <Compile Include="Core\Struct\UShortN.cs" />
-    <Compile Include="Core\Struct\Vector3.cs" />
-    <Compile Include="Core\Struct\Vector4.cs" />
     <Compile Include="Audio\Enums\BgmStatus.cs" />
     <Compile Include="Audio\Enums\SoundStatus.cs" />
     <Compile Include="Audio\Bgm.cs" />
@@ -249,5 +202,54 @@
     <Compile Include="Services\NetworkStreamReader.cs" />
     <Compile Include="Services\NetworkStreamReaderDelegate.cs" />
     <Compile Include="Services\Telemetry.cs" />
+    <Compile Include="Core\Struct\Byte2.cs" />
+    <Compile Include="Core\Struct\Byte2N.cs" />
+    <Compile Include="Core\Struct\Byte3.cs" />
+    <Compile Include="Core\Struct\Byte3N.cs" />
+    <Compile Include="Core\Struct\Byte4.cs" />
+    <Compile Include="Core\Struct\Byte4N.cs" />
+    <Compile Include="Core\Struct\ByteN.cs" />
+    <Compile Include="Core\Struct\Half.cs" />
+    <Compile Include="Core\Struct\Half2.cs" />
+    <Compile Include="Core\Struct\Half3.cs" />
+    <Compile Include="Core\Struct\Half4.cs" />
+    <Compile Include="Core\Struct\Matrix4.cs" />
+    <Compile Include="Core\Struct\Quaternion.cs" />
+    <Compile Include="Core\Struct\Rectangle.cs" />
+    <Compile Include="Core\Struct\Rgb565.cs" />
+    <Compile Include="Core\Struct\Rgba.cs" />
+    <Compile Include="Core\Struct\Rgba4444.cs" />
+    <Compile Include="Core\Struct\Rgba5551.cs" />
+    <Compile Include="Core\Struct\Short2.cs" />
+    <Compile Include="Core\Struct\Short2N.cs" />
+    <Compile Include="Core\Struct\Short3.cs" />
+    <Compile Include="Core\Struct\Short3N.cs" />
+    <Compile Include="Core\Struct\Short4.cs" />
+    <Compile Include="Core\Struct\Short4N.cs" />
+    <Compile Include="Core\Struct\ShortN.cs" />
+    <Compile Include="Core\Struct\UByte2.cs" />
+    <Compile Include="Core\Struct\UByte2N.cs" />
+    <Compile Include="Core\Struct\UByte3.cs" />
+    <Compile Include="Core\Struct\UByte3N.cs" />
+    <Compile Include="Core\Struct\UByte4.cs" />
+    <Compile Include="Core\Struct\UByte4N.cs" />
+    <Compile Include="Core\Struct\UByteN.cs" />
+    <Compile Include="Core\Struct\UShort2.cs" />
+    <Compile Include="Core\Struct\UShort2N.cs" />
+    <Compile Include="Core\Struct\UShort3.cs" />
+    <Compile Include="Core\Struct\UShort3N.cs" />
+    <Compile Include="Core\Struct\UShort4.cs" />
+    <Compile Include="Core\Struct\UShort4N.cs" />
+    <Compile Include="Core\Struct\UShortN.cs" />
+    <Compile Include="Core\Struct\Vector2.cs" />
+    <Compile Include="Core\Struct\Vector3.cs" />
+    <Compile Include="Core\Struct\Vector4.cs" />
+    <Compile Include="Core\AudioSystemException.cs" />
+    <Compile Include="Core\CameraSystemException.cs" />
+    <Compile Include="Core\FontSystemException.cs" />
+    <Compile Include="Core\GraphicsSystemException.cs" />
+    <Compile Include="Core\ImageSystemException.cs" />
+    <Compile Include="Core\InputSystemException.cs" />
+    <Compile Include="Core\LocationSystemException.cs" />
   </ItemGroup>
 </Project>

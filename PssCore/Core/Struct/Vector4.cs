@@ -6,8 +6,6 @@ namespace Sce.PlayStation.Core
 	public struct Vector4 : IEquatable<Vector4>
 	{
 		/// <returns>a new vector consisting of the current vector's x, x, x, x values</returns>
-
-
 		public Vector4 Xxxx
 		{
 			get
@@ -17,8 +15,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, x, x, x values</returns>
-
-
 		public Vector4 Yxxx
 		{
 			get
@@ -28,8 +24,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, x, x, x values</returns>
-
-
 		public Vector4 Zxxx
 		{
 			get
@@ -39,8 +33,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, x, x, x values</returns>
-
-
 		public Vector4 Wxxx
 		{
 			get
@@ -50,8 +42,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, y, x, x values</returns>
-
-
 		public Vector4 Xyxx
 		{
 			get
@@ -61,8 +51,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, y, x, x values</returns>
-
-
 		public Vector4 Yyxx
 		{
 			get
@@ -72,8 +60,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, y, x, x values</returns>
-
-
 		public Vector4 Zyxx
 		{
 			get
@@ -83,8 +69,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, y, x, x values</returns>
-
-
 		public Vector4 Wyxx
 		{
 			get
@@ -94,8 +78,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, z, x, x values</returns>
-
-
 		public Vector4 Xzxx
 		{
 			get
@@ -105,8 +87,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, z, x, x values</returns>
-
-
 		public Vector4 Yzxx
 		{
 			get
@@ -116,8 +96,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, z, x, x values</returns>
-
-
 		public Vector4 Zzxx
 		{
 			get
@@ -127,8 +105,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, z, x, x values</returns>
-
-
 		public Vector4 Wzxx
 		{
 			get
@@ -138,8 +114,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, w, x, x values</returns>
-
-
 		public Vector4 Xwxx
 		{
 			get
@@ -149,8 +123,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, w, x, x values</returns>
-
-
 		public Vector4 Ywxx
 		{
 			get
@@ -160,8 +132,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, w, x, x values</returns>
-
-
 		public Vector4 Zwxx
 		{
 			get
@@ -171,8 +141,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, w, x, x values</returns>
-
-
 		public Vector4 Wwxx
 		{
 			get
@@ -182,8 +150,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, x, y, x values</returns>
-
-
 		public Vector4 Xxyx
 		{
 			get
@@ -193,8 +159,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, x, y, x values</returns>
-
-
 		public Vector4 Yxyx
 		{
 			get
@@ -204,8 +168,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, x, y, x values</returns>
-
-
 		public Vector4 Zxyx
 		{
 			get
@@ -215,8 +177,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, x, y, x values</returns>
-
-
 		public Vector4 Wxyx
 		{
 			get
@@ -226,8 +186,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, y, y, x values</returns>
-
-
 		public Vector4 Xyyx
 		{
 			get
@@ -237,8 +195,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, y, y, x values</returns>
-
-
 		public Vector4 Yyyx
 		{
 			get
@@ -248,8 +204,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, y, y, x values</returns>
-
-
 		public Vector4 Zyyx
 		{
 			get
@@ -259,8 +213,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, y, y, x values</returns>
-
-
 		public Vector4 Wyyx
 		{
 			get
@@ -270,8 +222,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, z, y, x values</returns>
-
-
 		public Vector4 Xzyx
 		{
 			get
@@ -281,8 +231,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, z, y, x values</returns>
-
-
 		public Vector4 Yzyx
 		{
 			get
@@ -292,8 +240,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, z, y, x values</returns>
-
-
 		public Vector4 Zzyx
 		{
 			get
@@ -303,9 +249,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, z, y, x values</returns>
-
-
-
 		public Vector4 Wzyx
 		{
 			get
@@ -322,8 +265,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, w, y, x values</returns>
-
-
 		public Vector4 Xwyx
 		{
 			get
@@ -333,8 +274,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, w, y, x values</returns>
-
-
 		public Vector4 Ywyx
 		{
 			get
@@ -344,9 +283,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, w, y, x values</returns>
-
-
-
 		public Vector4 Zwyx
 		{
 			get
@@ -363,8 +299,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, w, y, x values</returns>
-
-
 		public Vector4 Wwyx
 		{
 			get
@@ -374,8 +308,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, x, z, x values</returns>
-
-
 		public Vector4 Xxzx
 		{
 			get
@@ -385,8 +317,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, x, z, x values</returns>
-
-
 		public Vector4 Yxzx
 		{
 			get
@@ -396,8 +326,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, x, z, x values</returns>
-
-
 		public Vector4 Zxzx
 		{
 			get
@@ -407,8 +335,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, x, z, x values</returns>
-
-
 		public Vector4 Wxzx
 		{
 			get
@@ -418,8 +344,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, y, z, x values</returns>
-
-
 		public Vector4 Xyzx
 		{
 			get
@@ -429,8 +353,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, y, z, x values</returns>
-
-
 		public Vector4 Yyzx
 		{
 			get
@@ -440,8 +362,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, y, z, x values</returns>
-
-
 		public Vector4 Zyzx
 		{
 			get
@@ -451,9 +371,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, y, z, x values</returns>
-
-
-
 		public Vector4 Wyzx
 		{
 			get
@@ -470,8 +387,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, z, z, x values</returns>
-
-
 		public Vector4 Xzzx
 		{
 			get
@@ -481,8 +396,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, z, z, x values</returns>
-
-
 		public Vector4 Yzzx
 		{
 			get
@@ -492,8 +405,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, z, z, x values</returns>
-
-
 		public Vector4 Zzzx
 		{
 			get
@@ -503,8 +414,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, z, z, x values</returns>
-
-
 		public Vector4 Wzzx
 		{
 			get
@@ -514,8 +423,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, w, z, x values</returns>
-
-
 		public Vector4 Xwzx
 		{
 			get
@@ -525,9 +432,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, w, z, x values</returns>
-
-
-
 		public Vector4 Ywzx
 		{
 			get
@@ -544,8 +448,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, w, z, x values</returns>
-
-
 		public Vector4 Zwzx
 		{
 			get
@@ -555,8 +457,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, w, z, x values</returns>
-
-
 		public Vector4 Wwzx
 		{
 			get
@@ -566,8 +466,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, x, w, x values</returns>
-
-
 		public Vector4 Xxwx
 		{
 			get
@@ -577,8 +475,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, x, w, x values</returns>
-
-
 		public Vector4 Yxwx
 		{
 			get
@@ -588,8 +484,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, x, w, x values</returns>
-
-
 		public Vector4 Zxwx
 		{
 			get
@@ -599,8 +493,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, x, w, x values</returns>
-
-
 		public Vector4 Wxwx
 		{
 			get
@@ -610,8 +502,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, y, w, x values</returns>
-
-
 		public Vector4 Xywx
 		{
 			get
@@ -621,8 +511,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, y, w, x values</returns>
-
-
 		public Vector4 Yywx
 		{
 			get
@@ -632,9 +520,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, y, w, x values</returns>
-
-
-
 		public Vector4 Zywx
 		{
 			get
@@ -651,8 +536,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, y, w, x values</returns>
-
-
 		public Vector4 Wywx
 		{
 			get
@@ -662,8 +545,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, z, w, x values</returns>
-
-
 		public Vector4 Xzwx
 		{
 			get
@@ -673,9 +554,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, z, w, x values</returns>
-
-
-
 		public Vector4 Yzwx
 		{
 			get
@@ -692,8 +570,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, z, w, x values</returns>
-
-
 		public Vector4 Zzwx
 		{
 			get
@@ -703,8 +579,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, z, w, x values</returns>
-
-
 		public Vector4 Wzwx
 		{
 			get
@@ -714,8 +588,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, w, w, x values</returns>
-
-
 		public Vector4 Xwwx
 		{
 			get
@@ -725,8 +597,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, w, w, x values</returns>
-
-
 		public Vector4 Ywwx
 		{
 			get
@@ -736,8 +606,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, w, w, x values</returns>
-
-
 		public Vector4 Zwwx
 		{
 			get
@@ -747,8 +615,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, w, w, x values</returns>
-
-
 		public Vector4 Wwwx
 		{
 			get
@@ -758,8 +624,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, x, x, y values</returns>
-
-
 		public Vector4 Xxxy
 		{
 			get
@@ -769,8 +633,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, x, x, y values</returns>
-
-
 		public Vector4 Yxxy
 		{
 			get
@@ -780,8 +642,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, x, x, y values</returns>
-
-
 		public Vector4 Zxxy
 		{
 			get
@@ -791,8 +651,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, x, x, y values</returns>
-
-
 		public Vector4 Wxxy
 		{
 			get
@@ -802,8 +660,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, y, x, y values</returns>
-
-
 		public Vector4 Xyxy
 		{
 			get
@@ -813,8 +669,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, y, x, y values</returns>
-
-
 		public Vector4 Yyxy
 		{
 			get
@@ -824,8 +678,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, y, x, y values</returns>
-
-
 		public Vector4 Zyxy
 		{
 			get
@@ -835,8 +687,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, y, x, y values</returns>
-
-
 		public Vector4 Wyxy
 		{
 			get
@@ -846,8 +696,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, z, x, y values</returns>
-
-
 		public Vector4 Xzxy
 		{
 			get
@@ -857,8 +705,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, z, x, y values</returns>
-
-
 		public Vector4 Yzxy
 		{
 			get
@@ -868,8 +714,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, z, x, y values</returns>
-
-
 		public Vector4 Zzxy
 		{
 			get
@@ -879,9 +723,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, z, x, y values</returns>
-
-
-
 		public Vector4 Wzxy
 		{
 			get
@@ -898,8 +739,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, w, x, y values</returns>
-
-
 		public Vector4 Xwxy
 		{
 			get
@@ -909,8 +748,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, w, x, y values</returns>
-
-
 		public Vector4 Ywxy
 		{
 			get
@@ -920,9 +757,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, w, x, y values</returns>
-
-
-
 		public Vector4 Zwxy
 		{
 			get
@@ -939,8 +773,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, w, x, y values</returns>
-
-
 		public Vector4 Wwxy
 		{
 			get
@@ -950,8 +782,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, x, y, y values</returns>
-
-
 		public Vector4 Xxyy
 		{
 			get
@@ -961,8 +791,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, x, y, y values</returns>
-
-
 		public Vector4 Yxyy
 		{
 			get
@@ -972,8 +800,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, x, y, y values</returns>
-
-
 		public Vector4 Zxyy
 		{
 			get
@@ -983,8 +809,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, x, y, y values</returns>
-
-
 		public Vector4 Wxyy
 		{
 			get
@@ -994,8 +818,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, y, y, y values</returns>
-
-
 		public Vector4 Xyyy
 		{
 			get
@@ -1005,8 +827,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, y, y, y values</returns>
-
-
 		public Vector4 Yyyy
 		{
 			get
@@ -1016,8 +836,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, y, y, y values</returns>
-
-
 		public Vector4 Zyyy
 		{
 			get
@@ -1027,8 +845,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, y, y, y values</returns>
-
-
 		public Vector4 Wyyy
 		{
 			get
@@ -1038,8 +854,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, z, y, y values</returns>
-
-
 		public Vector4 Xzyy
 		{
 			get
@@ -1049,8 +863,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, z, y, y values</returns>
-
-
 		public Vector4 Yzyy
 		{
 			get
@@ -1060,8 +872,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, z, y, y values</returns>
-
-
 		public Vector4 Zzyy
 		{
 			get
@@ -1071,8 +881,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, z, y, y values</returns>
-
-
 		public Vector4 Wzyy
 		{
 			get
@@ -1082,8 +890,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, w, y, y values</returns>
-
-
 		public Vector4 Xwyy
 		{
 			get
@@ -1093,8 +899,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, w, y, y values</returns>
-
-
 		public Vector4 Ywyy
 		{
 			get
@@ -1104,8 +908,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, w, y, y values</returns>
-
-
 		public Vector4 Zwyy
 		{
 			get
@@ -1115,8 +917,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, w, y, y values</returns>
-
-
 		public Vector4 Wwyy
 		{
 			get
@@ -1126,8 +926,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, x, z, y values</returns>
-
-
 		public Vector4 Xxzy
 		{
 			get
@@ -1137,8 +935,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, x, z, y values</returns>
-
-
 		public Vector4 Yxzy
 		{
 			get
@@ -1148,8 +944,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, x, z, y values</returns>
-
-
 		public Vector4 Zxzy
 		{
 			get
@@ -1159,9 +953,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, x, z, y values</returns>
-
-
-
 		public Vector4 Wxzy
 		{
 			get
@@ -1178,8 +969,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, y, z, y values</returns>
-
-
 		public Vector4 Xyzy
 		{
 			get
@@ -1189,8 +978,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, y, z, y values</returns>
-
-
 		public Vector4 Yyzy
 		{
 			get
@@ -1200,8 +987,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, y, z, y values</returns>
-
-
 		public Vector4 Zyzy
 		{
 			get
@@ -1211,8 +996,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, y, z, y values</returns>
-
-
 		public Vector4 Wyzy
 		{
 			get
@@ -1222,8 +1005,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, z, z, y values</returns>
-
-
 		public Vector4 Xzzy
 		{
 			get
@@ -1233,8 +1014,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, z, z, y values</returns>
-
-
 		public Vector4 Yzzy
 		{
 			get
@@ -1244,8 +1023,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, z, z, y values</returns>
-
-
 		public Vector4 Zzzy
 		{
 			get
@@ -1255,8 +1032,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, z, z, y values</returns>
-
-
 		public Vector4 Wzzy
 		{
 			get
@@ -1266,9 +1041,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, w, z, y values</returns>
-
-
-
 		public Vector4 Xwzy
 		{
 			get
@@ -1285,8 +1057,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, w, z, y values</returns>
-
-
 		public Vector4 Ywzy
 		{
 			get
@@ -1296,8 +1066,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, w, z, y values</returns>
-
-
 		public Vector4 Zwzy
 		{
 			get
@@ -1307,8 +1075,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, w, z, y values</returns>
-
-
 		public Vector4 Wwzy
 		{
 			get
@@ -1318,8 +1084,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, x, w, y values</returns>
-
-
 		public Vector4 Xxwy
 		{
 			get
@@ -1329,8 +1093,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, x, w, y values</returns>
-
-
 		public Vector4 Yxwy
 		{
 			get
@@ -1340,9 +1102,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, x, w, y values</returns>
-
-
-
 		public Vector4 Zxwy
 		{
 			get
@@ -1359,8 +1118,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, x, w, y values</returns>
-
-
 		public Vector4 Wxwy
 		{
 			get
@@ -1370,8 +1127,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, y, w, y values</returns>
-
-
 		public Vector4 Xywy
 		{
 			get
@@ -1381,8 +1136,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, y, w, y values</returns>
-
-
 		public Vector4 Yywy
 		{
 			get
@@ -1392,8 +1145,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, y, w, y values</returns>
-
-
 		public Vector4 Zywy
 		{
 			get
@@ -1403,8 +1154,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, y, w, y values</returns>
-
-
 		public Vector4 Wywy
 		{
 			get
@@ -1414,9 +1163,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, z, w, y values</returns>
-
-
-
 		public Vector4 Xzwy
 		{
 			get
@@ -1433,8 +1179,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, z, w, y values</returns>
-
-
 		public Vector4 Yzwy
 		{
 			get
@@ -1444,8 +1188,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, z, w, y values</returns>
-
-
 		public Vector4 Zzwy
 		{
 			get
@@ -1455,8 +1197,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, z, w, y values</returns>
-
-
 		public Vector4 Wzwy
 		{
 			get
@@ -1466,8 +1206,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, w, w, y values</returns>
-
-
 		public Vector4 Xwwy
 		{
 			get
@@ -1477,8 +1215,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, w, w, y values</returns>
-
-
 		public Vector4 Ywwy
 		{
 			get
@@ -1488,8 +1224,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, w, w, y values</returns>
-
-
 		public Vector4 Zwwy
 		{
 			get
@@ -1499,8 +1233,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, w, w, y values</returns>
-
-
 		public Vector4 Wwwy
 		{
 			get
@@ -1510,8 +1242,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, x, x, z values</returns>
-
-
 		public Vector4 Xxxz
 		{
 			get
@@ -1521,8 +1251,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, x, x, z values</returns>
-
-
 		public Vector4 Yxxz
 		{
 			get
@@ -1532,8 +1260,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, x, x, z values</returns>
-
-
 		public Vector4 Zxxz
 		{
 			get
@@ -1543,8 +1269,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, x, x, z values</returns>
-
-
 		public Vector4 Wxxz
 		{
 			get
@@ -1554,8 +1278,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, y, x, z values</returns>
-
-
 		public Vector4 Xyxz
 		{
 			get
@@ -1565,8 +1287,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, y, x, z values</returns>
-
-
 		public Vector4 Yyxz
 		{
 			get
@@ -1576,8 +1296,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, y, x, z values</returns>
-
-
 		public Vector4 Zyxz
 		{
 			get
@@ -1587,9 +1305,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, y, x, z values</returns>
-
-
-
 		public Vector4 Wyxz
 		{
 			get
@@ -1606,8 +1321,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, z, x, z values</returns>
-
-
 		public Vector4 Xzxz
 		{
 			get
@@ -1617,8 +1330,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, z, x, z values</returns>
-
-
 		public Vector4 Yzxz
 		{
 			get
@@ -1628,8 +1339,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, z, x, z values</returns>
-
-
 		public Vector4 Zzxz
 		{
 			get
@@ -1639,8 +1348,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, z, x, z values</returns>
-
-
 		public Vector4 Wzxz
 		{
 			get
@@ -1650,8 +1357,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, w, x, z values</returns>
-
-
 		public Vector4 Xwxz
 		{
 			get
@@ -1661,9 +1366,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, w, x, z values</returns>
-
-
-
 		public Vector4 Ywxz
 		{
 			get
@@ -1680,8 +1382,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, w, x, z values</returns>
-
-
 		public Vector4 Zwxz
 		{
 			get
@@ -1691,8 +1391,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, w, x, z values</returns>
-
-
 		public Vector4 Wwxz
 		{
 			get
@@ -1702,8 +1400,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, x, y, z values</returns>
-
-
 		public Vector4 Xxyz
 		{
 			get
@@ -1713,8 +1409,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, x, y, z values</returns>
-
-
 		public Vector4 Yxyz
 		{
 			get
@@ -1724,8 +1418,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, x, y, z values</returns>
-
-
 		public Vector4 Zxyz
 		{
 			get
@@ -1735,9 +1427,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, x, y, z values</returns>
-
-
-
 		public Vector4 Wxyz
 		{
 			get
@@ -1754,8 +1443,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, y, y, z values</returns>
-
-
 		public Vector4 Xyyz
 		{
 			get
@@ -1765,8 +1452,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, y, y, z values</returns>
-
-
 		public Vector4 Yyyz
 		{
 			get
@@ -1776,8 +1461,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, y, y, z values</returns>
-
-
 		public Vector4 Zyyz
 		{
 			get
@@ -1787,8 +1470,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, y, y, z values</returns>
-
-
 		public Vector4 Wyyz
 		{
 			get
@@ -1798,8 +1479,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, z, y, z values</returns>
-
-
 		public Vector4 Xzyz
 		{
 			get
@@ -1809,8 +1488,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, z, y, z values</returns>
-
-
 		public Vector4 Yzyz
 		{
 			get
@@ -1820,8 +1497,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, z, y, z values</returns>
-
-
 		public Vector4 Zzyz
 		{
 			get
@@ -1831,8 +1506,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, z, y, z values</returns>
-
-
 		public Vector4 Wzyz
 		{
 			get
@@ -1842,9 +1515,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, w, y, z values</returns>
-
-
-
 		public Vector4 Xwyz
 		{
 			get
@@ -1861,8 +1531,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, w, y, z values</returns>
-
-
 		public Vector4 Ywyz
 		{
 			get
@@ -1872,8 +1540,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, w, y, z values</returns>
-
-
 		public Vector4 Zwyz
 		{
 			get
@@ -1883,8 +1549,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, w, y, z values</returns>
-
-
 		public Vector4 Wwyz
 		{
 			get
@@ -1894,8 +1558,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, x, z, z values</returns>
-
-
 		public Vector4 Xxzz
 		{
 			get
@@ -1905,8 +1567,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, x, z, z values</returns>
-
-
 		public Vector4 Yxzz
 		{
 			get
@@ -1916,8 +1576,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, x, z, z values</returns>
-
-
 		public Vector4 Zxzz
 		{
 			get
@@ -1927,8 +1585,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, x, z, z values</returns>
-
-
 		public Vector4 Wxzz
 		{
 			get
@@ -1938,8 +1594,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, y, z, z values</returns>
-
-
 		public Vector4 Xyzz
 		{
 			get
@@ -1949,8 +1603,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, y, z, z values</returns>
-
-
 		public Vector4 Yyzz
 		{
 			get
@@ -1960,8 +1612,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, y, z, z values</returns>
-
-
 		public Vector4 Zyzz
 		{
 			get
@@ -1971,8 +1621,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, y, z, z values</returns>
-
-
 		public Vector4 Wyzz
 		{
 			get
@@ -1982,8 +1630,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, z, z, z values</returns>
-
-
 		public Vector4 Xzzz
 		{
 			get
@@ -1993,8 +1639,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, z, z, z values</returns>
-
-
 		public Vector4 Yzzz
 		{
 			get
@@ -2004,8 +1648,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, z, z, z values</returns>
-
-
 		public Vector4 Zzzz
 		{
 			get
@@ -2015,8 +1657,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, z, z, z values</returns>
-
-
 		public Vector4 Wzzz
 		{
 			get
@@ -2026,8 +1666,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, w, z, z values</returns>
-
-
 		public Vector4 Xwzz
 		{
 			get
@@ -2037,8 +1675,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, w, z, z values</returns>
-
-
 		public Vector4 Ywzz
 		{
 			get
@@ -2048,8 +1684,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, w, z, z values</returns>
-
-
 		public Vector4 Zwzz
 		{
 			get
@@ -2059,8 +1693,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, w, z, z values</returns>
-
-
 		public Vector4 Wwzz
 		{
 			get
@@ -2070,8 +1702,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, x, w, z values</returns>
-
-
 		public Vector4 Xxwz
 		{
 			get
@@ -2081,9 +1711,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, x, w, z values</returns>
-
-
-
 		public Vector4 Yxwz
 		{
 			get
@@ -2100,8 +1727,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, x, w, z values</returns>
-
-
 		public Vector4 Zxwz
 		{
 			get
@@ -2111,8 +1736,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, x, w, z values</returns>
-
-
 		public Vector4 Wxwz
 		{
 			get
@@ -2122,9 +1745,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, y, w, z values</returns>
-
-
-
 		public Vector4 Xywz
 		{
 			get
@@ -2141,8 +1761,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, y, w, z values</returns>
-
-
 		public Vector4 Yywz
 		{
 			get
@@ -2152,8 +1770,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, y, w, z values</returns>
-
-
 		public Vector4 Zywz
 		{
 			get
@@ -2163,8 +1779,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, y, w, z values</returns>
-
-
 		public Vector4 Wywz
 		{
 			get
@@ -2174,8 +1788,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, z, w, z values</returns>
-
-
 		public Vector4 Xzwz
 		{
 			get
@@ -2185,8 +1797,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, z, w, z values</returns>
-
-
 		public Vector4 Yzwz
 		{
 			get
@@ -2196,8 +1806,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, z, w, z values</returns>
-
-
 		public Vector4 Zzwz
 		{
 			get
@@ -2207,8 +1815,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, z, w, z values</returns>
-
-
 		public Vector4 Wzwz
 		{
 			get
@@ -2218,8 +1824,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, w, w, z values</returns>
-
-
 		public Vector4 Xwwz
 		{
 			get
@@ -2229,8 +1833,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, w, w, z values</returns>
-
-
 		public Vector4 Ywwz
 		{
 			get
@@ -2240,8 +1842,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, w, w, z values</returns>
-
-
 		public Vector4 Zwwz
 		{
 			get
@@ -2251,8 +1851,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, w, w, z values</returns>
-
-
 		public Vector4 Wwwz
 		{
 			get
@@ -2262,8 +1860,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, x, x, w values</returns>
-
-
 		public Vector4 Xxxw
 		{
 			get
@@ -2273,8 +1869,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, x, x, w values</returns>
-
-
 		public Vector4 Yxxw
 		{
 			get
@@ -2284,8 +1878,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, x, x, w values</returns>
-
-
 		public Vector4 Zxxw
 		{
 			get
@@ -2295,8 +1887,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, x, x, w values</returns>
-
-
 		public Vector4 Wxxw
 		{
 			get
@@ -2306,8 +1896,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, y, x, w values</returns>
-
-
 		public Vector4 Xyxw
 		{
 			get
@@ -2317,8 +1905,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, y, x, w values</returns>
-
-
 		public Vector4 Yyxw
 		{
 			get
@@ -2328,9 +1914,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, y, x, w values</returns>
-
-
-
 		public Vector4 Zyxw
 		{
 			get
@@ -2347,8 +1930,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, y, x, w values</returns>
-
-
 		public Vector4 Wyxw
 		{
 			get
@@ -2358,8 +1939,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, z, x, w values</returns>
-
-
 		public Vector4 Xzxw
 		{
 			get
@@ -2369,9 +1948,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, z, x, w values</returns>
-
-
-
 		public Vector4 Yzxw
 		{
 			get
@@ -2388,8 +1964,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, z, x, w values</returns>
-
-
 		public Vector4 Zzxw
 		{
 			get
@@ -2399,8 +1973,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, z, x, w values</returns>
-
-
 		public Vector4 Wzxw
 		{
 			get
@@ -2410,8 +1982,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, w, x, w values</returns>
-
-
 		public Vector4 Xwxw
 		{
 			get
@@ -2421,8 +1991,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, w, x, w values</returns>
-
-
 		public Vector4 Ywxw
 		{
 			get
@@ -2432,8 +2000,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, w, x, w values</returns>
-
-
 		public Vector4 Zwxw
 		{
 			get
@@ -2443,8 +2009,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, w, x, w values</returns>
-
-
 		public Vector4 Wwxw
 		{
 			get
@@ -2454,8 +2018,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, x, y, w values</returns>
-
-
 		public Vector4 Xxyw
 		{
 			get
@@ -2465,8 +2027,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, x, y, w values</returns>
-
-
 		public Vector4 Yxyw
 		{
 			get
@@ -2476,9 +2036,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, x, y, w values</returns>
-
-
-
 		public Vector4 Zxyw
 		{
 			get
@@ -2495,8 +2052,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, x, y, w values</returns>
-
-
 		public Vector4 Wxyw
 		{
 			get
@@ -2506,8 +2061,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, y, y, w values</returns>
-
-
 		public Vector4 Xyyw
 		{
 			get
@@ -2517,8 +2070,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, y, y, w values</returns>
-
-
 		public Vector4 Yyyw
 		{
 			get
@@ -2528,8 +2079,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, y, y, w values</returns>
-
-
 		public Vector4 Zyyw
 		{
 			get
@@ -2539,8 +2088,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, y, y, w values</returns>
-
-
 		public Vector4 Wyyw
 		{
 			get
@@ -2550,9 +2097,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, z, y, w values</returns>
-
-
-
 		public Vector4 Xzyw
 		{
 			get
@@ -2569,8 +2113,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, z, y, w values</returns>
-
-
 		public Vector4 Yzyw
 		{
 			get
@@ -2580,8 +2122,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, z, y, w values</returns>
-
-
 		public Vector4 Zzyw
 		{
 			get
@@ -2591,8 +2131,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, z, y, w values</returns>
-
-
 		public Vector4 Wzyw
 		{
 			get
@@ -2602,8 +2140,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, w, y, w values</returns>
-
-
 		public Vector4 Xwyw
 		{
 			get
@@ -2613,8 +2149,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, w, y, w values</returns>
-
-
 		public Vector4 Ywyw
 		{
 			get
@@ -2624,8 +2158,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, w, y, w values</returns>
-
-
 		public Vector4 Zwyw
 		{
 			get
@@ -2635,8 +2167,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, w, y, w values</returns>
-
-
 		public Vector4 Wwyw
 		{
 			get
@@ -2646,8 +2176,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, x, z, w values</returns>
-
-
 		public Vector4 Xxzw
 		{
 			get
@@ -2657,9 +2185,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, x, z, w values</returns>
-
-
-
 		public Vector4 Yxzw
 		{
 			get
@@ -2676,8 +2201,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, x, z, w values</returns>
-
-
 		public Vector4 Zxzw
 		{
 			get
@@ -2687,8 +2210,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, x, z, w values</returns>
-
-
 		public Vector4 Wxzw
 		{
 			get
@@ -2698,9 +2219,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, y, z, w values</returns>
-
-
-
 		public Vector4 Xyzw
 		{
 			get
@@ -2717,8 +2235,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, y, z, w values</returns>
-
-
 		public Vector4 Yyzw
 		{
 			get
@@ -2728,8 +2244,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, y, z, w values</returns>
-
-
 		public Vector4 Zyzw
 		{
 			get
@@ -2739,8 +2253,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, y, z, w values</returns>
-
-
 		public Vector4 Wyzw
 		{
 			get
@@ -2750,8 +2262,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, z, z, w values</returns>
-
-
 		public Vector4 Xzzw
 		{
 			get
@@ -2761,8 +2271,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, z, z, w values</returns>
-
-
 		public Vector4 Yzzw
 		{
 			get
@@ -2772,8 +2280,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, z, z, w values</returns>
-
-
 		public Vector4 Zzzw
 		{
 			get
@@ -2783,8 +2289,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, z, z, w values</returns>
-
-
 		public Vector4 Wzzw
 		{
 			get
@@ -2794,8 +2298,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, w, z, w values</returns>
-
-
 		public Vector4 Xwzw
 		{
 			get
@@ -2805,8 +2307,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, w, z, w values</returns>
-
-
 		public Vector4 Ywzw
 		{
 			get
@@ -2816,8 +2316,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, w, z, w values</returns>
-
-
 		public Vector4 Zwzw
 		{
 			get
@@ -2827,8 +2325,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, w, z, w values</returns>
-
-
 		public Vector4 Wwzw
 		{
 			get
@@ -2838,8 +2334,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, x, w, w values</returns>
-
-
 		public Vector4 Xxww
 		{
 			get
@@ -2849,8 +2343,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, x, w, w values</returns>
-
-
 		public Vector4 Yxww
 		{
 			get
@@ -2860,8 +2352,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, x, w, w values</returns>
-
-
 		public Vector4 Zxww
 		{
 			get
@@ -2871,8 +2361,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, x, w, w values</returns>
-
-
 		public Vector4 Wxww
 		{
 			get
@@ -2882,8 +2370,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, y, w, w values</returns>
-
-
 		public Vector4 Xyww
 		{
 			get
@@ -2893,8 +2379,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, y, w, w values</returns>
-
-
 		public Vector4 Yyww
 		{
 			get
@@ -2904,8 +2388,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, y, w, w values</returns>
-
-
 		public Vector4 Zyww
 		{
 			get
@@ -2915,8 +2397,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, y, w, w values</returns>
-
-
 		public Vector4 Wyww
 		{
 			get
@@ -2926,8 +2406,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, z, w, w values</returns>
-
-
 		public Vector4 Xzww
 		{
 			get
@@ -2937,8 +2415,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, z, w, w values</returns>
-
-
 		public Vector4 Yzww
 		{
 			get
@@ -2948,8 +2424,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, z, w, w values</returns>
-
-
 		public Vector4 Zzww
 		{
 			get
@@ -2959,8 +2433,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, z, w, w values</returns>
-
-
 		public Vector4 Wzww
 		{
 			get
@@ -2970,8 +2442,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, w, w, w values</returns>
-
-
 		public Vector4 Xwww
 		{
 			get
@@ -2981,8 +2451,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, w, w, w values</returns>
-
-
 		public Vector4 Ywww
 		{
 			get
@@ -2992,8 +2460,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, w, w, w values</returns>
-
-
 		public Vector4 Zwww
 		{
 			get
@@ -3003,8 +2469,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, w, w, w values</returns>
-
-
 		public Vector4 Wwww
 		{
 			get
@@ -3014,8 +2478,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, x, x values</returns>
-
-
 		public Vector3 Xxx
 		{
 			get
@@ -3025,8 +2487,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, x, x values</returns>
-
-
 		public Vector3 Yxx
 		{
 			get
@@ -3036,8 +2496,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, x, x values</returns>
-
-
 		public Vector3 Zxx
 		{
 			get
@@ -3047,8 +2505,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, x, x values</returns>
-
-
 		public Vector3 Wxx
 		{
 			get
@@ -3058,8 +2514,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, y, x values</returns>
-
-
 		public Vector3 Xyx
 		{
 			get
@@ -3069,8 +2523,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, y, x values</returns>
-
-
 		public Vector3 Yyx
 		{
 			get
@@ -3080,9 +2532,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, y, x values</returns>
-
-
-
 		public Vector3 Zyx
 		{
 			get
@@ -3098,9 +2547,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, y, x values</returns>
-
-
-
 		public Vector3 Wyx
 		{
 			get
@@ -3116,8 +2562,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, z, x values</returns>
-
-
 		public Vector3 Xzx
 		{
 			get
@@ -3127,9 +2571,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, z, x values</returns>
-
-
-
 		public Vector3 Yzx
 		{
 			get
@@ -3145,8 +2586,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, z, x values</returns>
-
-
 		public Vector3 Zzx
 		{
 			get
@@ -3156,9 +2595,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, z, x values</returns>
-
-
-
 		public Vector3 Wzx
 		{
 			get
@@ -3174,8 +2610,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, w, x values</returns>
-
-
 		public Vector3 Xwx
 		{
 			get
@@ -3185,9 +2619,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, w, x values</returns>
-
-
-
 		public Vector3 Ywx
 		{
 			get
@@ -3203,9 +2634,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, w, x values</returns>
-
-
-
 		public Vector3 Zwx
 		{
 			get
@@ -3221,8 +2649,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, w, x values</returns>
-
-
 		public Vector3 Wwx
 		{
 			get
@@ -3232,8 +2658,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, x, y values</returns>
-
-
 		public Vector3 Xxy
 		{
 			get
@@ -3243,8 +2667,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, x, y values</returns>
-
-
 		public Vector3 Yxy
 		{
 			get
@@ -3254,9 +2676,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, x, y values</returns>
-
-
-
 		public Vector3 Zxy
 		{
 			get
@@ -3272,9 +2691,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, x, y values</returns>
-
-
-
 		public Vector3 Wxy
 		{
 			get
@@ -3290,8 +2706,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, y, y values</returns>
-
-
 		public Vector3 Xyy
 		{
 			get
@@ -3301,8 +2715,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, y, y values</returns>
-
-
 		public Vector3 Yyy
 		{
 			get
@@ -3312,8 +2724,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, y, y values</returns>
-
-
 		public Vector3 Zyy
 		{
 			get
@@ -3323,8 +2733,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, y, y values</returns>
-
-
 		public Vector3 Wyy
 		{
 			get
@@ -3334,9 +2742,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, z, y values</returns>
-
-
-
 		public Vector3 Xzy
 		{
 			get
@@ -3352,8 +2757,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, z, y values</returns>
-
-
 		public Vector3 Yzy
 		{
 			get
@@ -3363,8 +2766,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, z, y values</returns>
-
-
 		public Vector3 Zzy
 		{
 			get
@@ -3374,9 +2775,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, z, y values</returns>
-
-
-
 		public Vector3 Wzy
 		{
 			get
@@ -3392,9 +2790,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, w, y values</returns>
-
-
-
 		public Vector3 Xwy
 		{
 			get
@@ -3410,8 +2805,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, w, y values</returns>
-
-
 		public Vector3 Ywy
 		{
 			get
@@ -3421,9 +2814,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, w, y values</returns>
-
-
-
 		public Vector3 Zwy
 		{
 			get
@@ -3439,8 +2829,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, w, y values</returns>
-
-
 		public Vector3 Wwy
 		{
 			get
@@ -3450,8 +2838,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, x, z values</returns>
-
-
 		public Vector3 Xxz
 		{
 			get
@@ -3461,9 +2847,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, x, z values</returns>
-
-
-
 		public Vector3 Yxz
 		{
 			get
@@ -3479,8 +2862,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, x, z values</returns>
-
-
 		public Vector3 Zxz
 		{
 			get
@@ -3490,9 +2871,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, x, z values</returns>
-
-
-
 		public Vector3 Wxz
 		{
 			get
@@ -3508,9 +2886,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, y, z values</returns>
-
-
-
 		public Vector3 Xyz
 		{
 			get
@@ -3526,8 +2901,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, y, z values</returns>
-
-
 		public Vector3 Yyz
 		{
 			get
@@ -3537,8 +2910,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, y, z values</returns>
-
-
 		public Vector3 Zyz
 		{
 			get
@@ -3548,9 +2919,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, y, z values</returns>
-
-
-
 		public Vector3 Wyz
 		{
 			get
@@ -3566,8 +2934,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, z, z values</returns>
-
-
 		public Vector3 Xzz
 		{
 			get
@@ -3577,8 +2943,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, z, z values</returns>
-
-
 		public Vector3 Yzz
 		{
 			get
@@ -3588,8 +2952,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, z, z values</returns>
-
-
 		public Vector3 Zzz
 		{
 			get
@@ -3599,8 +2961,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, z, z values</returns>
-
-
 		public Vector3 Wzz
 		{
 			get
@@ -3610,9 +2970,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, w, z values</returns>
-
-
-
 		public Vector3 Xwz
 		{
 			get
@@ -3628,9 +2985,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, w, z values</returns>
-
-
-
 		public Vector3 Ywz
 		{
 			get
@@ -3646,8 +3000,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, w, z values</returns>
-
-
 		public Vector3 Zwz
 		{
 			get
@@ -3657,8 +3009,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, w, z values</returns>
-
-
 		public Vector3 Wwz
 		{
 			get
@@ -3668,8 +3018,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, x, w values</returns>
-
-
 		public Vector3 Xxw
 		{
 			get
@@ -3679,9 +3027,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, x, w values</returns>
-
-
-
 		public Vector3 Yxw
 		{
 			get
@@ -3697,9 +3042,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, x, w values</returns>
-
-
-
 		public Vector3 Zxw
 		{
 			get
@@ -3715,8 +3057,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, x, w values</returns>
-
-
 		public Vector3 Wxw
 		{
 			get
@@ -3726,9 +3066,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, y, w values</returns>
-
-
-
 		public Vector3 Xyw
 		{
 			get
@@ -3744,8 +3081,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, y, w values</returns>
-
-
 		public Vector3 Yyw
 		{
 			get
@@ -3755,9 +3090,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, y, w values</returns>
-
-
-
 		public Vector3 Zyw
 		{
 			get
@@ -3773,8 +3105,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, y, w values</returns>
-
-
 		public Vector3 Wyw
 		{
 			get
@@ -3784,9 +3114,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, z, w values</returns>
-
-
-
 		public Vector3 Xzw
 		{
 			get
@@ -3802,9 +3129,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, z, w values</returns>
-
-
-
 		public Vector3 Yzw
 		{
 			get
@@ -3820,8 +3144,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, z, w values</returns>
-
-
 		public Vector3 Zzw
 		{
 			get
@@ -3831,8 +3153,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, z, w values</returns>
-
-
 		public Vector3 Wzw
 		{
 			get
@@ -3842,8 +3162,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, w, w values</returns>
-
-
 		public Vector3 Xww
 		{
 			get
@@ -3853,8 +3171,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, w, w values</returns>
-
-
 		public Vector3 Yww
 		{
 			get
@@ -3864,8 +3180,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, w, w values</returns>
-
-
 		public Vector3 Zww
 		{
 			get
@@ -3875,8 +3189,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, w, w values</returns>
-
-
 		public Vector3 Www
 		{
 			get
@@ -3886,8 +3198,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, x values</returns>
-
-
 		public Vector2 Xx
 		{
 			get
@@ -3897,9 +3207,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, x values</returns>
-
-
-
 		public Vector2 Yx
 		{
 			get
@@ -3914,9 +3221,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, x values</returns>
-
-
-
 		public Vector2 Zx
 		{
 			get
@@ -3931,9 +3235,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, x values</returns>
-
-
-
 		public Vector2 Wx
 		{
 			get
@@ -3948,9 +3249,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, y values</returns>
-
-
-
 		public Vector2 Xy
 		{
 			get
@@ -3965,8 +3263,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, y values</returns>
-
-
 		public Vector2 Yy
 		{
 			get
@@ -3976,9 +3272,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, y values</returns>
-
-
-
 		public Vector2 Zy
 		{
 			get
@@ -3993,9 +3286,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, y values</returns>
-
-
-
 		public Vector2 Wy
 		{
 			get
@@ -4010,9 +3300,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, z values</returns>
-
-
-
 		public Vector2 Xz
 		{
 			get
@@ -4027,9 +3314,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, z values</returns>
-
-
-
 		public Vector2 Yz
 		{
 			get
@@ -4044,8 +3328,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, z values</returns>
-
-
 		public Vector2 Zz
 		{
 			get
@@ -4055,9 +3337,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, z values</returns>
-
-
-
 		public Vector2 Wz
 		{
 			get
@@ -4072,9 +3351,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's x, w values</returns>
-
-
-
 		public Vector2 Xw
 		{
 			get
@@ -4089,9 +3365,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's y, w values</returns>
-
-
-
 		public Vector2 Yw
 		{
 			get
@@ -4106,9 +3379,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's z, w values</returns>
-
-
-
 		public Vector2 Zw
 		{
 			get
@@ -4123,8 +3393,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <returns>a new vector consisting of the current vector's w, w values</returns>
-
-
 		public Vector2 Ww
 		{
 			get
@@ -4137,8 +3405,6 @@ namespace Sce.PlayStation.Core
 		/// return a 4 element vector consisting of the current vector with the w component set to 0
 		/// </summary>
 		/// <returns>a 4 element vector consisting of the current vector with the w component set to 0</returns>
-
-
 		public Vector4 Xyz0
 		{
 			get
@@ -4151,8 +3417,6 @@ namespace Sce.PlayStation.Core
 		/// return a 4 element vector consisting of the current vector with the w component set to 1
 		/// </summary>
 		/// <returns>a 4 element vector consisting of the current vector with the w component set to 1</returns>
-
-
 		public Vector4 Xyz1
 		{
 			get
@@ -4162,9 +3426,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <summary>Red</summary>
-
-
-
 		public float R
 		{
 			get
@@ -4178,9 +3439,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <summary>Green</summary>
-
-
-
 		public float G
 		{
 			get
@@ -4194,9 +3452,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <summary>Blue</summary>
-
-
-
 		public float B
 		{
 			get
@@ -4210,9 +3465,6 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <summary>Alpha</summary>
-
-
-
 		public float A
 		{
 			get
@@ -4230,7 +3482,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="y">y value to init with</param>
 		/// <param name="z">z value to init with</param>
 		/// <param name="w">w value to init with</param>
-
 		public Vector4(float x, float y, float z, float w)
 		{
 			this.X = x;
@@ -4242,7 +3493,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>constructor taking a Vector3 and a scalar float</summary>
 		/// <param name="xyz">xyz value to init with</param>
 		/// <param name="w">w value to init with</param>
-
 		public Vector4(Vector3 xyz, float w)
 		{
 			this.X = xyz.X;
@@ -4255,7 +3505,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="xy">xy values to init with</param>
 		/// <param name="z">z value to init with</param>
 		/// <param name="w">w value to init with</param>
-
 		public Vector4(Vector2 xy, float z, float w)
 		{
 			this.X = xy.X;
@@ -4267,7 +3516,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>constructor taking two Vector2s</summary>
 		/// <param name="xy">xy values to init with</param>
 		/// <param name="zw">zw values to init with</param>
-
 		public Vector4(Vector2 xy, Vector2 zw)
 		{
 			this.X = xy.X;
@@ -4278,7 +3526,6 @@ namespace Sce.PlayStation.Core
 
 		/// <summary>constructor taking one float</summary>
 		/// <param name="f">f</param>
-
 		public Vector4(float f)
 		{
 			this.X = f;
@@ -4289,7 +3536,6 @@ namespace Sce.PlayStation.Core
 
 		/// <summary>return the length of this vector</summary>
 		/// <returns>the length of this vector</returns>
-
 		public float Length()
 		{
 			return (float)Math.Sqrt((double)(this.X * this.X + this.Y * this.Y + this.Z * this.Z + this.W * this.W));
@@ -4297,7 +3543,6 @@ namespace Sce.PlayStation.Core
 
 		/// <summary>return the length squared of this vector</summary>
 		/// <returns>the length squared of this vector</returns>
-
 		public float LengthSquared()
 		{
 			return this.X * this.X + this.Y * this.Y + this.Z * this.Z + this.W * this.W;
@@ -4306,7 +3551,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>get the distance between this and another vector</summary>
 		/// <param name="v">the vector to get the distance to</param>
 		/// <returns>the distance bwteen this and the other vector</returns>
-
 		public float Distance(Vector4 v)
 		{
 			return this.Distance(ref v);
@@ -4315,7 +3559,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>get the distance between this and another vector</summary>
 		/// <param name="v">the vector to get the distance to</param>
 		/// <returns>the distance bwteen this and the other vector</returns>
-
 		public float Distance(ref Vector4 v)
 		{
 			float num = this.X - v.X;
@@ -4328,7 +3571,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>get the distance squared between this and another vector</summary>
 		/// <param name="v">the vector to get the distance squared to</param>
 		/// <returns>the distance between this and the other vector squared</returns>
-
 		public float DistanceSquared(Vector4 v)
 		{
 			return this.DistanceSquared(ref v);
@@ -4337,7 +3579,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>get the distance squared between this and another vector</summary>
 		/// <param name="v">the vector to get the distance squared to</param>
 		/// <returns>the distance between this and the other vector squared</returns>
-
 		public float DistanceSquared(ref Vector4 v)
 		{
 			float num = this.X - v.X;
@@ -4350,7 +3591,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>dot product of this and v</summary>
 		/// <param name="v">vector to take the dot product with</param>
 		/// <returns>dot product of this and v</returns>
-
 		public float Dot(Vector4 v)
 		{
 			return this.X * v.X + this.Y * v.Y + this.Z * v.Z + this.W * v.W;
@@ -4359,7 +3599,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>dot product of this and v</summary>
 		/// <param name="v">vector to take the dot product with</param>
 		/// <returns>dot product of this and v</returns>
-
 		public float Dot(ref Vector4 v)
 		{
 			return this.X * v.X + this.Y * v.Y + this.Z * v.Z + this.W * v.W;
@@ -4367,7 +3606,6 @@ namespace Sce.PlayStation.Core
 
 		/// <summary>return this vector normalized</summary>
 		/// <returns>this vector normalized</returns>
-
 		public Vector4 Normalize()
 		{
 			Vector4 result;
@@ -4377,7 +3615,6 @@ namespace Sce.PlayStation.Core
 
 		/// <summary>return this vector normalized</summary>
 		/// <param name="result">this vector normalized</param>
-
 		public void Normalize(out Vector4 result)
 		{
 			float num = 1f / this.Length();
@@ -4389,7 +3626,6 @@ namespace Sce.PlayStation.Core
 
 		/// <summary>element wise absolute value</summary>
 		/// <returns>element wise absolute value of this</returns>
-
 		public Vector4 Abs()
 		{
 			Vector4 result;
@@ -4399,7 +3635,6 @@ namespace Sce.PlayStation.Core
 
 		/// <summary>element wise absolute value</summary>
 		/// <param name="result">element wise absolute value of this</param>
-
 		public void Abs(out Vector4 result)
 		{
 			result.X = ((this.X >= 0f) ? this.X : (-this.X));
@@ -4411,7 +3646,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>element wise min</summary>
 		/// <param name="v">vector to compare to this</param>
 		/// <returns>the min of this and v</returns>
-
 		public Vector4 Min(Vector4 v)
 		{
 			Vector4 result;
@@ -4422,7 +3656,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>element wise min</summary>
 		/// <param name="v">vector to compare to this</param>
 		/// <param name="result">the min of this and v</param>
-
 		public void Min(ref Vector4 v, out Vector4 result)
 		{
 			result.X = ((this.X <= v.X) ? this.X : v.X);
@@ -4434,7 +3667,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>element wise min</summary>
 		/// <param name="f">scalar to compare to this</param>
 		/// <returns>the min of this and f</returns>
-
 		public Vector4 Min(float f)
 		{
 			Vector4 result;
@@ -4445,7 +3677,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>element wise min</summary>
 		/// <param name="f">scalar to compare to this</param>
 		/// <param name="result">the min of this and f</param>
-
 		public void Min(float f, out Vector4 result)
 		{
 			result.X = ((this.X <= f) ? this.X : f);
@@ -4457,7 +3688,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>element wise max</summary>
 		/// <param name="v">vector to compare to this</param>
 		/// <returns>the max of this and v</returns>
-
 		public Vector4 Max(Vector4 v)
 		{
 			Vector4 result;
@@ -4468,7 +3698,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>element wise max</summary>
 		/// <param name="v">vector to compare to this</param>
 		/// <param name="result">the max of this and v</param>
-
 		public void Max(ref Vector4 v, out Vector4 result)
 		{
 			result.X = ((this.X >= v.X) ? this.X : v.X);
@@ -4480,7 +3709,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>element wise max</summary>
 		/// <param name="f">scalar to compare to this</param>
 		/// <returns>the max of this and f</returns>
-
 		public Vector4 Max(float f)
 		{
 			Vector4 result;
@@ -4491,7 +3719,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>element wise max</summary>
 		/// <param name="f">scalar to compare to this</param>
 		/// <param name="result">the max of this and f</param>
-
 		public void Max(float f, out Vector4 result)
 		{
 			result.X = ((this.X >= f) ? this.X : f);
@@ -4504,7 +3731,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="min">min values to clamp against</param>
 		/// <param name="max">max values to clamp against</param>
 		/// <returns>a new vector consisting of each element of this clamped between min and max</returns>
-
 		public Vector4 Clamp(Vector4 min, Vector4 max)
 		{
 			Vector4 result;
@@ -4516,7 +3742,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="min">min values to clamp against</param>
 		/// <param name="max">max values to clamp against</param>
 		/// <param name="result">a new vector consisting of each element of this clamped between min and max</param>
-
 		public void Clamp(ref Vector4 min, ref Vector4 max, out Vector4 result)
 		{
 			result.X = ((this.X <= min.X) ? min.X : ((this.X >= max.X) ? max.X : this.X));
@@ -4529,7 +3754,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="min">min value to clamp against</param>
 		/// <param name="max">max value to clamp against</param>
 		/// <returns>a new vector consisting of each element of this clamped between min and max</returns>
-
 		public Vector4 Clamp(float min, float max)
 		{
 			Vector4 result;
@@ -4541,7 +3765,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="min">min value to clamp against</param>
 		/// <param name="max">max value to clamp against</param>
 		/// <param name="result">a new vector consisting of each element of this clamped between min and max</param>
-
 		public void Clamp(float min, float max, out Vector4 result)
 		{
 			result.X = ((this.X <= min) ? min : ((this.X >= max) ? max : this.X));
@@ -4554,7 +3777,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="min">min values to repeat over</param>
 		/// <param name="max">max values to repeat over</param>
 		/// <returns>a new vector consisting of each element of this repeated between min and max</returns>
-
 		public Vector4 Repeat(Vector4 min, Vector4 max)
 		{
 			Vector4 result;
@@ -4566,7 +3788,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="min">min values to repeat over</param>
 		/// <param name="max">max values to repeat over</param>
 		/// <param name="result">a new vector consisting of each element of this repeated between min and max</param>
-
 		public void Repeat(ref Vector4 min, ref Vector4 max, out Vector4 result)
 		{
 			result.X = FMath.Repeat(this.X, min.X, max.X);
@@ -4579,7 +3800,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="min">min value to repeat over</param>
 		/// <param name="max">max value to repeat over</param>
 		/// <returns>a new vector consisting of each element of this repeated between min and max</returns>
-
 		public Vector4 Repeat(float min, float max)
 		{
 			Vector4 result;
@@ -4591,7 +3811,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="min">min value to repeat over</param>
 		/// <param name="max">max value to repeat over</param>
 		/// <param name="result">a new vector consisting of each element of this repeated between min and max</param>
-
 		public void Repeat(float min, float max, out Vector4 result)
 		{
 			result.X = FMath.Repeat(this.X, min, max);
@@ -4604,7 +3823,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="v">the other vector to lerp to</param>
 		/// <param name="f">lerp amount</param>
 		/// <returns>a Vector4 where each element is the result of lerping f between the corresponding elements of this and other</returns>
-
 		public Vector4 Lerp(Vector4 v, float f)
 		{
 			Vector4 result;
@@ -4616,7 +3834,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="v">the other vector to lerp to</param>
 		/// <param name="f">lerp amount</param>
 		/// <param name="result">a Vector4 where each element is the result of lerping f between the corresponding elements of this and other</param>
-
 		public void Lerp(ref Vector4 v, float f, out Vector4 result)
 		{
 			float num = 1f - f;
@@ -4630,7 +3847,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="v">target vector</param>
 		/// <param name="length">step length</param>
 		/// <returns>a new vector moved to target vector by specified length</returns>
-
 		public Vector4 MoveTo(Vector4 v, float length)
 		{
 			Vector4 result;
@@ -4642,7 +3858,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="v">target vector</param>
 		/// <param name="length">step length</param>
 		/// <param name="result">a new vector moved to target vector by specified length</param>
-
 		public void MoveTo(ref Vector4 v, float length, out Vector4 result)
 		{
 			float num = this.Distance(v);
@@ -4652,7 +3867,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>return this + v</summary>
 		/// <param name="v">vector</param>
 		/// <returns>this + v</returns>
-
 		public Vector4 Add(Vector4 v)
 		{
 			Vector4 result;
@@ -4663,7 +3877,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>result = this + v</summary>
 		/// <param name="v">vector</param>
 		/// <param name="result">this + v</param>
-
 		public void Add(ref Vector4 v, out Vector4 result)
 		{
 			result.X = this.X + v.X;
@@ -4675,7 +3888,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>return this - v</summary>
 		/// <param name="v">vector</param>
 		/// <returns>this - v</returns>
-
 		public Vector4 Subtract(Vector4 v)
 		{
 			Vector4 result;
@@ -4686,7 +3898,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>result = this - v</summary>
 		/// <param name="v">vector</param>
 		/// <param name="result">this - v</param>
-
 		public void Subtract(ref Vector4 v, out Vector4 result)
 		{
 			result.X = this.X - v.X;
@@ -4698,7 +3909,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>return this * v</summary>
 		/// <param name="v">vector</param>
 		/// <returns>this * v</returns>
-
 		public Vector4 Multiply(Vector4 v)
 		{
 			Vector4 result;
@@ -4709,7 +3919,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>result = this * v</summary>
 		/// <param name="v">vector</param>
 		/// <param name="result">this * v</param>
-
 		public void Multiply(ref Vector4 v, out Vector4 result)
 		{
 			result.X = this.X * v.X;
@@ -4721,7 +3930,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>return this * f</summary>
 		/// <param name="f">scalar</param>
 		/// <returns>this * f</returns>
-
 		public Vector4 Multiply(float f)
 		{
 			Vector4 result;
@@ -4732,7 +3940,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>result = this * f</summary>
 		/// <param name="f">scalar</param>
 		/// <param name="result">this * f</param>
-
 		public void Multiply(float f, out Vector4 result)
 		{
 			result.X = this.X * f;
@@ -4744,7 +3951,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>return this / v</summary>
 		/// <param name="v">vector</param>
 		/// <returns>this / v</returns>
-
 		public Vector4 Divide(Vector4 v)
 		{
 			Vector4 result;
@@ -4755,7 +3961,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>result = this / v</summary>
 		/// <param name="v">vector</param>
 		/// <param name="result">this / v</param>
-
 		public void Divide(ref Vector4 v, out Vector4 result)
 		{
 			result.X = this.X / v.X;
@@ -4767,7 +3972,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>return this / f</summary>
 		/// <param name="f">scalar</param>
 		/// <returns>this / f</returns>
-
 		public Vector4 Divide(float f)
 		{
 			Vector4 result;
@@ -4778,7 +3982,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>result = this / f</summary>
 		/// <param name="f">scalar</param>
 		/// <param name="result">this / f</param>
-
 		public void Divide(float f, out Vector4 result)
 		{
 			float num = 1f / f;
@@ -4790,7 +3993,6 @@ namespace Sce.PlayStation.Core
 
 		/// <summary>return -this</summary>
 		/// <returns>-this</returns>
-
 		public Vector4 Negate()
 		{
 			Vector4 result;
@@ -4800,7 +4002,6 @@ namespace Sce.PlayStation.Core
 
 		/// <summary>result = -this</summary>
 		/// <param name="result">-this</param>
-
 		public void Negate(out Vector4 result)
 		{
 			result.X = -this.X;
@@ -4809,7 +4010,6 @@ namespace Sce.PlayStation.Core
 			result.W = -this.W;
 		}
 
-
 		public bool IsUnit(float epsilon)
 		{
 			return Math.Abs(this.Length() - 1f) <= epsilon;
@@ -4817,7 +4017,6 @@ namespace Sce.PlayStation.Core
 
 		/// <summary>test if all elements of this are zero</summary>
 		/// <returns>true if all elements of this are zero, false otherwise</returns>
-
 		public bool IsZero()
 		{
 			return this.X == 0f && this.Y == 0f && this.Z == 0f && this.W == 0f;
@@ -4825,7 +4024,6 @@ namespace Sce.PlayStation.Core
 
 		/// <summary>test if all elements of this are one</summary>
 		/// <returns>true if all elements of this are one, false otherwise</returns>
-
 		public bool IsOne()
 		{
 			return this.X == 1f && this.Y == 1f && this.Z == 1f && this.W == 1f;
@@ -4833,7 +4031,6 @@ namespace Sce.PlayStation.Core
 
 		/// <summary>test if any elements of this are Infinity</summary>
 		/// <returns>true if any elements are Infinity, false otherwise</returns>
-
 		public bool IsInfinity()
 		{
 			return float.IsInfinity(this.X) || float.IsInfinity(this.Y) || float.IsInfinity(this.Z) || float.IsInfinity(this.W);
@@ -4841,12 +4038,10 @@ namespace Sce.PlayStation.Core
 
 		/// <summary>test if any elements of this are NaN</summary>
 		/// <returns>true if any elements of this are NaN, false otherwise</returns>
-
 		public bool IsNaN()
 		{
 			return float.IsNaN(this.X) || float.IsNaN(this.Y) || float.IsNaN(this.Z) || float.IsNaN(this.W);
 		}
-
 
 		public bool Equals(Vector4 v, float epsilon)
 		{
@@ -4856,7 +4051,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>equality test</summary>
 		/// <param name="v">the vector to compare this to</param>
 		/// <returns>true if this == v, false otherwise</returns>
-
 		public bool Equals(Vector4 v)
 		{
 			return this.X == v.X && this.Y == v.Y && this.Z == v.Z && this.W == v.W;
@@ -4865,7 +4059,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>equality test</summary>
 		/// <param name="o">the object to compare this to</param>
 		/// <returns>true if this == o, false otherwise</returns>
-
 		public override bool Equals(object o)
 		{
 			return o is Vector4 && this.Equals((Vector4)o);
@@ -4873,7 +4066,6 @@ namespace Sce.PlayStation.Core
 
 		/// <summary>get the string representation of this vector</summary>
 		/// <returns>the string representation of this vector</returns>
-
 		public override string ToString()
 		{
 			return string.Format("({0:F6},{1:F6},{2:F6},{3:F6})", new object[]
@@ -4887,7 +4079,6 @@ namespace Sce.PlayStation.Core
 
 		/// <summary>gets the hash code for this vector</summary>
 		/// <returns>integer hash code</returns>
-
 		public override int GetHashCode()
 		{
 			return this.X.GetHashCode() ^ this.Y.GetHashCode() ^ this.Z.GetHashCode() ^ this.W.GetHashCode();
@@ -4896,7 +4087,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>static function equivalent to Length()</summary>
 		/// <param name="v">vector</param>
 		/// <returns>the length of the vector</returns>
-
 		public static float Length(Vector4 v)
 		{
 			return v.Length();
@@ -4905,7 +4095,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>static function equivalent to Length()</summary>
 		/// <param name="v">vector</param>
 		/// <returns>the length of the vector</returns>
-
 		public static float Length(ref Vector4 v)
 		{
 			return v.Length();
@@ -4914,7 +4103,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>static function equivalent to LengthSquared()</summary>
 		/// <param name="v">vector</param>
 		/// <returns>the length squared of the vector</returns>
-
 		public static float LengthSquared(Vector4 v)
 		{
 			return v.LengthSquared();
@@ -4923,7 +4111,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>static function equivalent to LengthSquared()</summary>
 		/// <param name="v">vector</param>
 		/// <returns>the length squared of the vector</returns>
-
 		public static float LengthSquared(ref Vector4 v)
 		{
 			return v.LengthSquared();
@@ -4933,7 +4120,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="v1">vector 1</param>
 		/// <param name="v2">vector 2</param>
 		/// <returns>the distance bwteen v1 and v2</returns>
-
 		public static float Distance(Vector4 v1, Vector4 v2)
 		{
 			return v1.Distance(ref v2);
@@ -4943,7 +4129,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="v1">vector 1</param>
 		/// <param name="v2">vector 2</param>
 		/// <returns>the distance bwteen v1 and v2</returns>
-
 		public static float Distance(ref Vector4 v1, ref Vector4 v2)
 		{
 			return v1.Distance(ref v2);
@@ -4953,7 +4138,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="v1">vector 1</param>
 		/// <param name="v2">vector 2</param>
 		/// <returns>the distance between v1 and v2 squared</returns>
-
 		public static float DistanceSquared(Vector4 v1, Vector4 v2)
 		{
 			return v1.DistanceSquared(ref v2);
@@ -4963,7 +4147,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="v1">vector 1</param>
 		/// <param name="v2">vector 2</param>
 		/// <returns>the distance between v1 and v2 squared</returns>
-
 		public static float DistanceSquared(ref Vector4 v1, ref Vector4 v2)
 		{
 			return v1.DistanceSquared(ref v2);
@@ -4973,7 +4156,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="v1">vector 1</param>
 		/// <param name="v2">vector 2</param>
 		/// <returns>dot product of v1 and v2</returns>
-
 		public static float Dot(Vector4 v1, Vector4 v2)
 		{
 			return v1.Dot(ref v2);
@@ -4983,7 +4165,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="v1">vector 1</param>
 		/// <param name="v2">vector 2</param>
 		/// <returns>dot product of v1 and v2</returns>
-
 		public static float Dot(ref Vector4 v1, ref Vector4 v2)
 		{
 			return v1.Dot(ref v2);
@@ -4992,7 +4173,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>static function equivalent to Normalize()</summary>
 		/// <param name="v">vector</param>
 		/// <returns>the vector normalized</returns>
-
 		public static Vector4 Normalize(Vector4 v)
 		{
 			Vector4 result;
@@ -5003,7 +4183,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>static function equivalent to Normalize(out Vector4)</summary>
 		/// <param name="v">vector</param>
 		/// <param name="result">the vector normalized</param>
-
 		public static void Normalize(ref Vector4 v, out Vector4 result)
 		{
 			v.Normalize(out result);
@@ -5012,7 +4191,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>static function equivalent to Abs()</summary>
 		/// <param name="v">vector</param>
 		/// <returns>element wise absolute value of v</returns>
-
 		public static Vector4 Abs(Vector4 v)
 		{
 			Vector4 result;
@@ -5023,7 +4201,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>static function equivalent to Abs(out Vector4)</summary>
 		/// <param name="v">vector</param>
 		/// <param name="result">element wise absolute value of v</param>
-
 		public static void Abs(ref Vector4 v, out Vector4 result)
 		{
 			v.Abs(out result);
@@ -5033,7 +4210,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="v1">vector 1</param>
 		/// <param name="v2">vector 2</param>
 		/// <returns>the min of v1 and v2</returns>
-
 		public static Vector4 Min(Vector4 v1, Vector4 v2)
 		{
 			Vector4 result;
@@ -5045,7 +4221,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="v1">vector 1</param>
 		/// <param name="v2">vector 2</param>
 		/// <param name="result">the min of v1 and v2</param>
-
 		public static void Min(ref Vector4 v1, ref Vector4 v2, out Vector4 result)
 		{
 			v1.Min(ref v2, out result);
@@ -5055,7 +4230,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="v">vector</param>
 		/// <param name="f">scalar</param>
 		/// <returns>the min of v and f</returns>
-
 		public static Vector4 Min(Vector4 v, float f)
 		{
 			Vector4 result;
@@ -5067,7 +4241,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="v">vector</param>
 		/// <param name="f">scalar</param>
 		/// <param name="result">the min of v and f</param>
-
 		public static void Min(ref Vector4 v, float f, out Vector4 result)
 		{
 			v.Min(f, out result);
@@ -5077,7 +4250,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="v1">vector 1</param>
 		/// <param name="v2">vector 2</param>
 		/// <returns>the max of v1 and v2</returns>
-
 		public static Vector4 Max(Vector4 v1, Vector4 v2)
 		{
 			Vector4 result;
@@ -5089,7 +4261,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="v1">vector 1</param>
 		/// <param name="v2">vector 2</param>
 		/// <param name="result">the max of v1 and v2</param>
-
 		public static void Max(ref Vector4 v1, ref Vector4 v2, out Vector4 result)
 		{
 			v1.Max(ref v2, out result);
@@ -5099,7 +4270,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="v">vector</param>
 		/// <param name="f">scalar</param>
 		/// <returns>the max of v and f</returns>
-
 		public static Vector4 Max(Vector4 v, float f)
 		{
 			Vector4 result;
@@ -5111,7 +4281,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="v">vector</param>
 		/// <param name="f">scalar</param>
 		/// <param name="result">the max of v and f</param>
-
 		public static void Max(ref Vector4 v, float f, out Vector4 result)
 		{
 			v.Max(f, out result);
@@ -5122,7 +4291,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="min">min values to clamp against</param>
 		/// <param name="max">max values to clamp against</param>
 		/// <returns>a new vector consisting of each element of v clamped between min and max</returns>
-
 		public static Vector4 Clamp(Vector4 v, Vector4 min, Vector4 max)
 		{
 			Vector4 result;
@@ -5135,7 +4303,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="min">min values to clamp against</param>
 		/// <param name="max">max values to clamp against</param>
 		/// <param name="result">a new vector consisting of each element of v clamped between min and max</param>
-
 		public static void Clamp(ref Vector4 v, ref Vector4 min, ref Vector4 max, out Vector4 result)
 		{
 			v.Clamp(ref min, ref max, out result);
@@ -5146,7 +4313,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="min">min value to clamp against</param>
 		/// <param name="max">max value to clamp against</param>
 		/// <returns>a new vector consisting of each element of v clamped between min and max</returns>
-
 		public static Vector4 Clamp(Vector4 v, float min, float max)
 		{
 			Vector4 result;
@@ -5159,7 +4325,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="min">min value to clamp against</param>
 		/// <param name="max">max value to clamp against</param>
 		/// <param name="result">a new vector consisting of each element of v clamped between min and max</param>
-
 		public static void Clamp(ref Vector4 v, float min, float max, out Vector4 result)
 		{
 			v.Clamp(min, max, out result);
@@ -5170,7 +4335,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="min">min values to repeat over</param>
 		/// <param name="max">max values to repeat over</param>
 		/// <returns>a new vector consisting of each element of v repeated between min and max</returns>
-
 		public static Vector4 Repeat(Vector4 v, Vector4 min, Vector4 max)
 		{
 			Vector4 result;
@@ -5183,7 +4347,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="min">min values to repeat over</param>
 		/// <param name="max">max values to repeat over</param>
 		/// <param name="result">a new vector consisting of each element of v repeated between min and max</param>
-
 		public static void Repeat(ref Vector4 v, ref Vector4 min, ref Vector4 max, out Vector4 result)
 		{
 			v.Repeat(ref min, ref max, out result);
@@ -5194,7 +4357,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="min">min value to repeat over</param>
 		/// <param name="max">max value to repeat over</param>
 		/// <returns>a new vector consisting of each element of v repeated between min and max</returns>
-
 		public static Vector4 Repeat(Vector4 v, float min, float max)
 		{
 			Vector4 result;
@@ -5207,7 +4369,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="min">min value to repeat over</param>
 		/// <param name="max">max value to repeat over</param>
 		/// <param name="result">a new vector consisting of each element of v repeated between min and max</param>
-
 		public static void Repeat(ref Vector4 v, float min, float max, out Vector4 result)
 		{
 			v.Repeat(min, max, out result);
@@ -5218,7 +4379,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="v2">vector 2</param>
 		/// <param name="f">lerp amount</param>
 		/// <returns>a Vector4 where each element is the result of lerping f between the corresponding elements of v1 and v2</returns>
-
 		public static Vector4 Lerp(Vector4 v1, Vector4 v2, float f)
 		{
 			Vector4 result;
@@ -5231,7 +4391,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="v2">vector 2</param>
 		/// <param name="f">lerp amount</param>
 		/// <param name="result">a Vector4 where each element is the result of lerping f between the corresponding elements of v1 and v2</param>
-
 		public static void Lerp(ref Vector4 v1, ref Vector4 v2, float f, out Vector4 result)
 		{
 			v1.Lerp(ref v2, f, out result);
@@ -5242,7 +4401,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="v2">vector 2</param>
 		/// <param name="length">step length</param>
 		/// <returns>a new vector moved to target vector by specified length</returns>
-
 		public static Vector4 MoveTo(Vector4 v1, Vector4 v2, float length)
 		{
 			Vector4 result;
@@ -5255,7 +4413,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="v2">vector 2</param>
 		/// <param name="length">step length</param>
 		/// <param name="result">a new vector moved to target vector by specified length</param>
-
 		public static void MoveTo(ref Vector4 v1, ref Vector4 v2, float length, out Vector4 result)
 		{
 			v1.MoveTo(ref v2, length, out result);
@@ -5265,7 +4422,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="v1">vector 1</param>
 		/// <param name="v2">vector 2</param>
 		/// <returns>v1 + v2</returns>
-
 		public static Vector4 Add(Vector4 v1, Vector4 v2)
 		{
 			Vector4 result;
@@ -5277,7 +4433,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="v1">vector 1</param>
 		/// <param name="v2">vector 2</param>
 		/// <param name="result">v1 + v2</param>
-
 		public static void Add(ref Vector4 v1, ref Vector4 v2, out Vector4 result)
 		{
 			v1.Add(ref v2, out result);
@@ -5287,7 +4442,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="v1">vector 1</param>
 		/// <param name="v2">vector 2</param>
 		/// <returns>v1 - v2</returns>
-
 		public static Vector4 Subtract(Vector4 v1, Vector4 v2)
 		{
 			Vector4 result;
@@ -5299,7 +4453,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="v1">vector 1</param>
 		/// <param name="v2">vector 2</param>
 		/// <param name="result">v1 - v2</param>
-
 		public static void Subtract(ref Vector4 v1, ref Vector4 v2, out Vector4 result)
 		{
 			v1.Subtract(ref v2, out result);
@@ -5309,7 +4462,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="v1">vector 1</param>
 		/// <param name="v2">vector 2</param>
 		/// <returns>v1 * v2</returns>
-
 		public static Vector4 Multiply(Vector4 v1, Vector4 v2)
 		{
 			Vector4 result;
@@ -5321,7 +4473,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="v1">vector 1</param>
 		/// <param name="v2">vector 2</param>
 		/// <param name="result">v1 * v2</param>
-
 		public static void Multiply(ref Vector4 v1, ref Vector4 v2, out Vector4 result)
 		{
 			v1.Multiply(ref v2, out result);
@@ -5331,7 +4482,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="v">vector</param>
 		/// <param name="f">scalar</param>
 		/// <returns>v * f</returns>
-
 		public static Vector4 Multiply(Vector4 v, float f)
 		{
 			Vector4 result;
@@ -5343,7 +4493,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="v">vector</param>
 		/// <param name="f">scalar</param>
 		/// <param name="result">v * f</param>
-
 		public static void Multiply(ref Vector4 v, float f, out Vector4 result)
 		{
 			v.Multiply(f, out result);
@@ -5353,7 +4502,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="v1">vector 1</param>
 		/// <param name="v2">vector 2</param>
 		/// <returns>v1 / v2</returns>
-
 		public static Vector4 Divide(Vector4 v1, Vector4 v2)
 		{
 			Vector4 result;
@@ -5365,7 +4513,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="v1">vector 1</param>
 		/// <param name="v2">vector 2</param>
 		/// <param name="result">v1 / v2</param>
-
 		public static void Divide(ref Vector4 v1, ref Vector4 v2, out Vector4 result)
 		{
 			v1.Divide(ref v2, out result);
@@ -5375,7 +4522,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="v">vector</param>
 		/// <param name="f">scalar</param>
 		/// <returns>v / f</returns>
-
 		public static Vector4 Divide(Vector4 v, float f)
 		{
 			Vector4 result;
@@ -5387,7 +4533,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="v">vector</param>
 		/// <param name="f">scalar</param>
 		/// <param name="result">v / f</param>
-
 		public static void Divide(ref Vector4 v, float f, out Vector4 result)
 		{
 			v.Divide(f, out result);
@@ -5396,7 +4541,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>static function equivalent to Negate()</summary>
 		/// <param name="v">vector</param>
 		/// <returns>-v</returns>
-
 		public static Vector4 Negate(Vector4 v)
 		{
 			Vector4 result;
@@ -5407,7 +4551,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>static function equivalent to Negate(out Vector4)</summary>
 		/// <param name="v">vector</param>
 		/// <param name="result">-v</param>
-
 		public static void Negate(ref Vector4 v, out Vector4 result)
 		{
 			v.Negate(out result);
@@ -5417,7 +4560,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="v1">vector 1</param>
 		/// <param name="v2">vector 2</param>
 		/// <returns>true if vector 1 == vector 2, false otherwise</returns>
-
 		public static bool operator ==(Vector4 v1, Vector4 v2)
 		{
 			return v1.X == v2.X && v1.Y == v2.Y && v1.Z == v2.Z && v1.W == v2.W;
@@ -5427,7 +4569,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="v1">vector 1</param>
 		/// <param name="v2">vector 2</param>
 		/// <returns>true if vector 1 != vector 2, false otherwise</returns>
-
 		public static bool operator !=(Vector4 v1, Vector4 v2)
 		{
 			return v1.X != v2.X || v1.Y != v2.Y || v1.Z != v2.Z || v1.W != v2.W;
@@ -5437,7 +4578,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="v1">vector 1</param>
 		/// <param name="v2">vector 2</param>
 		/// <returns>vector 1 + vector 2</returns>
-
 		public static Vector4 operator +(Vector4 v1, Vector4 v2)
 		{
 			Vector4 result;
@@ -5449,7 +4589,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="v">the vector to add</param>
 		/// <param name="f">the scalar float to add each element of the vector</param>
 		/// <returns>a new vector with f added to each element of v</returns>
-
 		public static Vector4 operator +(Vector4 v, float f)
 		{
 			return new Vector4(v.X + f, v.Y + f, v.Z + f, v.W + f);
@@ -5459,7 +4598,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="f">the scalar float to add each element of the vector</param>
 		/// <param name="v">the vector to add</param>
 		/// <returns>a new vector with f added to each element of v</returns>
-
 		public static Vector4 operator +(float f, Vector4 v)
 		{
 			return new Vector4(f + v.X, f + v.Y, f + v.Z, f + v.W);
@@ -5469,7 +4607,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="v1">vector 1</param>
 		/// <param name="v2">vector 2</param>
 		/// <returns>vector 1 - vector 2</returns>
-
 		public static Vector4 operator -(Vector4 v1, Vector4 v2)
 		{
 			Vector4 result;
@@ -5481,7 +4618,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="v">the vector to subtract from</param>
 		/// <param name="f">the scalar float to subtract from each element of the vector</param>
 		/// <returns>a new vector with f subtracted from each element of v</returns>
-
 		public static Vector4 operator -(Vector4 v, float f)
 		{
 			return new Vector4(v.X - f, v.Y - f, v.Z - f, v.W - f);
@@ -5491,7 +4627,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="f">the scalar that we subtract v from</param>
 		/// <param name="v">the vector to subtract</param>
 		/// <returns>a new vector consisting of v subtracted from the vector {f, f, f, f}</returns>
-
 		public static Vector4 operator -(float f, Vector4 v)
 		{
 			return new Vector4(f - v.X, f - v.Y, f - v.Z, f - v.W);
@@ -5500,7 +4635,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>unary minus operator</summary>
 		/// <param name="v">vector to negate</param>
 		/// <returns>unary minus applied to each member of v</returns>
-
 		public static Vector4 operator -(Vector4 v)
 		{
 			Vector4 result;
@@ -5512,7 +4646,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="v1">vector 1</param>
 		/// <param name="v2">vector 2</param>
 		/// <returns>vector 1 * vector 2</returns>
-
 		public static Vector4 operator *(Vector4 v1, Vector4 v2)
 		{
 			Vector4 result;
@@ -5524,7 +4657,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="v">the vector to multiply</param>
 		/// <param name="f">the scalar to multiply each element of the vector by</param>
 		/// <returns>a new vector consisting of each element of vector multiplied by f</returns>
-
 		public static Vector4 operator *(Vector4 v, float f)
 		{
 			Vector4 result;
@@ -5536,7 +4668,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="f">the scalar to multiply each element of the vector by</param>
 		/// <param name="v">the vector to multiply</param>
 		/// <returns>a new vector consisting of each element of vector multiplied by f</returns>
-
 		public static Vector4 operator *(float f, Vector4 v)
 		{
 			Vector4 result;
@@ -5548,7 +4679,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="v1">vector 1</param>
 		/// <param name="v2">vector 2</param>
 		/// <returns>vector 1 / vector 2</returns>
-
 		public static Vector4 operator /(Vector4 v1, Vector4 v2)
 		{
 			Vector4 result;
@@ -5560,7 +4690,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="v">the vector to divide by scalar</param>
 		/// <param name="f">the scalar to divide by</param>
 		/// <returns>a new Vector4 consisting of each element of v divided by f</returns>
-
 		public static Vector4 operator /(Vector4 v, float f)
 		{
 			Vector4 result;
@@ -5572,56 +4701,45 @@ namespace Sce.PlayStation.Core
 		/// <param name="f">the scalar to divide by vector</param>
 		/// <param name="v">the vector to divide by</param>
 		/// <returns>a new vector {f, f, f, f} divided by v</returns>
-
 		public static Vector4 operator /(float f, Vector4 v)
 		{
 			return new Vector4(f / v.X, f / v.Y, f / v.Z, f / v.W);
 		}
 
 		/// <summary>X</summary>
-
 		public float X;
 
 		/// <summary>Y</summary>
-
 		public float Y;
 
 		/// <summary>Z</summary>
-
 		public float Z;
 
 		/// <summary>W</summary>
-
 		public float W;
 
 		/// <summary>return a new vector of all zeros</summary>
 		/// <returns>a new vector of all zeros</returns>
-
 		public static readonly Vector4 Zero = new Vector4(0f, 0f, 0f, 0f);
 
 		/// <summary>return a new vector of all ones</summary>
 		/// <returns>a new vector of all ones</returns>
-
 		public static readonly Vector4 One = new Vector4(1f, 1f, 1f, 1f);
 
 		/// <summary>return a new vector of all zeros with only the x value set to one</summary>
 		/// <returns>a new vector of all zeros with only the x value set to one</returns>
-
 		public static readonly Vector4 UnitX = new Vector4(1f, 0f, 0f, 0f);
 
 		/// <summary>return a new vector of all zeros with only the y value set to one</summary>
 		/// <returns>a new vector of all zeros with only the y value set to one</returns>
-
 		public static readonly Vector4 UnitY = new Vector4(0f, 1f, 0f, 0f);
 
 		/// <summary>return a new vector of all zeros with only the z value set to one</summary>
 		/// <returns>a new vector of all zeros with only the z value set to one</returns>
-
 		public static readonly Vector4 UnitZ = new Vector4(0f, 0f, 1f, 0f);
 
 		/// <summary>return a new vector of all zeros with only the w value set to one</summary>
 		/// <returns>a new vector of all zeros with only the w value set to one</returns>
-
 		public static readonly Vector4 UnitW = new Vector4(0f, 0f, 0f, 1f);
 	}
 }

@@ -3,7 +3,6 @@
 namespace Sce.PlayStation.Core
 {
 	/// <summary>quaternion</summary>
-	// 
 	public struct Quaternion : IEquatable<Quaternion>
 	{
 		/// <summary>constructor taking 4 floats</summary>
@@ -11,7 +10,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="y">y value to init with</param>
 		/// <param name="z">z value to init with</param>
 		/// <param name="w">w value to init with</param>
-
 		public Quaternion(float x, float y, float z, float w)
 		{
 			this.X = x;
@@ -23,7 +21,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>constructor taking a Vector3 and a scalar float</summary>
 		/// <param name="xyz">the x, y, z values to init with</param>
 		/// <param name="w">the w value to init with</param>
-
 		public Quaternion(Vector3 xyz, float w)
 		{
 			this.X = xyz.X;
@@ -34,7 +31,6 @@ namespace Sce.PlayStation.Core
 
 		/// <summary>constructor taking a Vector4</summary>
 		/// <param name="v">the vector to init with</param>
-
 		public Quaternion(Vector4 v)
 		{
 			this.X = v.X;
@@ -45,7 +41,6 @@ namespace Sce.PlayStation.Core
 
 		/// <summary>return the length of this quaternion</summary>
 		/// <returns>the length of this quaternion</returns>
-
 		public float Length()
 		{
 			return (float)Math.Sqrt((double)(this.X * this.X + this.Y * this.Y + this.Z * this.Z + this.W * this.W));
@@ -53,7 +48,6 @@ namespace Sce.PlayStation.Core
 
 		/// <summary>return the length squared of this quaternion</summary>
 		/// <returns>the length squared of this quaternion</returns>
-
 		public float LengthSquared()
 		{
 			return this.X * this.X + this.Y * this.Y + this.Z * this.Z + this.W * this.W;
@@ -62,7 +56,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>dot product</summary>
 		/// <param name="q">quaternion to take the dot product with</param>
 		/// <returns>dot product of this and q</returns>
-
 		public float Dot(Quaternion q)
 		{
 			return this.X * q.X + this.Y * q.Y + this.Z * q.Z + this.W * q.W;
@@ -71,7 +64,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>dot product</summary>
 		/// <param name="q">quaternion to take the dot product with</param>
 		/// <returns>dot product of this and q</returns>
-
 		public float Dot(ref Quaternion q)
 		{
 			return this.X * q.X + this.Y * q.Y + this.Z * q.Z + this.W * q.W;
@@ -79,7 +71,6 @@ namespace Sce.PlayStation.Core
 
 		/// <summary>return a unit quaternion</summary>
 		/// <returns>this as a unit quaternion</returns>
-
 		public Quaternion Normalize()
 		{
 			Quaternion result;
@@ -89,7 +80,6 @@ namespace Sce.PlayStation.Core
 
 		/// <summary>return a unit quaternion</summary>
 		/// <param name="result">this as a unit quaternion</param>
-
 		public void Normalize(out Quaternion result)
 		{
 			float num = 1f / this.Length();
@@ -101,7 +91,6 @@ namespace Sce.PlayStation.Core
 
 		/// <summary>quaternion conjugate</summary>
 		/// <returns>quaternion conjugate</returns>
-
 		public Quaternion Conjugate()
 		{
 			Quaternion result;
@@ -111,7 +100,6 @@ namespace Sce.PlayStation.Core
 
 		/// <summary>quaternion conjugate</summary>
 		/// <param name="result">quaternion conjugate</param>
-
 		public void Conjugate(out Quaternion result)
 		{
 			result.X = -this.X;
@@ -122,7 +110,6 @@ namespace Sce.PlayStation.Core
 
 		/// <summary>quaternion inverse</summary>
 		/// <returns>quaternion inverse</returns>
-
 		public Quaternion Inverse()
 		{
 			Quaternion result;
@@ -132,7 +119,6 @@ namespace Sce.PlayStation.Core
 
 		/// <summary>quaternion inverse</summary>
 		/// <param name="result">quaternion inverse</param>
-
 		public void Inverse(out Quaternion result)
 		{
 			float num = 1f / this.LengthSquared();
@@ -146,7 +132,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="q">second quaternion</param>
 		/// <param name="f">slerp amount</param>
 		/// <returns>slerp between this and q</returns>
-
 		public Quaternion Slerp(Quaternion q, float f)
 		{
 			Quaternion result;
@@ -158,7 +143,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="q">second quaternion</param>
 		/// <param name="f">slerp amount</param>
 		/// <param name="result">slerp between this and q</param>
-
 		public void Slerp(ref Quaternion q, float f, out Quaternion result)
 		{
 			if (f <= 0f)
@@ -204,7 +188,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="q">second quaternion</param>
 		/// <param name="f">lerp amount</param>
 		/// <returns>lerp between this and q</returns>
-
 		public Quaternion Lerp(Quaternion q, float f)
 		{
 			Quaternion result;
@@ -216,7 +199,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="q">second quaternion</param>
 		/// <param name="f">lerp amount</param>
 		/// <param name="result">lerp between this and q</param>
-
 		public void Lerp(ref Quaternion q, float f, out Quaternion result)
 		{
 			float num = 1f - f;
@@ -228,7 +210,6 @@ namespace Sce.PlayStation.Core
 
 		/// <summary>quaternion log</summary>
 		/// <returns>quaternion log</returns>
-
 		public Quaternion Log()
 		{
 			Quaternion result;
@@ -238,7 +219,6 @@ namespace Sce.PlayStation.Core
 
 		/// <summary>quaternion log</summary>
 		/// <param name="result">quaternion log</param>
-
 		public void Log(out Quaternion result)
 		{
 			float num = (this.W < -1f) ? -1f : ((this.W > 1f) ? 1f : this.W);
@@ -253,7 +233,6 @@ namespace Sce.PlayStation.Core
 
 		/// <summary>quaternion exp</summary>
 		/// <returns>quaternion exp</returns>
-
 		public Quaternion Exp()
 		{
 			Quaternion result;
@@ -263,7 +242,6 @@ namespace Sce.PlayStation.Core
 
 		/// <summary>quaternion exp</summary>
 		/// <param name="result">quaternion exp</param>
-
 		public void Exp(out Quaternion result)
 		{
 			float num = (float)Math.Sqrt((double)(this.X * this.X + this.Y * this.Y + this.Z * this.Z));
@@ -278,7 +256,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="q">target quaternion</param>
 		/// <param name="angle">step angle</param>
 		/// <returns>a new quaternion turned to target quaternion by specified angle</returns>
-
 		public Quaternion TurnTo(Quaternion q, float angle)
 		{
 			Quaternion result;
@@ -290,7 +267,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="q">target quaternion</param>
 		/// <param name="angle">step angle</param>
 		/// <param name="result">a new quaternion turned to target quaternion by specified angle</param>
-
 		public void TurnTo(ref Quaternion q, float angle, out Quaternion result)
 		{
 			float num = this.Angle(q);
@@ -300,7 +276,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>get the angle between this and the input quaternion</summary>
 		/// <param name="q">the quaternion to get the angle to</param>
 		/// <returns>the angle between this and v</returns>
-
 		public float Angle(Quaternion q)
 		{
 			return this.Angle(ref q);
@@ -309,7 +284,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>get the angle between this and the input quaternion</summary>
 		/// <param name="q">the quaternion to get the angle to</param>
 		/// <returns>the angle between this and q</returns>
-
 		public float Angle(ref Quaternion q)
 		{
 			float num = this.Dot(ref q);
@@ -327,7 +301,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>return this * v</summary>
 		/// <param name="v">vector</param>
 		/// <returns>this * v</returns>&gt;
-
 		public Vector4 Transform(Vector4 v)
 		{
 			Vector4 result;
@@ -338,7 +311,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>result = this * v</summary>
 		/// <param name="v">vector</param>
 		/// <param name="result">this * v</param>
-
 		public void Transform(ref Vector4 v, out Vector4 result)
 		{
 			float num = this.W * v.X + this.Y * v.Z - this.Z * v.Y;
@@ -353,7 +325,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>return this * v</summary>
 		/// <param name="v">vector</param>
 		/// <returns>this * v</returns>&gt;
-
 		public Vector3 Transform(Vector3 v)
 		{
 			Vector3 result;
@@ -364,7 +335,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>result = this * v</summary>
 		/// <param name="v">vector</param>
 		/// <param name="result">this * v</param>
-
 		public void Transform(ref Vector3 v, out Vector3 result)
 		{
 			float num = this.W * v.X + this.Y * v.Z - this.Z * v.Y;
@@ -378,7 +348,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>return this * v</summary>
 		/// <param name="v">vector</param>
 		/// <returns>this * v</returns>&gt;
-
 		public Vector2 Transform(Vector2 v)
 		{
 			Vector2 result;
@@ -389,7 +358,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>result = this * v</summary>
 		/// <param name="v">vector</param>
 		/// <param name="result">this * v</param>
-
 		public void Transform(ref Vector2 v, out Vector2 result)
 		{
 			float num = this.W * v.X - this.Z * v.Y;
@@ -402,7 +370,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>return this + q</summary>
 		/// <param name="q">quaternion</param>
 		/// <returns>this + q</returns>
-
 		public Quaternion Add(Quaternion q)
 		{
 			Quaternion result;
@@ -413,7 +380,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>result = this + q</summary>
 		/// <param name="q">quaternion</param>
 		/// <param name="result">this + q</param>
-
 		public void Add(ref Quaternion q, out Quaternion result)
 		{
 			result.X = this.X + q.X;
@@ -425,7 +391,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>return this - q</summary>
 		/// <param name="q">quaternion</param>
 		/// <returns>this - q</returns>
-
 		public Quaternion Subtract(Quaternion q)
 		{
 			Quaternion result;
@@ -436,7 +401,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>result = this - q</summary>
 		/// <param name="q">quaternion</param>
 		/// <param name="result">this - q</param>
-
 		public void Subtract(ref Quaternion q, out Quaternion result)
 		{
 			result.X = this.X - q.X;
@@ -448,7 +412,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>return this * q</summary>
 		/// <param name="q">quaternion</param>
 		/// <returns>this * q</returns>
-
 		public Quaternion Multiply(Quaternion q)
 		{
 			Quaternion result;
@@ -459,7 +422,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>result = this * q</summary>
 		/// <param name="q">quaternion</param>
 		/// <param name="result">this * q</param>
-
 		public void Multiply(ref Quaternion q, out Quaternion result)
 		{
 			result.X = this.W * q.X + this.X * q.W + this.Y * q.Z - this.Z * q.Y;
@@ -471,7 +433,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>return this * f</summary>
 		/// <param name="f">scalar</param>
 		/// <returns>this * f</returns>
-
 		public Quaternion Multiply(float f)
 		{
 			Quaternion result;
@@ -482,7 +443,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>result = this * f</summary>
 		/// <param name="f">scalar</param>
 		/// <param name="result">this * f</param>
-
 		public void Multiply(float f, out Quaternion result)
 		{
 			result.X = this.X * f;
@@ -494,7 +454,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>return this / f</summary>
 		/// <param name="f">scalar</param>
 		/// <returns>this / f</returns>
-
 		public Quaternion Divide(float f)
 		{
 			Quaternion result;
@@ -505,7 +464,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>result = this / f</summary>
 		/// <param name="f">scalar</param>
 		/// <param name="result">this / f</param>
-
 		public void Divide(float f, out Quaternion result)
 		{
 			float num = 1f / f;
@@ -517,7 +475,6 @@ namespace Sce.PlayStation.Core
 
 		/// <summary>return -this</summary>
 		/// <returns>-this</returns>
-
 		public Quaternion Negate()
 		{
 			Quaternion result;
@@ -527,7 +484,6 @@ namespace Sce.PlayStation.Core
 
 		/// <summary>result = -this</summary>
 		/// <param name="result">-this</param>
-
 		public void Negate(out Quaternion result)
 		{
 			result.X = -this.X;
@@ -538,7 +494,6 @@ namespace Sce.PlayStation.Core
 
 		/// <summary>return the quaternion as a Vector4</summary>
 		/// <returns>the quaternion as a Vector4</returns>
-
 		public Vector4 ToVector4()
 		{
 			Vector4 result;
@@ -548,7 +503,6 @@ namespace Sce.PlayStation.Core
 
 		/// <summary>return the quaternion as a Vector4</summary>
 		/// <param name="result">the quaternion as a Vector4</param>
-
 		public void ToVector4(out Vector4 result)
 		{
 			result.X = this.X;
@@ -559,7 +513,6 @@ namespace Sce.PlayStation.Core
 
 		/// <summary>convert this quaternion to a Matrix4</summary>
 		/// <returns>Matrix4 representation of this quaternion</returns>
-
 		public Matrix4 ToMatrix4()
 		{
 			Matrix4 result;
@@ -569,7 +522,6 @@ namespace Sce.PlayStation.Core
 
 		/// <summary>convert this quaternion to a Matrix4</summary>
 		/// <param name="result">Matrix4 representation of this quaternion</param>
-
 		public void ToMatrix4(out Matrix4 result)
 		{
 			float num = this.X + this.X;
@@ -601,7 +553,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>extract the rotation axis and angle from this quaternion</summary>
 		/// <param name="axis">the rotation axis</param>
 		/// <param name="angle">the rotation angle</param>
-
 		public void ToAxisAngle(out Vector3 axis, out float angle)
 		{
 			axis.X = this.X;
@@ -613,7 +564,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>test if this is a unit quaternion</summary>
 		/// <param name="epsilon">epsilon used in testing</param>
 		/// <returns>true if this is a unit quaternion, false otherwise</returns>
-
 		public bool IsUnit(float epsilon)
 		{
 			return Math.Abs(this.Length() - 1f) <= epsilon;
@@ -621,7 +571,6 @@ namespace Sce.PlayStation.Core
 
 		/// <summary>test if this is an identity quaternion</summary>
 		/// <returns>true if this is an identity quaternion, false otherwise</returns>
-
 		public bool IsIdentity()
 		{
 			return this.X == 0f && this.Y == 0f && this.Z == 0f && this.W == 1f;
@@ -629,7 +578,6 @@ namespace Sce.PlayStation.Core
 
 		/// <summary>test if any elements of this are Infinity</summary>
 		/// <returns>true if any elements of this are Infinity, false otherwise</returns>
-
 		public bool IsInfinity()
 		{
 			return float.IsInfinity(this.X) || float.IsInfinity(this.Y) || float.IsInfinity(this.Z) || float.IsInfinity(this.W);
@@ -637,12 +585,10 @@ namespace Sce.PlayStation.Core
 
 		/// <summary>test if any elements of this are NaN</summary>
 		/// <returns>true if any elements of this are NaN, false otherwise</returns>
-
 		public bool IsNaN()
 		{
 			return float.IsNaN(this.X) || float.IsNaN(this.Y) || float.IsNaN(this.Z) || float.IsNaN(this.W);
 		}
-
 
 		public bool Equals(Quaternion q, float epsilon)
 		{
@@ -652,7 +598,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>equality test</summary>
 		/// <param name="q">the quaternion to compare this to</param>
 		/// <returns>true if this == q, false otherwise</returns>
-
 		public bool Equals(Quaternion q)
 		{
 			return this.X == q.X && this.Y == q.Y && this.Z == q.Z && this.W == q.W;
@@ -661,7 +606,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>equality test</summary>
 		/// <param name="o">the object to compare this to</param>
 		/// <returns>true if this == o, false otherwise</returns>
-
 		public override bool Equals(object o)
 		{
 			return o is Quaternion && this.Equals((Quaternion)o);
@@ -669,7 +613,6 @@ namespace Sce.PlayStation.Core
 
 		/// <summary>get the string representation of this quaternion</summary>
 		/// <returns>the string representation of this quaternion</returns>
-
 		public override string ToString()
 		{
 			return string.Format("({0:F6},{1:F6},{2:F6},{3:F6})", new object[]
@@ -683,7 +626,6 @@ namespace Sce.PlayStation.Core
 
 		/// <summary>gets the hash code for this vector</summary>
 		/// <returns>integer hash code</returns>
-
 		public override int GetHashCode()
 		{
 			return this.X.GetHashCode() ^ this.Y.GetHashCode() ^ this.Z.GetHashCode() ^ this.W.GetHashCode();
@@ -692,7 +634,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>return a quaternion representing a rotation matrix</summary>
 		/// <param name="m">matrix to form the quaternion out of</param>
 		/// <returns>a quaternion representing a rotation matrix</returns>
-
 		public static Quaternion FromMatrix4(Matrix4 m)
 		{
 			Quaternion result;
@@ -703,7 +644,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>return a quaternion representing a rotation matrix</summary>
 		/// <param name="m">matrix to form the quaternion out of</param>
 		/// <param name="result">a quaternion representing a rotation matrix</param>
-
 		public static void FromMatrix4(ref Matrix4 m, out Quaternion result)
 		{
 			float num = m.M11 + m.M22 + m.M33;
@@ -749,7 +689,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="axis">the axis to rotate about</param>
 		/// <param name="angle">the angle to rotate</param>
 		/// <returns>a quaternion representing a rotation about an arbitrary axis</returns>
-
 		public static Quaternion RotationAxis(Vector3 axis, float angle)
 		{
 			Quaternion result;
@@ -761,7 +700,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="axis">the axis to rotate about</param>
 		/// <param name="angle">the angle to rotate</param>
 		/// <param name="result">a quaternion representing a rotation about an arbitrary axis</param>
-
 		public static void RotationAxis(ref Vector3 axis, float angle, out Quaternion result)
 		{
 			angle *= 0.5f;
@@ -775,7 +713,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>return a quaternion representing a rotation about the x axis</summary>
 		/// <param name="angle">the angle to rotate by</param>
 		/// <returns>a quaternion representing a rotation about the x axis</returns>
-
 		public static Quaternion RotationX(float angle)
 		{
 			Quaternion result;
@@ -786,7 +723,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>return a quaternion representing a rotation about the x axis</summary>
 		/// <param name="angle">the angle to rotate by</param>
 		/// <param name="result">a quaternion representing a rotation about the x axis</param>
-
 		public static void RotationX(float angle, out Quaternion result)
 		{
 			angle *= 0.5f;
@@ -799,7 +735,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>return a quaternion representing a rotation about the y axis</summary>
 		/// <param name="angle">the angle to rotate by</param>
 		/// <returns>a quaternion representing a rotation about the y axis</returns>
-
 		public static Quaternion RotationY(float angle)
 		{
 			Quaternion result;
@@ -810,7 +745,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>return a quaternion representing a rotation about the y axis</summary>
 		/// <param name="angle">the angle to rotate by</param>
 		/// <param name="result">a quaternion representing a rotation about the y axis</param>
-
 		public static void RotationY(float angle, out Quaternion result)
 		{
 			angle *= 0.5f;
@@ -823,7 +757,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>return a quaternion representing a rotation about the z axis</summary>
 		/// <param name="angle">the angle to rotate by</param>
 		/// <returns>a quaternion representing a rotation about the z axis</returns>
-
 		public static Quaternion RotationZ(float angle)
 		{
 			Quaternion result;
@@ -834,7 +767,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>return a quaternion representing a rotation about the z axis</summary>
 		/// <param name="angle">the angle to rotate by</param>
 		/// <param name="result">a quaternion representing a rotation about the z axis</param>
-
 		public static void RotationZ(float angle, out Quaternion result)
 		{
 			angle *= 0.5f;
@@ -849,7 +781,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="y">y angle</param>
 		/// <param name="z">z angle</param>
 		/// <returns>a new quaternion from the three euler angles</returns>
-
 		public static Quaternion RotationZyx(float x, float y, float z)
 		{
 			Quaternion result;
@@ -862,7 +793,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="y">y angle</param>
 		/// <param name="z">z angle</param>
 		/// <param name="result">a new quaternion from the three euler angles</param>
-
 		public static void RotationZyx(float x, float y, float z, out Quaternion result)
 		{
 			Vector3 vector;
@@ -877,7 +807,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>create a new quaternion from three euler angles</summary>
 		/// <param name="angles">the z, y, x euler angles used to create the quaternion</param>
 		/// <returns>a new quaternion from the three euler angles</returns>
-
 		public static Quaternion RotationZyx(Vector3 angles)
 		{
 			Quaternion result;
@@ -888,7 +817,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>create a new quaternion from three euler angles</summary>
 		/// <param name="angles">the z, y, x euler angles used to create the quaternion</param>
 		/// <param name="result">a new quaternion from the three euler angles</param>
-
 		public static void RotationZyx(ref Vector3 angles, out Quaternion result)
 		{
 			Quaternion.RotationZyx(angles.X, angles.Y, angles.Z, out result);
@@ -899,7 +827,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="y">y angle</param>
 		/// <param name="z">z angle</param>
 		/// <returns>a new quaternion from the three euler angles</returns>
-
 		public static Quaternion RotationYxz(float x, float y, float z)
 		{
 			Quaternion result;
@@ -912,7 +839,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="y">y angle</param>
 		/// <param name="z">z angle</param>
 		/// <param name="result">a new quaternion from the three euler angles</param>
-
 		public static void RotationYxz(float x, float y, float z, out Quaternion result)
 		{
 			Vector3 vector;
@@ -927,7 +853,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>create a new quaternion from three euler angles</summary>
 		/// <param name="angles">the y, x, z euler angles used to create the quaternion</param>
 		/// <returns>a new quaternion from the three euler angles</returns>
-
 		public static Quaternion RotationYxz(Vector3 angles)
 		{
 			Quaternion result;
@@ -938,7 +863,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>create a new quaternion from three euler angles</summary>
 		/// <param name="angles">the y, x, z euler angles used to create the quaternion</param>
 		/// <param name="result">a new quaternion from the three euler angles</param>
-
 		public static void RotationYxz(ref Vector3 angles, out Quaternion result)
 		{
 			Quaternion.RotationYxz(angles.X, angles.Y, angles.Z, out result);
@@ -949,7 +873,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="y">y angle</param>
 		/// <param name="z">z angle</param>
 		/// <returns>a new quaternion from the three euler angles</returns>
-
 		public static Quaternion RotationXzy(float x, float y, float z)
 		{
 			Quaternion result;
@@ -962,7 +885,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="y">y angle</param>
 		/// <param name="z">z angle</param>
 		/// <param name="result">a new quaternion from the three euler angles</param>
-
 		public static void RotationXzy(float x, float y, float z, out Quaternion result)
 		{
 			Vector3 vector;
@@ -977,7 +899,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>create a new quaternion from three euler angles</summary>
 		/// <param name="angles">the x, z, y euler angles used to create the quaternion</param>
 		/// <returns>a new quaternion from the three euler angles</returns>
-
 		public static Quaternion RotationXzy(Vector3 angles)
 		{
 			Quaternion result;
@@ -988,7 +909,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>create a new quaternion from three euler angles</summary>
 		/// <param name="angles">the x, z, y euler angles used to create the quaternion</param>
 		/// <param name="result">a new quaternion from the three euler angles</param>
-
 		public static void RotationXzy(ref Vector3 angles, out Quaternion result)
 		{
 			Quaternion.RotationXzy(angles.X, angles.Y, angles.Z, out result);
@@ -999,7 +919,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="y">y angle</param>
 		/// <param name="z">z angle</param>
 		/// <returns>a new quaternion from the three euler angles</returns>
-
 		public static Quaternion RotationXyz(float x, float y, float z)
 		{
 			Quaternion result;
@@ -1012,7 +931,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="y">y angle</param>
 		/// <param name="z">z angle</param>
 		/// <param name="result">a new quaternion from the three euler angles</param>
-
 		public static void RotationXyz(float x, float y, float z, out Quaternion result)
 		{
 			Vector3 vector;
@@ -1027,7 +945,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>create a new quaternion from three euler angles</summary>
 		/// <param name="angles">the x, y, z euler angles used to create the quaternion</param>
 		/// <returns>a new quaternion from the three euler angles</returns>
-
 		public static Quaternion RotationXyz(Vector3 angles)
 		{
 			Quaternion result;
@@ -1038,7 +955,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>create a new quaternion from three euler angles</summary>
 		/// <param name="angles">the x, y, z euler angles used to create the quaternion</param>
 		/// <param name="result">a new quaternion from the three euler angles</param>
-
 		public static void RotationXyz(ref Vector3 angles, out Quaternion result)
 		{
 			Quaternion.RotationXyz(angles.X, angles.Y, angles.Z, out result);
@@ -1049,7 +965,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="y">y angle</param>
 		/// <param name="z">z angle</param>
 		/// <returns>a new quaternion from the three euler angles</returns>
-
 		public static Quaternion RotationYzx(float x, float y, float z)
 		{
 			Quaternion result;
@@ -1062,7 +977,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="y">y angle</param>
 		/// <param name="z">z angle</param>
 		/// <param name="result">a new quaternion from the three euler angles</param>
-
 		public static void RotationYzx(float x, float y, float z, out Quaternion result)
 		{
 			Vector3 vector;
@@ -1077,7 +991,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>create a new quaternion from three euler angles</summary>
 		/// <param name="angles">the y, z, x euler angles used to create the quaternion</param>
 		/// <returns>a new quaternion from the three euler angles</returns>
-
 		public static Quaternion RotationYzx(Vector3 angles)
 		{
 			Quaternion result;
@@ -1088,7 +1001,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>create a new quaternion from three euler angles</summary>
 		/// <param name="angles">the y, z, x euler angles used to create the quaternion</param>
 		/// <param name="result">a new quaternion from the three euler angles</param>
-
 		public static void RotationYzx(ref Vector3 angles, out Quaternion result)
 		{
 			Quaternion.RotationYzx(angles.X, angles.Y, angles.Z, out result);
@@ -1099,7 +1011,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="y">y angle</param>
 		/// <param name="z">z angle</param>
 		/// <returns>a new quaternion from the three euler angles</returns>
-
 		public static Quaternion RotationZxy(float x, float y, float z)
 		{
 			Quaternion result;
@@ -1112,7 +1023,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="y">y angle</param>
 		/// <param name="z">z angle</param>
 		/// <param name="result">a new quaternion from the three euler angles</param>
-
 		public static void RotationZxy(float x, float y, float z, out Quaternion result)
 		{
 			Vector3 vector;
@@ -1127,7 +1037,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>create a new quaternion from three euler angles</summary>
 		/// <param name="angles">the z, x, y euler angles used to create the quaternion</param>
 		/// <returns>a new quaternion from the three euler angles</returns>
-
 		public static Quaternion RotationZxy(Vector3 angles)
 		{
 			Quaternion result;
@@ -1138,7 +1047,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>create a new quaternion from three euler angles</summary>
 		/// <param name="angles">the z, x, y euler angles used to create the quaternion</param>
 		/// <param name="result">a new quaternion from the three euler angles</param>
-
 		public static void RotationZxy(ref Vector3 angles, out Quaternion result)
 		{
 			Quaternion.RotationZxy(angles.X, angles.Y, angles.Z, out result);
@@ -1147,7 +1055,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>static function equivalent to Length()</summary>
 		/// <param name="q">quaternion</param>
 		/// <returns>the length of quaternion</returns>
-
 		public static float Length(Quaternion q)
 		{
 			return q.Length();
@@ -1156,7 +1063,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>static function equivalent to Length()</summary>
 		/// <param name="q">quaternion</param>
 		/// <returns>the length of quaternion</returns>
-
 		public static float Length(ref Quaternion q)
 		{
 			return q.Length();
@@ -1165,7 +1071,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>static function equivalent to LengthSquared()</summary>
 		/// <param name="q">quaternion</param>
 		/// <returns>the length squared of quaternion</returns>
-
 		public static float LengthSquared(Quaternion q)
 		{
 			return q.LengthSquared();
@@ -1174,7 +1079,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>static function equivalent to LengthSquared()</summary>
 		/// <param name="q">quaternion</param>
 		/// <returns>the length squared of quaternion</returns>
-
 		public static float LengthSquared(ref Quaternion q)
 		{
 			return q.LengthSquared();
@@ -1184,7 +1088,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="q1">quaternion 1</param>
 		/// <param name="q2">quaternion 2</param>
 		/// <returns>dot product of q1 and q2</returns>
-
 		public static float Dot(Quaternion q1, Quaternion q2)
 		{
 			return q1.Dot(q2);
@@ -1194,7 +1097,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="q1">quaternion 1</param>
 		/// <param name="q2">quaternion 2</param>
 		/// <returns>dot product of q1 and q2</returns>
-
 		public static float Dot(ref Quaternion q1, ref Quaternion q2)
 		{
 			return q1.Dot(q2);
@@ -1203,7 +1105,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>static function equivalent to Normalize()</summary>
 		/// <param name="q">quaternion</param>
 		/// <returns>q as a unit quaternion</returns>
-
 		public static Quaternion Normalize(Quaternion q)
 		{
 			Quaternion result;
@@ -1214,7 +1115,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>static function equivalent to Normalize(out Quaternion)</summary>
 		/// <param name="q">quaternion</param>
 		/// <param name="result">q as a unit quaternion</param>
-
 		public static void Normalize(ref Quaternion q, out Quaternion result)
 		{
 			q.Normalize(out result);
@@ -1223,7 +1123,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>static function equivalent to Conjugate()</summary>
 		/// <param name="q">quaternion</param>
 		/// <returns>quaternion conjugate</returns>
-
 		public static Quaternion Conjugate(Quaternion q)
 		{
 			Quaternion result;
@@ -1234,7 +1133,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>static function equivalent to Conjugate(out Quaternion)</summary>
 		/// <param name="q">quaternion</param>
 		/// <param name="result">quaternion conjugate</param>
-
 		public static void Conjugate(ref Quaternion q, out Quaternion result)
 		{
 			q.Conjugate(out result);
@@ -1243,7 +1141,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>static function equivalent to Inverse()</summary>
 		/// <param name="q">quaternion</param>
 		/// <returns>quaternion inverse</returns>
-
 		public static Quaternion Inverse(Quaternion q)
 		{
 			Quaternion result;
@@ -1254,7 +1151,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>static function equivalent to Inverse(out Quaternion)</summary>
 		/// <param name="q">quaternion</param>
 		/// <param name="result">quaternion inverse</param>
-
 		public static void Inverse(ref Quaternion q, out Quaternion result)
 		{
 			q.Inverse(out result);
@@ -1265,7 +1161,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="q2">quaternion 2</param>
 		/// <param name="f">slerp amount</param>
 		/// <returns>slerp between q1 and q2</returns>
-
 		public static Quaternion Slerp(Quaternion q1, Quaternion q2, float f)
 		{
 			Quaternion result;
@@ -1278,7 +1173,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="q2">quaternion 2</param>
 		/// <param name="f">slerp amount</param>
 		/// <param name="result">slerp between q1 and q2</param>
-
 		public static void Slerp(ref Quaternion q1, ref Quaternion q2, float f, out Quaternion result)
 		{
 			q1.Slerp(ref q2, f, out result);
@@ -1289,7 +1183,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="q2">quaternion 2</param>
 		/// <param name="f">lerp amount</param>
 		/// <returns>lerp between q1 and q2</returns>
-
 		public static Quaternion Lerp(Quaternion q1, Quaternion q2, float f)
 		{
 			Quaternion result;
@@ -1302,7 +1195,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="q2">quaternion 2</param>
 		/// <param name="f">lerp amount</param>
 		/// <param name="result">lerp between q1 and q2</param>
-
 		public static void Lerp(ref Quaternion q1, ref Quaternion q2, float f, out Quaternion result)
 		{
 			q1.Lerp(ref q2, f, out result);
@@ -1311,7 +1203,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>static function equivalent to Log()</summary>
 		/// <param name="q">quaternion</param>
 		/// <returns>quaternion log</returns>
-
 		public static Quaternion Log(Quaternion q)
 		{
 			Quaternion result;
@@ -1322,7 +1213,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>static function equivalent to Log(out Quaternion)</summary>
 		/// <param name="q">quaternion</param>
 		/// <param name="result">quaternion log</param>
-
 		public static void Log(ref Quaternion q, out Quaternion result)
 		{
 			q.Log(out result);
@@ -1331,7 +1221,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>static function equivalent to Exp()</summary>
 		/// <param name="q">quaternion</param>
 		/// <returns>quaternion exp</returns>
-
 		public static Quaternion Exp(Quaternion q)
 		{
 			Quaternion result;
@@ -1342,7 +1231,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>static function equivalent to Exp(out Quaternion)</summary>
 		/// <param name="q">quaternion</param>
 		/// <param name="result">quaternion exp</param>
-
 		public static void Exp(ref Quaternion q, out Quaternion result)
 		{
 			q.Exp(out result);
@@ -1353,7 +1241,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="q2">quaternion 2</param>
 		/// <param name="angle">step angle</param>
 		/// <returns>a new quaternion turned to target quaternion by specified angle</returns>
-
 		public static Quaternion TurnTo(Quaternion q1, Quaternion q2, float angle)
 		{
 			Quaternion result;
@@ -1366,7 +1253,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="q2">quaternion 2</param>
 		/// <param name="angle">step angle</param>
 		/// <param name="result">a new quaternion turned to target quaternion by specified angle</param>
-
 		public static void TurnTo(ref Quaternion q1, ref Quaternion q2, float angle, out Quaternion result)
 		{
 			q1.TurnTo(ref q2, angle, out result);
@@ -1376,7 +1262,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="q1">quaternion 1</param>
 		/// <param name="q2">quaternion 2</param>
 		/// <returns>the angle between q1 and q2</returns>
-
 		public static float Angle(Quaternion q1, Quaternion q2)
 		{
 			return q1.Angle(ref q2);
@@ -1386,7 +1271,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="q1">quaternion 1</param>
 		/// <param name="q2">quaternion 2</param>
 		/// <returns>the angle between q1 and q2</returns>
-
 		public static float Angle(ref Quaternion q1, ref Quaternion q2)
 		{
 			return q1.Angle(ref q2);
@@ -1396,7 +1280,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="q">quaternion</param>
 		/// <param name="v">vector</param>
 		/// <returns>q * v</returns>
-
 		public static Vector4 Transform(Quaternion q, Vector4 v)
 		{
 			Vector4 result;
@@ -1408,7 +1291,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="q">quaternion</param>
 		/// <param name="v">vector</param>
 		/// <param name="result">q * v</param>
-
 		public static void Transform(ref Quaternion q, ref Vector4 v, out Vector4 result)
 		{
 			q.Transform(ref v, out result);
@@ -1418,7 +1300,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="q">quaternion</param>
 		/// <param name="v">vector</param>
 		/// <returns>q * v</returns>
-
 		public static Vector3 Transform(Quaternion q, Vector3 v)
 		{
 			Vector3 result;
@@ -1430,7 +1311,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="q">quaternion</param>
 		/// <param name="v">vector</param>
 		/// <param name="result">q * v</param>
-
 		public static void Transform(ref Quaternion q, ref Vector3 v, out Vector3 result)
 		{
 			q.Transform(ref v, out result);
@@ -1440,7 +1320,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="q">quaternion</param>
 		/// <param name="v">vector</param>
 		/// <returns>q * v</returns>
-
 		public static Vector2 Transform(Quaternion q, Vector2 v)
 		{
 			Vector2 result;
@@ -1452,7 +1331,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="q">quaternion</param>
 		/// <param name="v">vector</param>
 		/// <param name="result">q * v</param>
-
 		public static void Transform(ref Quaternion q, ref Vector2 v, out Vector2 result)
 		{
 			q.Transform(ref v, out result);
@@ -1462,7 +1340,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="q1">quaternion 1</param>
 		/// <param name="q2">quaternion 2</param>
 		/// <returns>q1 + q2</returns>
-
 		public static Quaternion Add(Quaternion q1, Quaternion q2)
 		{
 			Quaternion result;
@@ -1474,7 +1351,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="q1">quaternion 1</param>
 		/// <param name="q2">quaternion 2</param>
 		/// <param name="result">q1 + q2</param>
-
 		public static void Add(ref Quaternion q1, ref Quaternion q2, out Quaternion result)
 		{
 			q1.Add(ref q2, out result);
@@ -1484,7 +1360,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="q1">quaternion 1</param>
 		/// <param name="q2">quaternion 2</param>
 		/// <returns>q1 - q2</returns>
-
 		public static Quaternion Subtract(Quaternion q1, Quaternion q2)
 		{
 			Quaternion result;
@@ -1496,7 +1371,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="q1">quaternion 1</param>
 		/// <param name="q2">quaternion 2</param>
 		/// <param name="result">q1 - q2</param>
-
 		public static void Subtract(ref Quaternion q1, ref Quaternion q2, out Quaternion result)
 		{
 			q1.Subtract(ref q2, out result);
@@ -1506,7 +1380,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="q1">quaternion 1</param>
 		/// <param name="q2">quaternion 2</param>
 		/// <returns>q1 * q2</returns>
-
 		public static Quaternion Multiply(Quaternion q1, Quaternion q2)
 		{
 			Quaternion result;
@@ -1518,7 +1391,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="q1">quaternion 1</param>
 		/// <param name="q2">quaternion 2</param>
 		/// <param name="result">q1 * q2</param>
-
 		public static void Multiply(ref Quaternion q1, ref Quaternion q2, out Quaternion result)
 		{
 			q1.Multiply(ref q2, out result);
@@ -1528,7 +1400,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="q">quaternion</param>
 		/// <param name="f">scalar</param>
 		/// <returns>q * f</returns>
-
 		public static Quaternion Multiply(Quaternion q, float f)
 		{
 			Quaternion result;
@@ -1540,7 +1411,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="q">quaternion</param>
 		/// <param name="f">scalar</param>
 		/// <param name="result">q * f</param>
-
 		public static void Multiply(ref Quaternion q, float f, out Quaternion result)
 		{
 			q.Multiply(f, out result);
@@ -1550,7 +1420,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="q">quaternion</param>
 		/// <param name="f">scalar</param>
 		/// <returns>q / f</returns>
-
 		public static Quaternion Divide(Quaternion q, float f)
 		{
 			Quaternion result;
@@ -1562,7 +1431,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="q">quaternion</param>
 		/// <param name="f">scalar</param>
 		/// <param name="result">q / f</param>
-
 		public static void Divide(ref Quaternion q, float f, out Quaternion result)
 		{
 			q.Divide(f, out result);
@@ -1571,7 +1439,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>static function equivalent to Negate()</summary>
 		/// <param name="q">quaternion</param>
 		/// <returns>-q</returns>
-
 		public static Quaternion Negate(Quaternion q)
 		{
 			Quaternion result;
@@ -1582,7 +1449,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>static function equivalent to Negate(out Quaternion)</summary>
 		/// <param name="q">quaternion</param>
 		/// <param name="result">-q</param>
-
 		public static void Negate(ref Quaternion q, out Quaternion result)
 		{
 			q.Negate(out result);
@@ -1592,7 +1458,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="q1">first quaternion to compare</param>
 		/// <param name="q2">second quaternion to compare</param>
 		/// <returns>true if q1 == q2, false otherwise</returns>
-
 		public static bool operator ==(Quaternion q1, Quaternion q2)
 		{
 			return q1.X == q2.X && q1.Y == q2.Y && q1.Z == q2.Z && q1.W == q2.W;
@@ -1602,7 +1467,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="q1">first quaternion to compare</param>
 		/// <param name="q2">second quaternion to compare</param>
 		/// <returns>true if q1 != q2, false otherwise</returns>
-
 		public static bool operator !=(Quaternion q1, Quaternion q2)
 		{
 			return q1.X != q2.X || q1.Y != q2.Y || q1.Z != q2.Z || q1.W != q2.W;
@@ -1612,7 +1476,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="q1">first quaternion to add</param>
 		/// <param name="q2">second quaternion to add</param>
 		/// <returns>q1 + q2</returns>
-
 		public static Quaternion operator +(Quaternion q1, Quaternion q2)
 		{
 			Quaternion result;
@@ -1624,7 +1487,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="q1">value to subtract from</param>
 		/// <param name="q2">value to subtract</param>
 		/// <returns>q1 - q2</returns>
-
 		public static Quaternion operator -(Quaternion q1, Quaternion q2)
 		{
 			Quaternion result;
@@ -1635,7 +1497,6 @@ namespace Sce.PlayStation.Core
 		/// <summary>unary minus operator</summary>
 		/// <param name="q">quaternion to negate</param>
 		/// <returns>unary minus applied to each member of q</returns>
-
 		public static Quaternion operator -(Quaternion q)
 		{
 			Quaternion result;
@@ -1647,7 +1508,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="q1">first value to multiply</param>
 		/// <param name="q2">second value to multiply</param>
 		/// <returns>q1 * q2</returns>
-
 		public static Quaternion operator *(Quaternion q1, Quaternion q2)
 		{
 			Quaternion result;
@@ -1659,7 +1519,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="q">quaternion to multiply</param>
 		/// <param name="f">float to multiply by</param>
 		/// <returns>q * f</returns>
-
 		public static Quaternion operator *(Quaternion q, float f)
 		{
 			Quaternion result;
@@ -1671,7 +1530,6 @@ namespace Sce.PlayStation.Core
 		/// <param name="f">float to multiply by</param>
 		/// <param name="q">quaternion to multiply</param>
 		/// <returns>f * q</returns>
-
 		public static Quaternion operator *(float f, Quaternion q)
 		{
 			Quaternion result;
@@ -1683,14 +1541,12 @@ namespace Sce.PlayStation.Core
 		/// <param name="q">quaternion to divide</param>
 		/// <param name="f">scalar float value to divide by</param>
 		/// <returns>q / f</returns>
-
 		public static Quaternion operator /(Quaternion q, float f)
 		{
 			Quaternion result;
 			q.Divide(f, out result);
 			return result;
 		}
-
 
 		private static void RotationVector(float x, float y, float z, out Vector3 c, out Vector3 s)
 		{
@@ -1705,7 +1561,6 @@ namespace Sce.PlayStation.Core
 			s.Z = (float)Math.Sin((double)z);
 		}
 
-
 		[Obsolete]
 		public static Vector3 operator *(Quaternion q, Vector3 v)
 		{
@@ -1719,23 +1574,18 @@ namespace Sce.PlayStation.Core
 		}
 
 		/// <summary>X</summary>
-
 		public float X;
 
 		/// <summary>Y</summary>
-
 		public float Y;
 
 		/// <summary>Z</summary>
-
 		public float Z;
 
 		/// <summary>W</summary>
-
 		public float W;
 
 		/// <summary>identity quaternion</summary>
-
 		public static readonly Quaternion Identity = new Quaternion(0f, 0f, 0f, 1f);
 	}
 }
