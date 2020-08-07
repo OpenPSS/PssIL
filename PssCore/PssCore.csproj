@@ -41,6 +41,9 @@
     <Folder Include="Core\Interface\" />
     <Folder Include="Core\Struct\" />
     <Folder Include="Audio\" />
+    <Folder Include="Audio\Enums\" />
+    <Folder Include="Device\" />
+    <Folder Include="Device\Enum\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Core\Error.cs" />
@@ -96,5 +99,16 @@
     <Compile Include="Core\Struct\UShortN.cs" />
     <Compile Include="Core\Struct\Vector3.cs" />
     <Compile Include="Core\Struct\Vector4.cs" />
+    <Compile Include="Audio\Enums\BgmStatus.cs" />
+    <Compile Include="Audio\Enums\SoundStatus.cs" />
+    <Compile Include="Audio\Bgm.cs" />
+    <Compile Include="Audio\BgmPlayer.cs" />
+    <Compile Include="Audio\Sound.cs" />
+    <Compile Include="Audio\SoundPlayer.cs" />
+    <Compile Include="Device\Enum\CameraFacing.cs" />
+    <Compile Include="Device\Enum\CameraImageFormat.cs" />
+    <Compile Include="Device\Enum\LocationDeviceType.cs" />
+    <Compile Include="Device\Enum\PictureState.cs" />
+    <Compile Include="Device\Camera.cs" />
   </ItemGroup>
 </Project>

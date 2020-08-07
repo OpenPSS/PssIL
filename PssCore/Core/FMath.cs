@@ -219,9 +219,9 @@ namespace Sce.PlayStation.Core
 		/// <returns>x repeated between min and max</returns>
 		public static float Repeat(float x, float min, float max)
 		{
-			float num = max - min;
-			float num2 = (num == 0f) ? 0f : ((x - min) % num);
-			return min + ((num2 >= 0f) ? num2 : (num2 + num));
+			float total = max - min;
+			float result = (total == 0f) ? 0f : ((x - min) % total);
+			return min + ((result >= 0f) ? result : (result + result));
 		}
 
 		/// <summary>repeat shuttlewise between two values</summary>
@@ -231,13 +231,13 @@ namespace Sce.PlayStation.Core
 		/// <returns>x repeated shuttlewise between min and max</returns>
 		public static float Mirror(float x, float min, float max)
 		{
-			float num = max - min;
-			float num2 = (num == 0f) ? 0f : ((x - min) % (num + num));
-			if (num2 < 0f)
+			float total = max - min;
+			float result = (total == 0f) ? 0f : ((x - min) % (total + total));
+			if (result < 0f)
 			{
-				num2 = -num2;
+				result = -result;
 			}
-			return min + ((num2 < num) ? num2 : (num + num - num2));
+			return min + ((result < total) ? result : (total + total - result));
 		}
 		
 		/// <summary>lerp between two values</summary>
@@ -281,8 +281,8 @@ namespace Sce.PlayStation.Core
 		
 		public static float SmoothStep(float min, float max, float x)
 		{
-			float num = FMath.LinearStep(min, max, x);
-			return num * num * (3f - num - num);
+			float linearStep = FMath.LinearStep(min, max, x);
+			return linearStep * linearStep * (3f - linearStep - linearStep);
 		}
 		
 		/*

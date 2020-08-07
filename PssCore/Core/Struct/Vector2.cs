@@ -219,9 +219,9 @@ namespace Sce.PlayStation.Core
 
 		public float Distance(ref Vector2 v)
 		{
-			float num = this.X - v.X;
-			float num2 = this.Y - v.Y;
-			return (float)Math.Sqrt((double)(num * num + num2 * num2));
+			float distX = this.X - v.X;
+			float distY = this.Y - v.Y;
+			return (float)Math.Sqrt((double)(distX * distX + distY * distY));
 		}
 
 		/// <summary>get the distance squared between this and another vector</summary>
@@ -239,9 +239,9 @@ namespace Sce.PlayStation.Core
 
 		public float DistanceSquared(ref Vector2 v)
 		{
-			float num = this.X - v.X;
-			float num2 = this.Y - v.Y;
-			return num * num + num2 * num2;
+			float distX = this.X - v.X;
+			float distY = this.Y - v.Y;
+			return distX * distX + distY * distY;
 		}
 
 		/// <summary>dot product of this and v</summary>
@@ -295,9 +295,9 @@ namespace Sce.PlayStation.Core
 
 		public void Normalize(out Vector2 result)
 		{
-			float num = 1f / this.Length();
-			result.X = this.X * num;
-			result.Y = this.Y * num;
+			float len = 1f / this.Length();
+			result.X = this.X * len;
+			result.Y = this.Y * len;
 		}
 
 		/// <summary>element wise absolute value</summary>
@@ -514,9 +514,9 @@ namespace Sce.PlayStation.Core
 
 		public void Lerp(ref Vector2 v, float f, out Vector2 result)
 		{
-			float num = 1f - f;
-			result.X = this.X * num + v.X * f;
-			result.Y = this.Y * num + v.Y * f;
+			float newF = 1f - f;
+			result.X = this.X * newF + v.X * f;
+			result.Y = this.Y * newF + v.Y * f;
 		}
 
 		/// <summary>slerp between this and the other vector</summary>
@@ -560,8 +560,8 @@ namespace Sce.PlayStation.Core
 
 		public void MoveTo(ref Vector2 v, float length, out Vector2 result)
 		{
-			float num = this.Distance(v);
-			result = ((length >= num) ? v : this.Lerp(v, length / num));
+			float distanceTo = this.Distance(v);
+			result = ((length >= distanceTo) ? v : this.Lerp(v, length / distanceTo));
 		}
 
 		/// <summary>turn to target vector by specified angle</summary>

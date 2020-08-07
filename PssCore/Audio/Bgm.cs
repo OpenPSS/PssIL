@@ -37,10 +37,10 @@ namespace Sce.PlayStation.Core.Audio
 		[SecuritySafeCritical]
 		public Bgm(string filename)
 		{
-			int num = Bgm.NewFromFilename(filename, out this.handle);
-			if (num < 0)
+			int errorCode = Bgm.NewFromFilename(filename, out this.handle);
+			if (errorCode < 0)
 			{
-				Error.ThrowNativeException(num);
+				Error.ThrowNativeException(errorCode);
 			}
 		}
 
@@ -49,10 +49,10 @@ namespace Sce.PlayStation.Core.Audio
 		[SecuritySafeCritical]
 		public Bgm(byte[] fileImage)
 		{
-			int num = Bgm.NewFromFileImage(fileImage, out this.handle);
-			if (num < 0)
+			int errorCode = Bgm.NewFromFileImage(fileImage, out this.handle);
+			if (errorCode < 0)
 			{
-				Error.ThrowNativeException(num);
+				Error.ThrowNativeException(errorCode);
 			}
 		}
 
@@ -84,13 +84,13 @@ namespace Sce.PlayStation.Core.Audio
 		[SecuritySafeCritical]
 		public BgmPlayer CreatePlayer()
 		{
-			int num2;
-			int num = Bgm.CreatePlayerNative(this.handle, out num2);
-			if (num != 0)
+			int bgmPlayerId;
+			int errorCode = Bgm.CreatePlayerNative(this.handle, out bgmPlayerId);
+			if (errorCode != 0)
 			{
-				Error.ThrowNativeException(num);
+				Error.ThrowNativeException(errorCode);
 			}
-			return new BgmPlayer(num2);
+			return new BgmPlayer(bgmPlayerId);
 		}
 	}
 }

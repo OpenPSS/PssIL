@@ -227,10 +227,10 @@ namespace Sce.PlayStation.Core.Audio
 			[SecuritySafeCritical]
 			set
 			{
-				int num = BgmPlayer.SetPlaybackRateNative(this.handle, value);
-				if (num != 0)
+				int errorCode = BgmPlayer.SetPlaybackRateNative(this.handle, value);
+				if (errorCode != 0)
 				{
-					Error.ThrowNativeException(num);
+					Error.ThrowNativeException(errorCode);
 				}
 			}
 		}
@@ -241,22 +241,22 @@ namespace Sce.PlayStation.Core.Audio
 			[SecuritySafeCritical]
 			get
 			{
-				ulong num = 0UL;
-				int position = BgmPlayer.GetPosition(this.handle, out num);
-				if (position != 0)
+				ulong position = 0UL;
+				int errorCode = BgmPlayer.GetPosition(this.handle, out position);
+				if (errorCode != 0)
 				{
-					Error.ThrowNativeException(position);
+					Error.ThrowNativeException(errorCode);
 				}
-				return num * 0.001;
+				return position * 0.001;
 			}
 			[SecuritySafeCritical]
 			set
 			{
 				ulong millisecond = (ulong)(value * 1000.0);
-				int num = BgmPlayer.SetPosition(this.handle, millisecond);
-				if (num != 0)
+				int errorCode = BgmPlayer.SetPosition(this.handle, millisecond);
+				if (errorCode != 0)
 				{
-					Error.ThrowNativeException(num);
+					Error.ThrowNativeException(errorCode);
 				}
 			}
 		}
@@ -267,13 +267,13 @@ namespace Sce.PlayStation.Core.Audio
 			[SecuritySafeCritical]
 			get
 			{
-				ulong num = 0UL;
-				int length = BgmPlayer.GetLength(this.handle, out num);
-				if (length != 0)
+				ulong length = 0UL;
+				int errorCode = BgmPlayer.GetLength(this.handle, out length);
+				if (errorCode != 0)
 				{
-					Error.ThrowNativeException(length);
+					Error.ThrowNativeException(errorCode);
 				}
-				return num * 0.001;
+				return length * 0.001;
 			}
 		}
 
@@ -310,16 +310,16 @@ namespace Sce.PlayStation.Core.Audio
 		{
 			if (this.loopStart < 0.0)
 			{
-				ulong num;
-				ulong num2;
-				int loopPosition = BgmPlayer.GetLoopPosition(this.handle, out num, out num2);
+				ulong start;
+				ulong end;
+				int loopPosition = BgmPlayer.GetLoopPosition(this.handle, out start, out end);
 				if (loopPosition != 0)
 				{
 					Error.ThrowNativeException(loopPosition);
 				}
 				double duration = this.Duration;
-				this.loopStart = Math.Min(num * 0.001, duration);
-				this.loopEnd = Math.Min(num2 * 0.001, duration);
+				this.loopStart = Math.Min(start * 0.001, duration);
+				this.loopEnd = Math.Min(end * 0.001, duration);
 			}
 		}
 
@@ -331,16 +331,16 @@ namespace Sce.PlayStation.Core.Audio
 			{
 				throw new ArgumentOutOfRangeException();
 			}
-			ulong num = (ulong)(start * 1000.0);
-			ulong num2 = (ulong)(end * 1000.0);
-			if (num > num2)
+			ulong startRes = (ulong)(start * 1000.0);
+			ulong endRes = (ulong)(end * 1000.0);
+			if (startRes > endRes)
 			{
-				num = num2;
+				startRes = endRes;
 			}
-			int num3 = BgmPlayer.SetLoopPosition(this.handle, num, num2);
-			if (num3 != 0)
+			int errorCode = BgmPlayer.SetLoopPosition(this.handle, startRes, endRes);
+			if (errorCode != 0)
 			{
-				Error.ThrowNativeException(num3);
+				Error.ThrowNativeException(errorCode);
 			}
 			this.loopStart = start;
 			this.loopEnd = end;
