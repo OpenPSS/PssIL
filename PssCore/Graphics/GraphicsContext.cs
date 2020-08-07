@@ -898,7 +898,7 @@ namespace Sce.PlayStation.Core.Graphics
 			int screenWidth;
 			int screenHeight;
 			PsmGraphicsContext.GetMaxScreenSize(out screenWidth, out screenHeight);
-			for (int i = 0; i < screenWidth; i++)
+			for (int i = 0; i < result; i++)
 			{
 				if (GraphicsContext.screenSizes[i].Width > screenWidth || GraphicsContext.screenSizes[i].Height > screenHeight)
 				{

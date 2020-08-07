@@ -1,6 +1,6 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="PssCore\Graphics\Struct\DepthFunc.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="PssCore\Graphics\PixelBuffer.cs">
     <Files>
       <File FileName="PssCore\Core\Error.cs" Line="110" Column="42" />
       <File FileName="PssCore\Core\FMath.cs" Line="274" Column="32" />
@@ -65,7 +65,7 @@
       <File FileName="PssCore\Graphics\Enum\VertexFormat.cs" Line="29" Column="10" />
       <File FileName="PssCore\Graphics\Struct\BlendFunc.cs" Line="11" Column="3" />
       <File FileName="PssCore\Graphics\Struct\CullFace.cs" Line="8" Column="3" />
-      <File FileName="PssCore\Graphics\Struct\DepthFunc.cs" Line="18" Column="42" />
+      <File FileName="PssCore\Graphics\Struct\DepthFunc.cs" Line="26" Column="22" />
       <File FileName="PssCore\Graphics\Struct\GraphicsCaps.cs" Line="9" Column="3" />
       <File FileName="PssCore\Graphics\Struct\GraphicsCapsState.cs" Line="7" Column="3" />
       <File FileName="PssCore\Graphics\Struct\GraphicsState.cs" Line="15" Column="1" />
@@ -73,15 +73,15 @@
       <File FileName="PssCore\Graphics\Struct\Primitive.cs" Line="14" Column="3" />
       <File FileName="PssCore\Graphics\Struct\RenderTarget.cs" Line="10" Column="6" />
       <File FileName="PssCore\Graphics\Struct\StencilFunc.cs" Line="8" Column="3" />
-      <File FileName="PssCore\Graphics\Struct\StencilOp.cs" Line="29" Column="29" />
-      <File FileName="PssCore\Graphics\Struct\TextureFilter.cs" Line="29" Column="29" />
-      <File FileName="PssCore\Graphics\Struct\TextureWrap.cs" Line="26" Column="29" />
+      <File FileName="PssCore\Graphics\Struct\StencilOp.cs" Line="21" Column="4" />
+      <File FileName="PssCore\Graphics\Struct\TextureFilter.cs" Line="29" Column="9" />
+      <File FileName="PssCore\Graphics\Struct\TextureWrap.cs" Line="5" Column="82" />
       <File FileName="PssCore\Graphics\ColorBuffer.cs" Line="1" Column="5" />
       <File FileName="PssCore\Graphics\DepthBuffer.cs" Line="1" Column="5" />
       <File FileName="PssCore\Graphics\FrameBuffer.cs" Line="10" Column="3" />
       <File FileName="PssCore\Graphics\FrameBufferState.cs" Line="20" Column="37" />
-      <File FileName="PssCore\Graphics\GraphicsContext.cs" Line="901" Column="35" />
-      <File FileName="PssCore\Graphics\PixelBuffer.cs" Line="10" Column="3" />
+      <File FileName="PssCore\Graphics\GraphicsContext.cs" Line="38" Column="234" />
+      <File FileName="PssCore\Graphics\PixelBuffer.cs" Line="12" Column="11" />
       <File FileName="PssCore\Graphics\PsmFrameBuffer.cs" Line="12" Column="3" />
       <File FileName="PssCore\Graphics\PsmGraphicsContext.cs" Line="46" Column="44" />
       <File FileName="PssCore\Graphics\PsmPixelBuffer.cs" Line="9" Column="3" />
@@ -93,7 +93,7 @@
       <File FileName="PssCore\Graphics\ShaderProgramOption.cs" Line="9" Column="3" />
       <File FileName="PssCore\Graphics\ShaderProgramState.cs" Line="8" Column="3" />
       <File FileName="PssCore\Graphics\Texture.cs" Line="14" Column="3" />
-      <File FileName="PssCore\Graphics\Texture2D.cs" Line="177" Column="41" />
+      <File FileName="PssCore\Graphics\Texture2D.cs" Line="12" Column="28" />
       <File FileName="PssCore\Graphics\TextureCube.cs" Line="180" Column="2" />
       <File FileName="PssCore\Graphics\TextureState.cs" Line="7" Column="1" />
       <File FileName="PssCore\Graphics\VertexBuffer.cs" Line="12" Column="3" />
@@ -106,7 +106,7 @@
       <File FileName="PssCore\Imaging\Enum\FontStyle.cs" Line="14" Column="19" />
       <File FileName="PssCore\Imaging\Enum\ImageMode.cs" Line="11" Column="9" />
       <File FileName="PssCore\Imaging\Font.cs" Line="10" Column="1" />
-      <File FileName="PssCore\Imaging\Image.cs" Line="366" Column="61" />
+      <File FileName="PssCore\Imaging\Image.cs" Line="363" Column="1" />
       <File FileName="PssCore\Imaging\Enum\FontAlias.cs" Line="9" Column="17" />
       <File FileName="PssCore\Input\Struct\MotionData.cs" Line="7" Column="3" />
       <File FileName="PssCore\Input\Struct\GamePadData.cs" Line="10" Column="20" />

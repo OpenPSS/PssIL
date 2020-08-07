@@ -17,7 +17,7 @@ namespace Sce.PlayStation.Core.Graphics
 		/// <param name="dstFactor">Alpha-blending function destination coefficient</param>
 		public BlendFunc(BlendFuncMode mode, BlendFuncFactor srcFactor, BlendFuncFactor dstFactor)
 		{
-			this.bits = (uint)(mode | (BlendFuncMode)((uint)srcFactor << 8) | (BlendFuncMode)((uint)dstFactor << 16));
+			this.bits = ((uint)((int)mode | (int)((uint)srcFactor << 8)) | ((uint)dstFactor << 16));
 		}
 
 		/// <summary>Sets a value to the the structure representing the alpha-blending function</summary>
@@ -26,7 +26,7 @@ namespace Sce.PlayStation.Core.Graphics
 		/// <param name="dstFactor">Alpha-blending function destination coefficient</param>
 		public void Set(BlendFuncMode mode, BlendFuncFactor srcFactor, BlendFuncFactor dstFactor)
 		{
-			this.bits = (uint)(mode | (BlendFuncMode)((uint)srcFactor << 8) | (BlendFuncMode)((uint)dstFactor << 16));
+			this.bits = ((uint)((int)mode | (int)((uint)srcFactor << 8)) | ((uint)dstFactor << 16));
 		}
 
 		/// <summary>Alpha-blending function mode</summary>
@@ -34,11 +34,11 @@ namespace Sce.PlayStation.Core.Graphics
 		{
 			get
 			{
-				return (BlendFuncMode)this.bits;
+				return (BlendFuncMode)bits;
 			}
 			set
 			{
-				this.bits = ((this.bits & 0xFFFFFF00) | (uint)value);
+				bits = ((uint)((int)bits & 0x0000FF00) | (uint)value);
 			}
 		}
 
@@ -47,11 +47,11 @@ namespace Sce.PlayStation.Core.Graphics
 		{
 			get
 			{
-				return (BlendFuncFactor)(this.bits >> 8);
+				return (BlendFuncFactor)(bits >> 8);
 			}
 			set
 			{
-				this.bits = ((this.bits & 0xFFFF00FF) | (uint)((uint)value << 8));
+				bits = ((uint)((int)bits & 0xFFFF00FF) | ((uint)value << 8));
 			}
 		}
 
@@ -60,13 +60,14 @@ namespace Sce.PlayStation.Core.Graphics
 		{
 			get
 			{
-				return (BlendFuncFactor)(this.bits >> 16);
+				return (BlendFuncFactor)(bits >> 16);
 			}
 			set
 			{
-				this.bits = ((this.bits & 0xFF00FFFF) | (uint)((uint)value << 16));
+				bits = ((uint)((int)bits & 0xFF00FFFF) | ((uint)value << 16));
 			}
 		}
+
 		
 
 	}

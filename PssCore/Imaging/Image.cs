@@ -360,16 +360,15 @@ namespace Sce.PlayStation.Core.Imaging
 				throw new DirectoryNotFoundException();
 			}
 			FileAttributes attributes = File.GetAttributes(directoryName);
-			bool canAccess = FileAttributes.ReadOnly == (attributes & FileAttributes.ReadOnly);
-			if (canAccess)
+			if (FileAttributes.ReadOnly == (attributes & FileAttributes.ReadOnly))
 			{
-				string text = string.Format("Access to the path '{0}' is denied.", path);
-				throw new UnauthorizedAccessException(text);
+				string message = "Access to the path '{path}' is denied.";
+				throw new UnauthorizedAccessException(message);
 			}
 			if (FileAttributes.Directory != (attributes & FileAttributes.Directory))
 			{
-				string text = string.Format("Access to the path '{0}' is denied.", path);
-				throw new UnauthorizedAccessException(text);
+				string message = "Access to the path '{path}' is denied.";
+				throw new UnauthorizedAccessException(message);
 			}
 			char[] invalidFileNameChars = Path.GetInvalidFileNameChars();
 			int errorCode = Image.SaveAsNative(this.handle, fullPath);
