@@ -44,6 +44,7 @@
     <Folder Include="Audio\Enums\" />
     <Folder Include="Device\" />
     <Folder Include="Device\Enum\" />
+    <Folder Include="Device\Struct\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Core\Error.cs" />
@@ -110,5 +111,11 @@
     <Compile Include="Device\Enum\LocationDeviceType.cs" />
     <Compile Include="Device\Enum\PictureState.cs" />
     <Compile Include="Device\Camera.cs" />
+    <Compile Include="Device\CameraImportDialog.cs" />
+    <Compile Include="Device\Location.cs" />
+    <Compile Include="Device\PhotoImportDialog.cs" />
+    <Compile Include="Device\Struct\CameraInfo.cs" />
+    <Compile Include="Device\Struct\CameraSize.cs" />
+    <Compile Include="Device\Struct\LocationData.cs" />
   </ItemGroup>
 </Project>
